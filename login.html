@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Smooth N Shine Aesthetics</title>
+    <meta name="description" content="Login to your Smooth N Shine customer portal to manage bookings and treatment packages." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
+                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
+                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
+                        dark: '#20120F',
+                        text: '#3A302D',
+                        muted: '#77706D',
+                        background: '#FAF8F7',
+                        border: '#E9E2DE',
+                        success: '#238B65',
+                        warning: '#D69A28'
+                    },
+                    fontFamily: {
+                        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+                        sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-background text-text font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Simple Header -->
+    <header class="py-6 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex flex-col">
+                <span class="text-2xl font-bold tracking-tight text-dark font-serif">Smooth N Shine</span>
+                <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase">Aesthetics At Doorstep</span>
+            </a>
+            <a href="index.html" class="text-xs font-bold text-muted hover:text-primary flex items-center gap-1">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Card -->
+    <main class="flex-1 flex items-center justify-center px-4 py-2">
+        <div class="w-full max-w-md bg-white p-8 rounded-3xl border border-border shadow-xl space-y-6">
+            <div class="text-center space-y-1">
+                <h1 class="text-2xl font-bold font-serif text-dark">Welcome Back</h1>
+                <p class="text-xs text-muted">Access your appointments, packages & skin notes</p>
+            </div>
+
+            <form id="loginForm" class="space-y-4" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-text mb-1">Email or Mobile Number</label>
+                    <input type="text" required placeholder="name@example.com or +91 9876543210" class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-text mb-1">Password</label>
+                    <input type="password" required placeholder="••••••••" class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                </div>
+
+                <div class="flex items-center justify-between text-xs">
+                    <label class="flex items-center gap-2 cursor-pointer text-muted">
+                        <input type="checkbox" checked class="text-primary rounded">
+                        <span>Remember Me</span>
+                    </label>
+                    <a href="#" class="text-primary font-semibold hover:underline">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="w-full h-12 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs shadow-md transition-all">
+                    Sign In
+                </button>
+            </form>
+
+            <div class="text-center text-xs text-muted">
+                <span>Don't have an account?</span>
+                <a href="register.html" class="text-primary font-bold hover:underline ml-1">Create Account</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs text-muted border-t border-border">
+        © 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.
+    </footer>
+
+    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav id="mobileBottomNav"
+        class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+        <div class="relative h-full grid grid-cols-5 items-center px-1">
+            <a href="index.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Home</span>
+            </a>
+            <a href="treatments.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Services</span>
+            </a>
+            <a href="booking.html" class="group relative h-full flex items-center justify-center no-underline">
+                <div
+                    class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+                    <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+                </div>
+            </a>
+            <a href="offers.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="tag" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Offers</span>
+            </a>
+            <a href="dashboard.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="user" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Account</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

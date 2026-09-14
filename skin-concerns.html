@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Concerns & Solutions | Acne, Pigmentation & Aging | Smooth N Shine</title>
+    <meta name="description" content="Find dermatologist-certified treatment pathways for Acne Scars, Melasma, Hyperpigmentation, Fine Lines, and Dull Skin." />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-[#FAF8F7] text-[#3A302D]">
+
+    <!-- TOPBAR -->
+    <div class="hidden lg:block bg-[#20120F] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="h-10 flex items-center justify-between text-[13px]">
+                <div class="flex items-center gap-2 text-white/90">
+                    <i class="bi bi-house-heart text-[#B8906B]"></i>
+                    <span>Certified Dermatologist Aesthetic Treatments at Your Doorstep</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="tel:+918850666361" class="flex items-center gap-2 text-white/90 hover:text-[#B8906B]">
+                        <i class="bi bi-telephone text-[#B8906B]"></i> +91 88506 66361
+                    </a>
+                    <a href="contact.html" class="flex items-center gap-2 text-white/90 hover:text-[#B8906B]">
+                        <i class="bi bi-envelope text-[#B8906B]"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-[999] hidden md:block w-full bg-white">
+        <nav class="w-full bg-white border-b border-[#E9E2DE] shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+                <div class="h-[76px] lg:h-[82px] flex items-center justify-between">
+                    <a href="index.html" class="group flex flex-col justify-center shrink-0 no-underline">
+                        <span class="text-[21px] sm:text-[24px] lg:text-[25px] font-semibold text-[#20120F] group-hover:text-[#D92734] transition-colors">
+                            Smooth N Shine
+                        </span>
+                        <span class="mt-[7px] text-[8px] sm:text-[9px] tracking-[3px] font-semibold text-[#B8906B]">
+                            AESTHETICS TREATMENTS
+                        </span>
+                    </a>
+
+                    <div class="hidden lg:flex items-center h-full">
+                        <ul class="flex items-center gap-10 h-full m-0 p-0 list-none">
+                            <li class="h-full flex items-center"><a href="about.html" class="nav-link">About Us</a></li>
+                            <li class="h-full flex items-center"><a href="skin-treatments.html" class="nav-link">Treatments</a></li>
+                            <li class="h-full flex items-center"><a href="skin-concerns.html" class="nav-link active">Concerns</a></li>
+                            <li class="h-full flex items-center"><a href="experts.html" class="nav-link">Experts</a></li>
+                            <li class="h-full flex items-center"><a href="blogs.html" class="nav-link">Blogs</a></li>
+                            <li class="h-full flex items-center"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden lg:flex items-center gap-3">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="h-10 px-5 rounded-full bg-[#D92734] hover:bg-[#B71F2A] text-white flex items-center justify-center gap-2 text-[13px] font-semibold shadow-md">
+                            <i class="bi bi-calendar-check"></i> Book Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="fixed bottom-0 left-0 right-0 z-[9999] h-[68px] bg-white/95 border-t border-[#E9E2DE] backdrop-blur-md md:hidden">
+        <div class="relative h-full grid grid-cols-5 items-center px-1">
+            <a href="index.html" class="group h-full flex flex-col items-center justify-center gap-1 text-[#3A302D]">
+                <div class="w-7 h-7 rounded-lg border border-[#B8906B] flex items-center justify-center text-[9px] font-extrabold">SNS</div>
+                <span class="text-[10px] font-semibold">Home</span>
+            </a>
+            <a href="skin-treatments.html" class="group h-full flex flex-col items-center justify-center gap-1 text-[#3A302D]">
+                <div class="w-7 h-7 flex items-center justify-center rounded-full"><i class="bi bi-stars text-[18px]"></i></div>
+                <span class="text-[10px] font-semibold">Treatments</span>
+            </a>
+            <a href="blogs.html" class="group relative h-full flex items-center justify-center">
+                <div class="absolute -top-[25px] w-[64px] h-[64px] rounded-full bg-[#FCE8EA] border-[3px] border-white shadow-md flex flex-col items-center justify-center text-center">
+                    <span class="text-[8px] font-extrabold text-[#D92734]">K-BEAUTY</span>
+                </div>
+            </a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="group h-full flex flex-col items-center justify-center gap-1 border-0 bg-transparent text-[#3A302D]">
+                <div class="w-7 h-7 flex items-center justify-center rounded-full"><i class="bi bi-calendar-check text-[18px] text-[#D92734]"></i></div>
+                <span class="text-[10px] font-semibold">Booking</span>
+            </button>
+            <a href="account.html" class="group h-full flex flex-col items-center justify-center gap-1 text-[#3A302D]">
+                <div class="w-7 h-7 flex items-center justify-center rounded-full"><i class="bi bi-person text-[19px]"></i></div>
+                <span class="text-[10px] font-semibold">Account</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="bg-[#20120F] text-white py-14 lg:py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-xs font-bold uppercase tracking-[2px] text-[#B8906B]">Targeted Diagnosis & Care</span>
+            <h1 class="text-3xl sm:text-5xl font-bold font-serif mt-2">Skin Concerns & Solutions</h1>
+            <p class="text-sm sm:text-base text-white/75 mt-3 max-w-2xl">
+                Every skin condition requires a precise clinical approach. Discover doctor-curated treatment regimens for active acne, stubborn pigmentation, premature aging, and dehydration.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONCERNS CARDS GRID -->
+    <section class="py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Concern 1: Acne & Scars -->
+            <div class="bg-white rounded-3xl p-8 border border-[#E9E2DE] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-[#FCE8EA] text-[#D92734] flex items-center justify-center text-2xl">
+                        <i class="bi bi-radioactive"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-serif text-[#20120F]">Acne & Deep Acne Scars</h3>
+                    <p class="text-sm text-[#77706D] leading-relaxed">
+                        Inflammatory comedones, cystic acne, and post-inflammatory ice-pick scars caused by excess sebum, bacteria, and delayed cellular turnover.
+                    </p>
+                    <div class="bg-[#FAF8F7] p-4 rounded-2xl border border-[#E9E2DE]">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-[#D92734] mb-2">Recommended Clinical Regimen:</h4>
+                        <ul class="text-xs text-[#3A302D] space-y-1.5 list-none p-0 m-0">
+                            <li>✔ Salicylic & Azelaic Medical Peels</li>
+                            <li>✔ Carbon Laser Pore Decongestion</li>
+                            <li>✔ Face PRP & Micro-Needling Scar Revision</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-[#E9E2DE] flex items-center justify-between">
+                    <a href="skin-treatments.html#chemical-peels" class="text-xs font-bold text-[#D92734] hover:underline flex items-center gap-1">
+                        View Treatments <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <button data-bs-toggle="modal" data-bs-target="#bookingModal" data-service="Chemical Peels" class="px-5 py-2.5 rounded-full bg-[#20120F] hover:bg-[#D92734] text-white text-xs font-semibold transition-colors">
+                        Book Acne Protocol
+                    </button>
+                </div>
+            </div>
+
+            <!-- Concern 2: Pigmentation & Dark Spots -->
+            <div class="bg-white rounded-3xl p-8 border border-[#E9E2DE] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-[#EDE7F6] text-[#6200EE] flex items-center justify-center text-2xl">
+                        <i class="bi bi-sun"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-serif text-[#20120F]">Pigmentation & Melasma</h3>
+                    <p class="text-sm text-[#77706D] leading-relaxed">
+                        Hormonal discoloration, sun damage, and patchy melasma patches triggered by melanin overproduction in deeper dermal layers.
+                    </p>
+                    <div class="bg-[#FAF8F7] p-4 rounded-2xl border border-[#E9E2DE]">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-[#6200EE] mb-2">Recommended Clinical Regimen:</h4>
+                        <ul class="text-xs text-[#3A302D] space-y-1.5 list-none p-0 m-0">
+                            <li>✔ Q-Switch Nd:YAG Laser Pigmentation Toning</li>
+                            <li>✔ Yellow Peel & Glutathione Infusion</li>
+                            <li>✔ Korean Glass Skin Radiance Peel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-[#E9E2DE] flex items-center justify-between">
+                    <a href="skin-treatments.html#laser-facials" class="text-xs font-bold text-[#6200EE] hover:underline flex items-center gap-1">
+                        View Treatments <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <button data-bs-toggle="modal" data-bs-target="#bookingModal" data-service="Laser Facials" class="px-5 py-2.5 rounded-full bg-[#20120F] hover:bg-[#6200EE] text-white text-xs font-semibold transition-colors">
+                        Book Pigmentation Protocol
+                    </button>
+                </div>
+            </div>
+
+            <!-- Concern 3: Aging & Fine Lines -->
+            <div class="bg-white rounded-3xl p-8 border border-[#E9E2DE] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-[#F4E8DE] text-[#B8906B] flex items-center justify-center text-2xl">
+                        <i class="bi bi-hourglass-split"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-serif text-[#20120F]">Aging & Fine Lines</h3>
+                    <p class="text-sm text-[#77706D] leading-relaxed">
+                        Gradual loss of natural collagen, elastin breakdown, crow's feet, smile lines, and loss of facial firmness over time.
+                    </p>
+                    <div class="bg-[#FAF8F7] p-4 rounded-2xl border border-[#E9E2DE]">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-[#B8906B] mb-2">Recommended Clinical Regimen:</h4>
+                        <ul class="text-xs text-[#3A302D] space-y-1.5 list-none p-0 m-0">
+                            <li>✔ Exosome & Stem-Cell Face PRP Therapy</li>
+                            <li>✔ Multi-Polar Radiofrequency Skin Tightening</li>
+                            <li>✔ 24K Peptide Anti-Aging Infusion</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-[#E9E2DE] flex items-center justify-between">
+                    <a href="skin-treatments.html#prp-exosome" class="text-xs font-bold text-[#B8906B] hover:underline flex items-center gap-1">
+                        View Treatments <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <button data-bs-toggle="modal" data-bs-target="#bookingModal" data-service="Anti-Aging Facial" class="px-5 py-2.5 rounded-full bg-[#20120F] hover:bg-[#B8906B] text-white text-xs font-semibold transition-colors">
+                        Book Anti-Aging Protocol
+                    </button>
+                </div>
+            </div>
+
+            <!-- Concern 4: Dull & Uneven Skin -->
+            <div class="bg-white rounded-3xl p-8 border border-[#E9E2DE] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-red-50 text-[#D92734] flex items-center justify-center text-2xl">
+                        <i class="bi bi-brightness-alt-high"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-serif text-[#20120F]">Dull, Tired & Dehydrated Skin</h3>
+                    <p class="text-sm text-[#77706D] leading-relaxed">
+                        Pollution exposure, impaired lipid barrier, surface dead-skin build-up resulting in rough texture and lack of luminous glow.
+                    </p>
+                    <div class="bg-[#FAF8F7] p-4 rounded-2xl border border-[#E9E2DE]">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-[#D92734] mb-2">Recommended Clinical Regimen:</h4>
+                        <ul class="text-xs text-[#3A302D] space-y-1.5 list-none p-0 m-0">
+                            <li>✔ 7-Step Korean Glass Skin Facial</li>
+                            <li>✔ Diamond Flake Microdermabrasion Polish</li>
+                            <li>✔ Hydra Medi-Facial with Hyaluronic Infusion</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-[#E9E2DE] flex items-center justify-between">
+                    <a href="facial-treatments.html#korean" class="text-xs font-bold text-[#D92734] hover:underline flex items-center gap-1">
+                        View Treatments <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <button data-bs-toggle="modal" data-bs-target="#bookingModal" data-service="Korean Glass Skin Facial" class="px-5 py-2.5 rounded-full bg-[#20120F] hover:bg-[#D92734] text-white text-xs font-semibold transition-colors">
+                        Book Glow Protocol
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#20120F] text-white pt-16 pb-24 md:pb-12 border-t border-[#3A2621]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="inline-block">
+                        <span class="text-2xl font-bold text-white">Smooth N Shine</span>
+                        <span class="block text-[10px] tracking-[3px] font-semibold text-[#B8906B]">AESTHETICS TREATMENTS</span>
+                    </a>
+                    <p class="text-sm text-white/70 max-w-sm">Doctor-certified aesthetics at your doorstep.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase text-[#B8906B] mb-4">Treatments</h4>
+                    <ul class="space-y-2 text-sm text-white/75 list-none p-0 m-0">
+                        <li><a href="skin-treatments.html" class="hover:text-white">Skin Treatments</a></li>
+                        <li><a href="body-contouring.html" class="hover:text-white">Body Contouring</a></li>
+                        <li><a href="facial-treatments.html" class="hover:text-white">Facials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase text-[#B8906B] mb-4">Concerns</h4>
+                    <ul class="space-y-2 text-sm text-white/75 list-none p-0 m-0">
+                        <li><a href="skin-concerns.html" class="hover:text-white">Skin Concerns</a></li>
+                        <li><a href="facial-concerns.html" class="hover:text-white">Facial Concerns</a></li>
+                        <li><a href="body-concerns.html" class="hover:text-white">Body Concerns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase text-[#B8906B] mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-white/75 list-none p-0 m-0">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="experts.html" class="hover:text-white">Doctors</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 text-xs text-white/50">© 2026 Smooth N Shine Aesthetics Pvt. Ltd.</div>
+        </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div id="bookingModal" class="fixed inset-0 z-[99999] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden my-8">
+            <div class="bg-[#20120F] px-6 py-5 text-white flex items-center justify-between">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i class="bi bi-calendar2-check text-[#D92734]"></i> Book Your Aesthetic Consultation
+                </h3>
+                <button type="button" data-bs-dismiss="modal" class="modal-close-btn w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center">
+                    <i class="bi bi-x-lg text-sm"></i>
+                </button>
+            </div>
+            <div id="bookingSuccessMsg" class="hidden p-8 text-center">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="bi bi-check-lg"></i></div>
+                <h4 class="text-xl font-bold text-[#20120F] mb-2">Consultation Scheduled!</h4>
+                <p class="text-sm text-[#77706D]">Our dermatologist team will connect with you.</p>
+            </div>
+            <form id="bookingForm" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-[#3A302D] mb-1.5">Primary Concern</label>
+                    <select name="service" required class="w-full h-11 px-3.5 rounded-xl border border-[#E9E2DE] text-sm text-[#3A302D] bg-[#FAF8F7] outline-none">
+                        <option value="Acne & Scars">Acne & Acne Scars</option>
+                        <option value="Pigmentation & Melasma">Pigmentation & Dark Spots</option>
+                        <option value="Aging & Fine Lines">Aging & Fine Lines</option>
+                        <option value="Dull & Uneven Skin">Dull & Uneven Skin Tone</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-[#3A302D] mb-1.5">Full Name</label>
+                        <input type="text" name="name" required placeholder="Your Name" class="w-full h-11 px-3.5 rounded-xl border border-[#E9E2DE] text-sm text-[#3A302D] bg-[#FAF8F7] outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-[#3A302D] mb-1.5">Phone Number</label>
+                        <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full h-11 px-3.5 rounded-xl border border-[#E9E2DE] text-sm text-[#3A302D] bg-[#FAF8F7] outline-none">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-[#3A302D] mb-1.5">Date</label>
+                        <input type="date" name="date" required class="w-full h-11 px-3.5 rounded-xl border border-[#E9E2DE] text-sm text-[#3A302D] bg-[#FAF8F7] outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-[#3A302D] mb-1.5">Time</label>
+                        <select name="time" class="w-full h-11 px-3.5 rounded-xl border border-[#E9E2DE] text-sm text-[#3A302D] bg-[#FAF8F7] outline-none">
+                            <option value="Morning (10:00 AM - 01:00 PM)">Morning (10 AM - 1 PM)</option>
+                            <option value="Afternoon (01:00 PM - 04:00 PM)">Afternoon (1 PM - 4 PM)</option>
+                            <option value="Evening (04:00 PM - 08:00 PM)">Evening (4 PM - 8 PM)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <button type="submit" class="w-full h-12 rounded-xl bg-[#D92734] hover:bg-[#B71F2A] text-white font-bold text-sm shadow-md transition-all">
+                        Request Doctor Consultation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

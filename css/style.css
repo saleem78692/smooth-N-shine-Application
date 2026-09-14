@@ -1,0 +1,154 @@
+/* Smooth N Shine - Custom Styles & Enhancements */
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #FAF8F7;
+    color: #3A302D;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+    font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Before / After Image Slider */
+.ba-container {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+.ba-slider-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #FFFFFF;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: ew-resize;
+    z-index: 30;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.ba-slider-handle::after {
+    content: "◀ ▶";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+    height: 38px;
+    background: #D92734;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(217, 39, 52, 0.4);
+}
+
+.ba-before-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.ba-before-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+/* Swiper Customizations */
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px;
+    border-radius: 6px;
+    background: #D92734 !important;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+    background: #D92734 !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #FAF8F7;
+}
+::-webkit-scrollbar-thumb {
+    background: #E9E2DE;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #B8906B;
+}
+
+/* Floating Vertical Enquire Tab */
+.vertical-enquire-tab {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+/* Toast Notification Animation */
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toast-animate {
+    animation: toastSlideIn 0.3s ease forwards;
+}
+
+/* Bottom Nav Padding for Mobile */
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 72px;
+    }
+}
+
+/* Hide horizontal scrollbar completely */
+.filter-scroll {
+    overflow-x: auto;
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE/Edge */
+}
+
+.filter-scroll::-webkit-scrollbar {
+    display: none;                /* Chrome/Safari */
+    width: 0;
+    height: 0;
+}

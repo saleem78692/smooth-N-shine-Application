@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Doorstep Appointment | Smooth N Shine</title>
+    <meta name="description"
+        content="Complete your 4-step doorstep aesthetic treatment booking with certified dermatologists." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
+                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
+                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
+                        dark: '#20120F',
+                        text: '#3A302D',
+                        muted: '#77706D',
+                        background: '#FAF8F7',
+                        border: '#E9E2DE',
+                        success: '#238B65',
+                        warning: '#D69A28'
+                    },
+                    fontFamily: {
+                        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+                        sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-background text-text font-sans antialiased">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-20 flex items-center justify-between">
+                <a href="index.html" class="flex flex-col">
+                    <span class="text-2xl font-bold tracking-tight text-dark font-serif">Smooth N Shine</span>
+                    <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase">Aesthetics
+                        </span>
+                </a>
+
+                <div class="flex items-center gap-2 text-xs text-muted">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-success"></i>
+                    <span>100% Safe & Secure</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BOOKING FLOW SECTION -->
+    <section class="py-10 lg:py-14">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Stepper Progress Header -->
+            <div class="grid grid-cols-4 gap-2 mb-10">
+                <button type="button" data-step="1"
+                    class="booking-step-tab bg-primary text-white p-3 rounded-2xl text-center text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    <span class="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px]">1</span>
+                    <span class="hidden sm:inline">01 Service</span>
+                </button>
+                <button type="button" data-step="2"
+                    class="booking-step-tab bg-white text-text p-3 rounded-2xl border border-border text-center text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    <span
+                        class="w-5 h-5 rounded-full bg-background flex items-center justify-center text-[10px]">2</span>
+                    <span class="hidden sm:inline">02 Date & Time</span>
+                </button>
+                <button type="button" data-step="3"
+                    class="booking-step-tab bg-white text-text p-3 rounded-2xl border border-border text-center text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    <span
+                        class="w-5 h-5 rounded-full bg-background flex items-center justify-center text-[10px]">3</span>
+                    <span class="hidden sm:inline">03 Address</span>
+                </button>
+                <button type="button" data-step="4"
+                    class="booking-step-tab bg-white text-text p-3 rounded-2xl border border-border text-center text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    <span
+                        class="w-5 h-5 rounded-full bg-background flex items-center justify-center text-[10px]">4</span>
+                    <span class="hidden sm:inline">04 Payment</span>
+                </button>
+            </div>
+
+            <!-- Main Booking Grid (Form Left, Summary Right) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Left Form Column (8 Cols) -->
+                <div class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-3xl border border-border shadow-sm">
+
+                    <!-- STEP 1: Service Selection -->
+                    <div data-step-content="1" class="booking-step-content space-y-6">
+                        <div>
+                            <h2 class="text-xl font-bold font-serif text-dark">Step 1: Choose Your Treatment</h2>
+                            <p class="text-xs text-muted mt-1">Select the certified aesthetic service for your home
+                                appointment.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <label
+                                class="flex items-center justify-between p-4 rounded-2xl border-2 border-primary bg-primary-light/20 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="stepService" value="korean" checked
+                                        class="text-primary focus:ring-primary">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-dark">Korean Glass Skin 7-Step Facial</h4>
+                                        <p class="text-xs text-muted">75 Mins • Ultrasonic aqua peel, essence & cryo
+                                            lift</p>
+                                    </div>
+                                </div>
+                                <span class="text-sm font-bold text-dark">₹2,199</span>
+                            </label>
+
+                            <label
+                                class="flex items-center justify-between p-4 rounded-2xl border border-border hover:border-primary cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="stepService" value="laser"
+                                        class="text-primary focus:ring-primary">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-dark">Laser Hair Reduction (Full Arms +
+                                            Underarms)</h4>
+                                        <p class="text-xs text-muted">60 Mins • Triple Diode painless sub-zero chill tip
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="text-sm font-bold text-dark">₹1,999</span>
+                            </label>
+
+                            <label
+                                class="flex items-center justify-between p-4 rounded-2xl border border-border hover:border-primary cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="stepService" value="slimming"
+                                        class="text-primary focus:ring-primary">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-dark">U-Lipo Body Slimming & Toning</h4>
+                                        <p class="text-xs text-muted">60 Mins • Ultrasonic cavitation for stubborn fat
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="text-sm font-bold text-dark">₹2,499</span>
+                            </label>
+                        </div>
+
+                        <div class="pt-4 flex justify-end">
+                            <button type="button"
+                                class="booking-next-step px-8 py-3.5 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs shadow-md transition-colors flex items-center gap-2">
+                                Continue to Date & Time <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Date & Time -->
+                    <div data-step-content="2" class="booking-step-content hidden space-y-6">
+                        <div>
+                            <h2 class="text-xl font-bold font-serif text-dark">Step 2: Select Date & Slot</h2>
+                            <p class="text-xs text-muted mt-1">Pick a convenient time when you are comfortable at home.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-text mb-1">Appointment Date</label>
+                                <input type="date" required
+                                    class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-text mb-2">Preferred Slot</label>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                    <label
+                                        class="p-3.5 rounded-xl border border-border bg-background cursor-pointer hover:border-primary text-center">
+                                        <input type="radio" name="slot" value="morning" checked class="text-primary">
+                                        <span class="block text-xs font-bold text-dark mt-1">Morning</span>
+                                        <span class="block text-[10px] text-muted">10:00 AM - 01:00 PM</span>
+                                    </label>
+                                    <label
+                                        class="p-3.5 rounded-xl border border-border bg-background cursor-pointer hover:border-primary text-center">
+                                        <input type="radio" name="slot" value="afternoon" class="text-primary">
+                                        <span class="block text-xs font-bold text-dark mt-1">Afternoon</span>
+                                        <span class="block text-[10px] text-muted">01:00 PM - 04:00 PM</span>
+                                    </label>
+                                    <label
+                                        class="p-3.5 rounded-xl border border-border bg-background cursor-pointer hover:border-primary text-center">
+                                        <input type="radio" name="slot" value="evening" class="text-primary">
+                                        <span class="block text-xs font-bold text-dark mt-1">Evening</span>
+                                        <span class="block text-[10px] text-muted">04:00 PM - 08:00 PM</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex justify-between">
+                            <button type="button"
+                                class="booking-prev-step px-6 py-3 rounded-xl border border-border text-xs font-semibold text-text hover:bg-background">Back</button>
+                            <button type="button"
+                                class="booking-next-step px-8 py-3 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs shadow-md">Continue
+                                to Address</button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Doorstep Address -->
+                    <div data-step-content="3" class="booking-step-content hidden space-y-6">
+                        <div>
+                            <h2 class="text-xl font-bold font-serif text-dark">Step 3: Doorstep Address</h2>
+                            <p class="text-xs text-muted mt-1">Where should our clinical mobile unit arrive?</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-text mb-1">Full Name</label>
+                                    <input type="text" required placeholder="Priya Sharma"
+                                        class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-text mb-1">Mobile
+                                        Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210"
+                                        class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-text mb-1">Complete House / Flat
+                                    Address</label>
+                                <input type="text" required placeholder="Flat 402, Sunshine Heights, 14th Road"
+                                    class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-text mb-1">Landmark</label>
+                                    <input type="text" placeholder="Near Linking Road"
+                                        class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-text mb-1">City & Pin
+                                        Code</label>
+                                    <input type="text" placeholder="Mumbai, 400050"
+                                        class="w-full h-11 px-3.5 rounded-xl border border-border bg-background text-xs outline-none focus:border-primary">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex justify-between">
+                            <button type="button"
+                                class="booking-prev-step px-6 py-3 rounded-xl border border-border text-xs font-semibold text-text hover:bg-background">Back</button>
+                            <button type="button"
+                                class="booking-next-step px-8 py-3 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs shadow-md">Review
+                                & Pay</button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: Payment / Confirm -->
+                    <div data-step-content="4" class="booking-step-content hidden space-y-6">
+                        <div>
+                            <h2 class="text-xl font-bold font-serif text-dark">Step 4: Confirm & Pay</h2>
+                            <p class="text-xs text-muted mt-1">Choose your preferred payment method.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <label
+                                class="flex items-center justify-between p-4 rounded-2xl border-2 border-primary bg-primary-light/20 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="payment" value="after-service" checked
+                                        class="text-primary">
+                                    <div>
+                                        <h4 class="text-xs font-bold text-dark">Pay After Service (Cash / UPI / Card)
+                                        </h4>
+                                        <p class="text-[10px] text-muted">Pay only after you are 100% satisfied with the
+                                            treatment.</p>
+                                    </div>
+                                </div>
+                                <i data-lucide="shield-check" class="w-5 h-5 text-success"></i>
+                            </label>
+
+                            <label
+                                class="flex items-center justify-between p-4 rounded-2xl border border-border hover:border-primary cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="payment" value="online" class="text-primary">
+                                    <div>
+                                        <h4 class="text-xs font-bold text-dark">Pay Online Now (Extra 5% OFF)</h4>
+                                        <p class="text-[10px] text-muted">UPI, Net Banking, Credit / Debit Cards</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-success">-₹110</span>
+                            </label>
+                        </div>
+
+                        <div class="pt-4 flex justify-between">
+                            <button type="button"
+                                class="booking-prev-step px-6 py-3 rounded-xl border border-border text-xs font-semibold text-text hover:bg-background">Back</button>
+                            <button type="button"
+                                onclick="alert('Congratulations! Your doorstep appointment has been booked. A confirmation SMS & WhatsApp message has been sent to your number.'); window.location.href='dashboard.html';"
+                                class="px-8 py-3.5 rounded-xl bg-success hover:bg-green-700 text-white font-bold text-xs shadow-lg flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4"></i> Confirm Booking
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Summary Column (4 Cols) -->
+                <div
+                    class="lg:col-span-4 bg-white p-6 rounded-3xl border border-border shadow-sm space-y-6 sticky top-28">
+                    <h3 class="text-base font-bold font-serif text-dark pb-3 border-b border-border">Booking Summary
+                    </h3>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-muted">Selected Service:</span>
+                            <span class="font-bold text-dark">Korean Glass Skin Facial</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-muted">Duration:</span>
+                            <span>75 Mins</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-muted">Clinician:</span>
+                            <span class="text-success font-semibold">Certified Aesthetician</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 text-xs border-t border-border pt-4">
+                        <div class="flex justify-between">
+                            <span class="text-muted">Original Price:</span>
+                            <span class="line-through text-muted">₹3,499</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-muted">Special Discount:</span>
+                            <span class="text-success font-semibold">-₹1,300</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-muted">Sterile Disposables:</span>
+                            <span class="text-success font-semibold">FREE</span>
+                        </div>
+                        <div class="flex justify-between text-base font-bold text-dark pt-2 border-t border-border">
+                            <span>Total Payable:</span>
+                            <span class="font-serif text-primary">₹2,199</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-background p-3.5 rounded-2xl border border-border flex items-center gap-2 text-[11px] text-muted">
+                        <i data-lucide="info" class="w-4 h-4 text-primary shrink-0"></i>
+                        <span>Free cancellation up to 2 hours before scheduled slot.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-10 pb-16 border-t border-white/10 text-center text-xs text-white/50">
+        © 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.
+    </footer>
+
+    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav id="mobileBottomNav"
+        class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+        <div class="relative h-full grid grid-cols-5 items-center px-1">
+            <a href="index.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Home</span>
+            </a>
+            <a href="treatments.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Services</span>
+            </a>
+            <a href="booking.html" class="group relative h-full flex items-center justify-center no-underline">
+                <div
+                    class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+                    <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+                </div>
+            </a>
+            <a href="offers.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="tag" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Offers</span>
+            </a>
+            <a href="dashboard.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="user" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Account</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

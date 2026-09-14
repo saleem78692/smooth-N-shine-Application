@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Our Certified Dermatologists & Experts | Smooth N Shine</title>
+    <meta name="description" content="Meet our board-certified MD Dermatologists, laser surgeons and cosmetic doctors." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
+                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
+                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
+                        dark: '#20120F',
+                        text: '#3A302D',
+                        muted: '#77706D',
+                        background: '#FAF8F7',
+                        border: '#E9E2DE',
+                        success: '#238B65',
+                        warning: '#D69A28'
+                    },
+                    fontFamily: {
+                        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+                        sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-background text-text font-sans antialiased">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-20 flex items-center justify-between">
+                <a href="index.html" class="flex flex-col">
+                    <span class="text-2xl font-bold tracking-tight text-dark font-serif">Smooth N Shine</span>
+                    <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase">Aesthetics At Doorstep</span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-7">
+                    <a href="index.html" class="text-sm font-medium text-text hover:text-primary">Home</a>
+                    <a href="treatments.html" class="text-sm font-medium text-text hover:text-primary">Treatments</a>
+                    <a href="experts.html" class="text-sm font-semibold text-primary">Experts</a>
+                    <a href="offers.html" class="text-sm font-medium text-text hover:text-primary">Offers</a>
+                    <a href="blogs.html" class="text-sm font-medium text-text hover:text-primary">Blogs</a>
+                    <a href="contact.html" class="text-sm font-medium text-text hover:text-primary">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="booking.html" class="h-10 px-5 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center gap-2 text-xs font-bold shadow-md">
+                        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                        <span>Book Appointment</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER HERO BANNER -->
+    <section class="bg-dark text-white py-14 lg:py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-xs font-bold uppercase tracking-[2px] text-secondary">Medical Leadership</span>
+            <h1 class="text-3xl sm:text-5xl font-bold font-serif text-white mt-1">Our Board of Dermatologists</h1>
+            <p class="text-xs sm:text-sm text-white/75 mt-2 max-w-xl">
+                Every doorstep aesthetic treatment is designed, calibrated, and supervised by certified MD Dermatologists.
+            </p>
+        </div>
+    </section>
+
+    <!-- EXPERTS DIRECTORY -->
+    <section class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-background shadow-md">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=85" alt="Dr. Radhika Sen" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center space-y-2">
+                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified MD</span>
+                        <h3 class="text-xl font-bold font-serif text-dark mt-2">Dr. Radhika Sen</h3>
+                        <p class="text-xs text-primary font-semibold">Chief Dermatologist</p>
+                        <p class="text-xs text-muted">MD, DNB (Dermatology) • 14+ Years Exp.</p>
+                        <p class="text-xs text-muted leading-relaxed pt-2">Specialist in Q-Switch laser pigmentation, autologous PRP therapies and Korean dermal protocols.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-dark">₹500 / Consult</span>
+                        <a href="booking.html?doctor=dr-radhika-sen" class="px-4 py-2 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary-dark">Book Slot</a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-background shadow-md">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=85" alt="Dr. Alok Verma" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center space-y-2">
+                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified MD</span>
+                        <h3 class="text-xl font-bold font-serif text-dark mt-2">Dr. Alok Verma</h3>
+                        <p class="text-xs text-purple font-semibold">Laser Aesthetic Surgeon</p>
+                        <p class="text-xs text-muted">MBBS, MD, FAM (Germany) • 11+ Years Exp.</p>
+                        <p class="text-xs text-muted leading-relaxed pt-2">Pioneer in painless Triple-Wavelength Diode lasers and non-invasive U-Lipo cavitation.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-dark">₹500 / Consult</span>
+                        <a href="booking.html?doctor=dr-alok-verma" class="px-4 py-2 rounded-xl bg-purple text-white text-xs font-bold hover:bg-purple-dark">Book Slot</a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-background shadow-md">
+                        <img src="https://images.unsplash.com/photo-1594824813689-0c6488d56b46?auto=format&fit=crop&w=400&q=85" alt="Dr. Natasha Kapur" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center space-y-2">
+                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified MD</span>
+                        <h3 class="text-xl font-bold font-serif text-dark mt-2">Dr. Natasha Kapur</h3>
+                        <p class="text-xs text-secondary font-semibold">Cosmetic Dermatologist</p>
+                        <p class="text-xs text-muted">MD, FAM (Seoul, Korea) • 9+ Years Exp.</p>
+                        <p class="text-xs text-muted leading-relaxed pt-2">Specializes in medical chemical peeling, microneedling and anti-aging glass skin therapies.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-dark">₹500 / Consult</span>
+                        <a href="booking.html?doctor=dr-natasha-kapur" class="px-4 py-2 rounded-xl bg-secondary text-white text-xs font-bold hover:bg-secondary-dark">Book Slot</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-14 pb-20 border-t border-white/10 text-center text-xs text-white/50">
+        © 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
