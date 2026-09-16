@@ -82,7 +82,7 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
     transform: translateX(-50%);
     cursor: ew-resize;
     z-index: 30;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
 .ba-slider-handle::after {
@@ -148,16 +148,13 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
     width: 8px;
     height: 8px;
 }
-
 ::-webkit-scrollbar-track {
     background: #FAF4F0;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #ECDAD5;
     border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #A66373;
 }
@@ -175,7 +172,6 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -196,15 +192,12 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
 /* Hide horizontal scrollbar completely */
 .filter-scroll {
     overflow-x: auto;
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* IE/Edge */
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE/Edge */
 }
 
 .filter-scroll::-webkit-scrollbar {
-    display: none;
-    /* Chrome/Safari */
+    display: none;                /* Chrome/Safari */
     width: 0;
     height: 0;
 }
@@ -227,241 +220,4 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
     width: auto;
     max-width: 250px;
     object-fit: contain;
-}
-
-
-
-
-/* About CSS  */
-
-
-/* Custom Tabbed UI */
-.tab-btn {
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tab-btn.active {
-    background-color: #A66373;
-    color: #FFFFFF;
-    border-color: #A66373;
-    box-shadow: 0 8px 20px rgba(166, 99, 115, 0.25);
-}
-
-.tab-btn.active i {
-    color: #FFFFFF !important;
-}
-
-.tab-content {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.35s ease;
-}
-
-.tab-content.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Certificate card hover effects */
-.cert-card {
-    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: pointer;
-}
-
-.cert-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 30px rgba(43, 26, 32, 0.12);
-}
-
-.cert-card img {
-    transition: transform 0.4s ease;
-}
-
-.cert-card:hover img {
-    transform: scale(1.03);
-}
-
-
-
-/* service category css  */
-
-
-/* =====================================================
-       HORIZONTAL SCROLLBAR HIDDEN
-    ====================================================== */
-
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* =====================================================
-       SERVICE CARD
-    ====================================================== */
-
-.service-card {
-    flex: 0 0 auto;
-    width: 145px;
-
-    background: #ffffff;
-
-    padding: 8px;
-
-    border-radius: 24px;
-
-    border: 1px solid #E9E2DE;
-
-    box-shadow:
-        0 2px 8px rgba(32, 18, 15, 0.05);
-
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    scroll-snap-align: start;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-}
-
-
-/* =====================================================
-       CARD HOVER
-    ====================================================== */
-
-.service-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #D92734;
-
-    box-shadow:
-        0 12px 30px rgba(32, 18, 15, 0.12);
-}
-
-
-/* =====================================================
-       IMAGE CONTAINER
-    ====================================================== */
-
-.service-image {
-    width: 100%;
-    height: 112px;
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    margin-bottom: 10px;
-
-    background: #F5F2F0;
-}
-
-
-/* =====================================================
-       IMAGE
-    ====================================================== */
-
-.service-img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition:
-        transform 0.5s ease;
-}
-
-
-.service-card:hover .service-img {
-    transform: scale(1.1);
-}
-
-
-/* =====================================================
-       TITLE
-    ====================================================== */
-
-.service-title {
-    display: block;
-
-    width: 100%;
-
-    min-height: 32px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: #20120F;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    line-height: 1.35;
-
-    transition:
-        color 0.25s ease;
-}
-
-
-.service-card:hover .service-title {
-    color: #D92734;
-}
-
-
-/* =====================================================
-       MOBILE
-    ====================================================== */
-
-@media (max-width: 640px) {
-
-    .service-card {
-        width: 135px;
-        padding: 7px;
-        border-radius: 20px;
-    }
-
-    .service-image {
-        height: 105px;
-        border-radius: 15px;
-        margin-bottom: 8px;
-    }
-
-    .service-title {
-        font-size: 11px;
-    }
-
-}
-
-
-/* =====================================================
-       TABLET
-    ====================================================== */
-
-@media (min-width: 641px) and (max-width: 1024px) {
-
-    .service-card {
-        width: 150px;
-    }
-
-    .service-image {
-        height: 115px;
-    }
-
 }

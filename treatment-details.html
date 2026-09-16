@@ -13,16 +13,18 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
-                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
-                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
-                        dark: '#20120F',
-                        text: '#3A302D',
-                        muted: '#77706D',
-                        background: '#FAF8F7',
-                        border: '#E9E2DE',
+                        primary: { DEFAULT: '#A66373', dark: '#7E4150', light: '#FAF2EF' },
+                        purple: { DEFAULT: '#A66373', light: '#DFC2C9' },
+                        secondary: { DEFAULT: '#C57668', dark: '#A85B4E', light: '#EAA597' },
+                        coral: { DEFAULT: '#C57668', light: '#EAA597' },
+                        lavender: { DEFAULT: '#DFC2C9', light: '#FAF4F0' },
+                        dark: '#2B1A20',
+                        text: '#2B1A20',
+                        muted: '#78636B',
+                        background: '#FAF4F0',
+                        border: '#ECDAD5',
                         success: '#238B65',
-                        warning: '#D69A28'
+                        warning: '#C57668'
                     },
                     fontFamily: {
                         serif: ['"DM Serif Display"', 'Georgia', 'serif'],
@@ -43,13 +45,13 @@
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="h-20 flex items-center justify-between">
-                <a href="index.html" class="flex flex-col">
-                    <span class="text-2xl font-bold tracking-tight text-dark font-serif">Smooth N Shine</span>
-                    <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase">Aesthetics At Doorstep</span>
+                <a href="index.html" class="flex items-center shrink-0" title="Smooth N Shine">
+                    <img src="assets/images/logo.svg" alt="Smooth N Shine" class="site-logo-img h-11 w-auto object-contain">
                 </a>
 
                 <nav class="hidden lg:flex items-center gap-7">
                     <a href="index.html" class="text-sm font-medium text-text hover:text-primary">Home</a>
+                    <a href="about.html" class="text-sm font-medium text-text hover:text-primary">About Us</a>
                     <a href="treatments.html" class="text-sm font-semibold text-primary">Treatments</a>
                     <a href="experts.html" class="text-sm font-medium text-text hover:text-primary">Experts</a>
                     <a href="offers.html" class="text-sm font-medium text-text hover:text-primary">Offers</a>

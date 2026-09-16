@@ -13,16 +13,18 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
-                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
-                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
-                        dark: '#20120F',
-                        text: '#3A302D',
-                        muted: '#77706D',
-                        background: '#FAF8F7',
-                        border: '#E9E2DE',
+                        primary: { DEFAULT: '#A66373', dark: '#7E4150', light: '#FAF2EF' },
+                        purple: { DEFAULT: '#A66373', light: '#DFC2C9' },
+                        secondary: { DEFAULT: '#C57668', dark: '#A85B4E', light: '#EAA597' },
+                        coral: { DEFAULT: '#C57668', light: '#EAA597' },
+                        lavender: { DEFAULT: '#DFC2C9', light: '#FAF4F0' },
+                        dark: '#2B1A20',
+                        text: '#2B1A20',
+                        muted: '#78636B',
+                        background: '#FAF4F0',
+                        border: '#ECDAD5',
                         success: '#238B65',
-                        warning: '#D69A28'
+                        warning: '#C57668'
                     },
                     fontFamily: {
                         serif: ['"DM Serif Display"', 'Georgia', 'serif'],
@@ -42,9 +44,8 @@
     <!-- Simple Header -->
     <header class="py-6 px-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="index.html" class="flex flex-col">
-                <span class="text-2xl font-bold tracking-tight text-dark font-serif">Smooth N Shine</span>
-                <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase">Aesthetics At Doorstep</span>
+            <a href="index.html" class="flex items-center shrink-0" title="Smooth N Shine">
+                <img src="assets/images/logo.svg" alt="Smooth N Shine" class="site-logo-img h-11 w-auto object-contain">
             </a>
             <a href="index.html" class="text-xs font-bold text-muted hover:text-primary flex items-center gap-1">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
@@ -96,36 +97,58 @@
         © 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.
     </footer>
 
-    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+   <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
     <nav id="mobileBottomNav"
         class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+
         <div class="relative h-full grid grid-cols-5 items-center px-1">
+
+            <!-- HOME -->
             <a href="index.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
                 <i data-lucide="home" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Home</span>
             </a>
+
+            <!-- SERVICES -->
             <a href="treatments.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="sparkles" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Services</span>
             </a>
-            <a href="booking.html" class="group relative h-full flex items-center justify-center no-underline">
+
+            <!-- BOOKING -->
+            <a href="booking.html" id="mobileBookingButton"
+                class="group relative h-full flex items-center justify-center no-underline" style="background-color: transparent !important;">
+
                 <div
                     class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+
                     <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+
+                    <!-- BOOKING NOTIFICATION -->
+                    <span id="mobileBookingBadge"
+                        class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-white flex items-center justify-center shadow-lg badge-pop">
+                        0
+                    </span>
+
                 </div>
             </a>
+
+            <!-- OFFERS -->
             <a href="offers.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="tag" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Offers</span>
             </a>
+
+            <!-- ACCOUNT -->
             <a href="dashboard.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="user" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Account</span>
             </a>
+
         </div>
     </nav>
 

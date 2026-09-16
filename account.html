@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Account & Treatment Tracker | Smooth N Shine</title>
     <meta name="description" content="View your upcoming dermatologist appointments, active treatment packages, skin prescriptions and reward points." />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-[#FAF8F7] text-[#3A302D]">
+<body class="bg-[#FAF4F0] text-[#2B1A20]">
 
     <!-- TOPBAR -->
-    <div class="hidden lg:block bg-[#20120F] text-white">
+    <div class="hidden lg:block bg-[#2B1A20] text-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="h-10 flex items-center justify-between text-[13px]">
                 <div class="flex items-center gap-2 text-white/90">
-                    <i class="bi bi-house-heart text-[#B8906B]"></i>
+                    <i class="bi bi-house-heart text-[#EAA597]"></i>
                     <span>Certified Dermatologist Aesthetic Treatments at Your Doorstep</span>
                 </div>
                 <div class="flex items-center gap-6">
-                    <a href="tel:+918850666361" class="flex items-center gap-2 text-white/90 hover:text-[#B8906B]">
-                        <i class="bi bi-telephone text-[#B8906B]"></i> +91 88506 66361
+                    <a href="tel:+918850666361" class="flex items-center gap-2 text-white/90 hover:text-[#EAA597]">
+                        <i class="bi bi-telephone text-[#EAA597]"></i> +91 88506 66361
                     </a>
-                    <a href="contact.html" class="flex items-center gap-2 text-white/90 hover:text-[#B8906B]">
-                        <i class="bi bi-envelope text-[#B8906B]"></i> Contact Us
+                    <a href="contact.html" class="flex items-center gap-2 text-white/90 hover:text-[#EAA597]">
+                        <i class="bi bi-envelope text-[#EAA597]"></i> Contact Us
                     </a>
                 </div>
             </div>
@@ -35,16 +35,11 @@
 
     <!-- MAIN NAVBAR -->
     <header class="sticky top-0 z-[999] hidden md:block w-full bg-white">
-        <nav class="w-full bg-white border-b border-[#E9E2DE] shadow-sm">
+        <nav class="w-full bg-white border-b border-[#ECDAD5] shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
                 <div class="h-[76px] lg:h-[82px] flex items-center justify-between">
-                    <a href="index.html" class="group flex flex-col justify-center shrink-0 no-underline">
-                        <span class="text-[21px] sm:text-[24px] lg:text-[25px] font-semibold text-[#20120F] group-hover:text-[#D92734] transition-colors">
-                            Smooth N Shine
-                        </span>
-                        <span class="mt-[7px] text-[8px] sm:text-[9px] tracking-[3px] font-semibold text-[#B8906B]">
-                            AESTHETICS TREATMENTS
-                        </span>
+                    <a href="index.html" class="group flex items-center shrink-0 no-underline" title="Smooth N Shine">
+                        <img src="assets/images/logo.svg" alt="Smooth N Shine" class="site-logo-img h-11 w-auto object-contain">
                     </a>
 
                     <div class="hidden lg:flex items-center h-full">
@@ -223,13 +218,12 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#20120F] text-white pt-16 pb-24 md:pb-12 border-t border-[#3A2621]">
+    <footer class="bg-[#2B1A20] text-white pt-16 pb-24 md:pb-12 border-t border-[#3D252E]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
                 <div class="lg:col-span-2 space-y-4">
-                    <a href="index.html" class="inline-block">
-                        <span class="text-2xl font-bold text-white">Smooth N Shine</span>
-                        <span class="block text-[10px] tracking-[3px] font-semibold text-[#B8906B]">AESTHETICS TREATMENTS</span>
+                    <a href="index.html" class="inline-block" title="Smooth N Shine">
+                        <img src="assets/images/logo-white.svg" alt="Smooth N Shine" class="site-logo-footer h-11 w-auto object-contain">
                     </a>
                     <p class="text-sm text-white/70 max-w-sm">Doctor-certified aesthetics at your doorstep.</p>
                 </div>
@@ -259,6 +253,61 @@
             <div class="pt-8 text-xs text-white/50">© 2026 Smooth N Shine Aesthetics Pvt. Ltd.</div>
         </div>
     </footer>
+
+     <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav id="mobileBottomNav"
+        class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+
+        <div class="relative h-full grid grid-cols-5 items-center px-1">
+
+            <!-- HOME -->
+            <a href="index.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Home</span>
+            </a>
+
+            <!-- SERVICES -->
+            <a href="treatments.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Services</span>
+            </a>
+
+            <!-- BOOKING -->
+            <a href="booking.html" id="mobileBookingButton"
+                class="group relative h-full flex items-center justify-center no-underline" style="background-color: transparent !important;">
+
+                <div
+                    class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+
+                    <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+
+                    <!-- BOOKING NOTIFICATION -->
+                    <span id="mobileBookingBadge"
+                        class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-white flex items-center justify-center shadow-lg badge-pop">
+                        0
+                    </span>
+
+                </div>
+            </a>
+
+            <!-- OFFERS -->
+            <a href="offers.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="tag" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Offers</span>
+            </a>
+
+            <!-- ACCOUNT -->
+            <a href="dashboard.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="user" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Account</span>
+            </a>
+
+        </div>
+    </nav>
 
     <!-- BOOKING MODAL -->
     <div id="bookingModal" class="fixed inset-0 z-[99999] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto">

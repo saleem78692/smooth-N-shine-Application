@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&amp;family=Montserrat:wght@400;500;600&amp;display=swap');
+      .logo-text {
+        font-family: 'Cormorant Garamond', 'Playfair Display', 'Didot', 'Georgia', serif;
+        font-size: 82px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        fill: #A66373;
+      }
+      .logo-sub {
+        font-family: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        fill: #A66373;
+      }
+      .logo-color {
+        fill: #A66373;
+      }
+      .logo-stroke {
+        stroke: #A66373;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(15, 20)">
+    <!-- Letters SM -->
+    <text x="25" y="112" class="logo-text">SM</text>
+
+    <!-- Flower 'O' (First O) -->
+    <g transform="translate(202, 80)">
+      <!-- 5 Petals -->
+      <path d="M 0,-30 C 14,-30 25,-19 25,-5 C 25,10 0,22 0,22 C 0,22 -25,10 -25,-5 C -25,-19 -14,-30 0,-30 Z" class="logo-color" fill-opacity="0.1" stroke="#A66373" stroke-width="4.5" />
+      <g transform="rotate(72)">
+        <path d="M 0,-30 C 14,-30 25,-19 25,-5 C 25,10 0,22 0,22 C 0,22 -25,10 -25,-5 C -25,-19 -14,-30 0,-30 Z" class="logo-color" fill-opacity="0.1" stroke="#A66373" stroke-width="4.5" />
+      </g>
+      <g transform="rotate(144)">
+        <path d="M 0,-30 C 14,-30 25,-19 25,-5 C 25,10 0,22 0,22 C 0,22 -25,10 -25,-5 C -25,-19 -14,-30 0,-30 Z" class="logo-color" fill-opacity="0.1" stroke="#A66373" stroke-width="4.5" />
+      </g>
+      <g transform="rotate(216)">
+        <path d="M 0,-30 C 14,-30 25,-19 25,-5 C 25,10 0,22 0,22 C 0,22 -25,10 -25,-5 C -25,-19 -14,-30 0,-30 Z" class="logo-color" fill-opacity="0.1" stroke="#A66373" stroke-width="4.5" />
+      </g>
+      <g transform="rotate(288)">
+        <path d="M 0,-30 C 14,-30 25,-19 25,-5 C 25,10 0,22 0,22 C 0,22 -25,10 -25,-5 C -25,-19 -14,-30 0,-30 Z" class="logo-color" fill-opacity="0.1" stroke="#A66373" stroke-width="4.5" />
+      </g>
+      <!-- Center Core -->
+      <circle cx="0" cy="0" r="7" class="logo-color" />
+    </g>
+
+    <!-- Face Silhouette 'O' (Second O) -->
+    <g transform="translate(258, 48)">
+      <!-- Outer Solid Oval 'O' -->
+      <path d="M 10,0 C 26,0 36,15 36,33 C 36,52 26,67 10,67 C -6,67 -16,52 -16,33 C -16,15 -6,0 10,0 Z" class="logo-color" />
+      <!-- Face profile cutout on left side of O -->
+      <path d="M 10,6 C 4,6 -1,13 -1,23 C 0,26 2,28 1,30 C -1,32 -3,32.5 -2,35 C -1,37 1.5,37 1,39 C 0,42 -2.5,43.5 -1,46 C 0.5,48 4,50 4,54 C 4,58 1,60 1,63 C 4,64 7,64.5 10,64.5 C 22,64.5 30,52 30,33 C 30,15 22,6 10,6 Z" fill="#FAF4F0" />
+    </g>
+
+    <!-- Letters TH -->
+    <text x="320" y="112" class="logo-text">TH</text>
+
+    <!-- Stylized 'N' with Star -->
+    <g transform="translate(485, 48)">
+      <!-- Large Seriffed 'N' -->
+      <path d="M 4,4 L 14,4 L 14,12 L 8,12 L 8,56 L 14,56 L 14,64 L -4,64 L -4,56 L 2,56 L 2,12 L -4,12 L -4,4 Z" class="logo-color" />
+      <path d="M 6,10 L 48,58 L 48,12 L 42,12 L 42,4 L 58,4 L 58,12 L 52,12 L 52,64 L 44,64 L 2,16 Z" class="logo-color" />
+      <!-- Sparkle 4-point star at bottom left of N -->
+      <path d="M 6,70 Q 6,62 10,62 Q 6,62 6,54 Q 6,62 2,62 Q 6,62 6,70 Z" class="logo-color" />
+    </g>
+
+    <!-- Letters SHINE -->
+    <text x="575" y="112" class="logo-text">SHINE</text>
+
+    <!-- Subtitle: AESTHETIC HOME SERVICE -->
+    <text x="450" y="168" text-anchor="middle" class="logo-sub">AESTHETIC HOME SERVICE</text>
+  </g>
+</svg>

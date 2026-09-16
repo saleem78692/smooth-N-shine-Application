@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty & Skincare Tips Blog | Smooth N Shine</title>
-    <meta name="description" content="Science-backed skincare articles, Korean beauty rituals, and aesthetic guidance from board-certified dermatologists." />
+    <meta name="description"
+        content="Science-backed skincare articles, Korean beauty rituals, and aesthetic guidance from board-certified dermatologists." />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,16 +14,18 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
-                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
-                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
-                        dark: '#20120F',
-                        text: '#3A302D',
-                        muted: '#77706D',
-                        background: '#FAF8F7',
-                        border: '#E9E2DE',
+                        primary: { DEFAULT: '#A66373', dark: '#7E4150', light: '#FAF2EF' },
+                        purple: { DEFAULT: '#A66373', light: '#DFC2C9' },
+                        secondary: { DEFAULT: '#C57668', dark: '#A85B4E', light: '#EAA597' },
+                        coral: { DEFAULT: '#C57668', light: '#EAA597' },
+                        lavender: { DEFAULT: '#DFC2C9', light: '#FAF4F0' },
+                        dark: '#2B1A20',
+                        text: '#2B1A20',
+                        muted: '#78636B',
+                        background: '#FAF4F0',
+                        border: '#ECDAD5',
                         success: '#238B65',
-                        warning: '#D69A28'
+                        warning: '#C57668'
                     },
                     fontFamily: {
                         serif: ['"DM Serif Display"', 'Georgia', 'serif'],
@@ -32,7 +35,9 @@
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,13 +48,13 @@
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="h-20 flex items-center justify-between">
-                <a href="index.html" class="flex flex-col">
-                    <span class="text-2xl font-bold tracking-tight text-dark font-serif">Smooth N Shine</span>
-                    <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase">Aesthetics At Doorstep</span>
+                <a href="index.html" class="flex items-center shrink-0" title="Smooth N Shine">
+                    <img src="assets/images/logo.svg" alt="Smooth N Shine" class="site-logo-img h-11 w-auto object-contain">
                 </a>
 
                 <nav class="hidden lg:flex items-center gap-7">
                     <a href="index.html" class="text-sm font-medium text-text hover:text-primary">Home</a>
+                    <a href="about.html" class="text-sm font-medium text-text hover:text-primary">About Us</a>
                     <a href="treatments.html" class="text-sm font-medium text-text hover:text-primary">Treatments</a>
                     <a href="experts.html" class="text-sm font-medium text-text hover:text-primary">Experts</a>
                     <a href="offers.html" class="text-sm font-medium text-text hover:text-primary">Offers</a>
@@ -58,7 +63,8 @@
                 </nav>
 
                 <div class="flex items-center gap-3">
-                    <a href="booking.html" class="h-10 px-5 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center gap-2 text-xs font-bold shadow-md">
+                    <a href="booking.html"
+                        class="h-10 px-5 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center gap-2 text-xs font-bold shadow-md">
                         <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
                         <span>Book Appointment</span>
                     </a>
@@ -73,7 +79,8 @@
             <span class="text-xs font-bold uppercase tracking-[2px] text-secondary">Expert Knowledge</span>
             <h1 class="text-3xl sm:text-5xl font-bold font-serif text-white mt-1">Beauty & Skincare Tips</h1>
             <p class="text-xs sm:text-sm text-white/75 mt-2 max-w-xl">
-                Science-backed guides, Korean beauty rituals, and post-procedure secrets penned by our board of dermatologists.
+                Science-backed guides, Korean beauty rituals, and post-procedure secrets penned by our board of
+                dermatologists.
             </p>
         </div>
     </section>
@@ -81,60 +88,100 @@
     <!-- BLOG POSTS -->
     <section class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- 1 -->
-                <article class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                <!-- ================= ARTICLE CARD 1 ================= -->
+                <article
+                    class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+
                     <div>
+                        <!-- Article Image -->
                         <div class="aspect-[16/10] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=85" alt="Korean Facial" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=85"
+                                alt="Korean Facial"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                         </div>
+
+                        <!-- Article Content -->
                         <div class="p-6 space-y-2">
-                            <span class="text-[10px] font-bold uppercase text-primary">K-Beauty Secrets</span>
-                            <h3 class="text-lg font-bold font-serif text-dark">Korean Facial Benefits: The Truth Behind Glass Skin</h3>
-                            <p class="text-xs text-muted leading-relaxed">Why multi-layered essence infusions and cryo-lifting create lasting dewy radiance without heavy makeup.</p>
+
+                            <span class="text-[10px] font-bold uppercase text-primary">
+                                K-Beauty Secrets
+                            </span>
+
+                            <h3 class="text-lg font-bold font-serif text-dark">
+                                Korean Facial Benefits: The Truth Behind Glass Skin
+                            </h3>
+
+                            <p class="text-xs text-muted leading-relaxed">
+                                Why multi-layered essence infusions and cryo-lifting create
+                                lasting dewy radiance without heavy makeup.
+                            </p>
+
                         </div>
                     </div>
-                    <div class="p-6 pt-0 text-xs text-muted border-t border-background flex justify-between items-center">
+
+                    <!-- Footer -->
+                    <div
+                        class="p-6 pt-0 text-xs text-muted border-t border-background flex justify-between items-center">
+
                         <span>5 min read</span>
-                        <a href="#" class="text-primary font-bold hover:underline">Read Article →</a>
+
+                        <!-- Read Article -->
+                        <a href="korean-facial-benefits.html"
+                            class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+                            Read Article
+                            <span>→</span>
+                        </a>
+
                     </div>
+
                 </article>
 
                 <!-- 2 -->
-                <article class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                <article
+                    class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
                     <div>
                         <div class="aspect-[16/10] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1512290900676-26c2a4a2f5b1?auto=format&fit=crop&w=600&q=85" alt="Laser Hair Guide" class="w-full h-full object-cover">
+                            <img src="https://www.drpraneethclinic.com/wp-content/uploads/elementor/thumbs/Diode-Laser-Hair-Removal-treatment-pmpol8t1fzmhohc6hs88lqetnywfyv4g7g429npji4.jpg"
+                                alt="Laser Hair Guide" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 space-y-2">
                             <span class="text-[10px] font-bold uppercase text-purple">Laser Essentials</span>
-                            <h3 class="text-lg font-bold font-serif text-dark">Laser Hair Reduction Guide: Everything You Must Know</h3>
-                            <p class="text-xs text-muted leading-relaxed">How triple-wavelength diode technology targets deep follicles painlessly on Indian skin tones.</p>
+                            <h3 class="text-lg font-bold font-serif text-dark">Laser Hair Reduction Guide: Everything
+                                You Must Know</h3>
+                            <p class="text-xs text-muted leading-relaxed">How triple-wavelength diode technology targets
+                                deep follicles painlessly on Indian skin tones.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 text-xs text-muted border-t border-background flex justify-between items-center">
+                    <div
+                        class="p-6 pt-0 text-xs text-muted border-t border-background flex justify-between items-center">
                         <span>6 min read</span>
-                        <a href="#" class="text-purple font-bold hover:underline">Read Article →</a>
+                        <a href="korean-facial-benefits.html" class="text-purple font-bold hover:underline">Read Article →</a>
                     </div>
                 </article>
 
                 <!-- 3 -->
-                <article class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                <article
+                    class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
                     <div>
                         <div class="aspect-[16/10] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=85" alt="Skincare Routine" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=85"
+                                alt="Skincare Routine" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="p-6 space-y-2">
                             <span class="text-[10px] font-bold uppercase text-secondary">Daily Regimen</span>
-                            <h3 class="text-lg font-bold font-serif text-dark">Daily Skincare Routine Recommended by Dermatologists</h3>
-                            <p class="text-xs text-muted leading-relaxed">The only 4 products you truly need for a resilient skin barrier and anti-aging protection.</p>
+                            <h3 class="text-lg font-bold font-serif text-dark">Daily Skincare Routine Recommended by
+                                Dermatologists</h3>
+                            <p class="text-xs text-muted leading-relaxed">The only 4 products you truly need for a
+                                resilient skin barrier and anti-aging protection.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 text-xs text-muted border-t border-background flex justify-between items-center">
+                    <div
+                        class="p-6 pt-0 text-xs text-muted border-t border-background flex justify-between items-center">
                         <span>4 min read</span>
-                        <a href="#" class="text-secondary font-bold hover:underline">Read Article →</a>
+                        <a href="korean-facial-benefits.html" class="text-secondary font-bold hover:underline">Read Article →</a>
                     </div>
                 </article>
 
@@ -147,6 +194,61 @@
     <footer class="bg-dark text-white pt-14 pb-20 border-t border-white/10 text-center text-xs text-white/50">
         © 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.
     </footer>
+
+     <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav id="mobileBottomNav"
+        class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+
+        <div class="relative h-full grid grid-cols-5 items-center px-1">
+
+            <!-- HOME -->
+            <a href="index.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Home</span>
+            </a>
+
+            <!-- SERVICES -->
+            <a href="treatments.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Services</span>
+            </a>
+
+            <!-- BOOKING -->
+            <a href="booking.html" id="mobileBookingButton"
+                class="group relative h-full flex items-center justify-center no-underline" style="background-color: transparent !important;">
+
+                <div
+                    class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+
+                    <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+
+                    <!-- BOOKING NOTIFICATION -->
+                    <span id="mobileBookingBadge"
+                        class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-white flex items-center justify-center shadow-lg badge-pop">
+                        0
+                    </span>
+
+                </div>
+            </a>
+
+            <!-- OFFERS -->
+            <a href="offers.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="tag" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Offers</span>
+            </a>
+
+            <!-- ACCOUNT -->
+            <a href="dashboard.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
+                <i data-lucide="user" class="w-5 h-5"></i>
+                <span class="text-[10px] font-bold">Account</span>
+            </a>
+
+        </div>
+    </nav>
 
     <script src="js/script.js"></script>
 </body>

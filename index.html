@@ -9,7 +9,6 @@
         content="Certified dermatologist and aesthetic treatments delivered directly to your doorstep. Laser hair reduction, Korean facials, body contouring & chemical peels." />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Tailwind CSS with Custom Theme Config -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
     <script>
@@ -18,25 +17,34 @@
                 extend: {
                     colors: {
                         primary: {
-                            DEFAULT: '#D92734',
-                            dark: '#B71F2A',
-                            light: '#FCE8EA'
+                            DEFAULT: '#A66373',
+                            dark: '#7E4150',
+                            light: '#FAF2EF'
                         },
                         purple: {
-                            DEFAULT: '#6300ED',
-                            light: '#EBE6FD'
+                            DEFAULT: '#A66373',
+                            light: '#DFC2C9'
                         },
                         secondary: {
-                            DEFAULT: '#B8906B',
-                            light: '#F4E8DE'
+                            DEFAULT: '#C57668',
+                            dark: '#A85B4E',
+                            light: '#EAA597'
                         },
-                        dark: '#20120F',
-                        text: '#3A302D',
-                        muted: '#77706D',
-                        background: '#FAF8F7',
-                        border: '#E9E2DE',
+                        coral: {
+                            DEFAULT: '#C57668',
+                            light: '#EAA597'
+                        },
+                        lavender: {
+                            DEFAULT: '#DFC2C9',
+                            light: '#FAF4F0'
+                        },
+                        dark: '#2B1A20',
+                        text: '#2B1A20',
+                        muted: '#78636B',
+                        background: '#FAF4F0',
+                        border: '#ECDAD5',
                         success: '#238B65',
-                        warning: '#D69A28'
+                        warning: '#C57668'
                     },
                     fontFamily: {
                         serif: ['"DM Serif Display"', 'Georgia', 'serif'],
@@ -51,7 +59,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Cormorant+Garamond:wght@600;700&display=swap"
         rel="stylesheet">
 
     <!-- Swiper CSS -->
@@ -64,17 +72,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-[#FAF8F7] text-[#3A302D] font-sans antialiased">
+<body class="bg-[#FAF4F0] text-[#2B1A20] font-sans antialiased">
 
     <!-- ================= TOP OFFER BAR ================= -->
-    <div class="bg-[#8e2648] text-xs sm:text-sm py-2 px-4">
+    <div class="bg-[#2B1A20] text-xs sm:text-sm py-2.5 px-4 text-white">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-2 mx-auto sm:mx-0">
-                <span class="text-primary font-bold">✨ Special Offer:</span>
+                <span class="text-[#EAA597] font-bold">✨ Special Offer:</span>
                 <span class="text-white/90">Get exclusive savings of up to 40% on your first doorstep booking!</span>
             </div>
             <a href="#bookingModal" data-open-modal="booking"
-                class="hidden sm:inline-flex items-center gap-1 text-secondary hover:text-white font-semibold transition-colors">
+                class="hidden sm:inline-flex items-center gap-1 text-[#EAA597] hover:text-[#DFC2C9] font-semibold transition-colors">
                 Book Now <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
         </div>
@@ -87,19 +95,17 @@
             <div class="h-20 flex items-center justify-between">
 
                 <!-- Logo -->
-                <a href="index.html" class="flex flex-col justify-center shrink-0 no-underline group">
-                    <span
-                        class="text-2xl lg:text-3xl font-bold tracking-tight text-dark group-hover:text-primary transition-colors">
-                        Smooth N Shine
-                    </span>
-                    <span class="text-[9px] tracking-[3px] font-bold text-secondary uppercase -mt-0.5">
-                        Aesthetics At Doorstep
-                    </span>
+                <a href="index.html" class="flex items-center shrink-0 no-underline group py-1"
+                    title="Smooth N Shine Aesthetics">
+                    <img src="assets/images/logo.svg" alt="Smooth N Shine - Aesthetic Home Service"
+                        class="site-logo-img h-11 w-auto object-contain">
                 </a>
 
                 <!-- Desktop Navigation Menu -->
                 <nav class="hidden lg:flex items-center gap-7 h-full">
 
+                    <a href="about.html"
+                        class="text-sm font-medium text-text hover:text-primary transition-colors">About Us</a>
 
                     <!-- Treatments Mega Menu -->
                     <div class="relative h-full flex items-center has-mega-menu cursor-pointer">
@@ -109,54 +115,410 @@
                                 class="w-3.5 h-3.5 text-muted transition-transform"></i>
                         </a>
 
-                        <!-- Mega Menu Dropdown -->
-                        <div
-                            class="mega-menu absolute left-1/2 top-full -translate-x-1/2 pt-2 w-[720px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-300">
-                            <div
-                                class="bg-white border border-border rounded-3xl shadow-2xl p-6 grid grid-cols-3 gap-6">
-                                <div>
-                                    <h4 class="text-xs font-bold uppercase tracking-wider text-primary mb-3">Skin &
-                                        Laser</h4>
-                                    <ul class="space-y-2 text-xs text-muted list-none p-0 m-0">
-                                        <li><a href="treatments.html#laser-hair"
-                                                class="hover:text-primary block py-1">Laser Hair Reduction</a></li>
-                                        <li><a href="treatments.html#carbon-laser"
-                                                class="hover:text-primary block py-1">Carbon Laser Peel</a></li>
-                                        <li><a href="treatments.html#chemical-peels"
-                                                class="hover:text-primary block py-1">Clinical Chemical Peels</a></li>
-                                        <li><a href="treatments.html#prp-exosomes"
-                                                class="hover:text-primary block py-1">Face PRP / Exosomes</a></li>
-                                    </ul>
+                        <!-- ================= PREMIUM TREATMENTS MEGA MENU ================= -->
+                        <div class="mega-menu absolute left-1/2 top-full -translate-x-1/2 pt-1
+                                        w-[920px] opacity-0 invisible translate-y-3
+                                        pointer-events-none transition-all duration-300 z-[9999]">
+
+                            <div class="relative overflow-hidden bg-white/95 backdrop-blur-xl
+                                        border border-[#E9E2DE] rounded-[28px]
+                                        shadow-[0_25px_70px_rgba(32,18,15,0.16)]">
+
+                                <!-- Decorative Background -->
+                                <div class="absolute -top-24 -right-24 w-56 h-56
+                                                    bg-[#FCE8EA] rounded-full blur-3xl opacity-70">
                                 </div>
-                                <div>
-                                    <h4 class="text-xs font-bold uppercase tracking-wider text-primary mb-3">Facial
-                                        Rituals</h4>
-                                    <ul class="space-y-2 text-xs text-muted list-none p-0 m-0">
-                                        <li><a href="treatment-details.html"
-                                                class="hover:text-primary block py-1 font-semibold text-text">Korean
-                                                Glass Skin (Popular)</a></li>
-                                        <li><a href="treatments.html#medi-facial"
-                                                class="hover:text-primary block py-1">Hydra Medi-Facial</a></li>
-                                        <li><a href="treatments.html#rf-anti-aging"
-                                                class="hover:text-primary block py-1">RF Anti-Aging Facial</a></li>
-                                        <li><a href="treatments.html#diamond-polish"
-                                                class="hover:text-primary block py-1">Body Diamond Polish</a></li>
-                                    </ul>
+
+                                <div class="absolute -bottom-28 -left-20 w-52 h-52
+                                        bg-[#F4E8DE] rounded-full blur-3xl opacity-50">
                                 </div>
-                                <div>
-                                    <h4 class="text-xs font-bold uppercase tracking-wider text-primary mb-3">Body
-                                        Contouring</h4>
-                                    <ul class="space-y-2 text-xs text-muted list-none p-0 m-0">
-                                        <li><a href="treatments.html#body-slimming"
-                                                class="hover:text-primary block py-1">Body Slimming & Toning</a></li>
-                                        <li><a href="treatments.html#ulipo" class="hover:text-primary block py-1">U-Lipo
-                                                Cavitation</a></li>
-                                        <li><a href="treatments.html#stomach-contour"
-                                                class="hover:text-primary block py-1">Stomach Contouring</a></li>
-                                        <li><a href="treatments.html#double-chin"
-                                                class="hover:text-primary block py-1">Slimming Jawline Facial</a></li>
-                                    </ul>
+
+                                <!-- Menu Content -->
+                                <div class="relative grid grid-cols-3 gap-0 p-5">
+
+
+                                    <!-- ================= SKIN & LASER ================= -->
+                                    <div class="group px-4 py-3 border-r border-[#E9E2DE]">
+
+                                        <!-- Category Header -->
+                                        <div class="flex items-center gap-3 mb-4">
+
+                                            <div class="flex items-center justify-center
+                                                        w-10 h-10 rounded-xl
+                                                        bg-[#FCE8EA]
+                                                        text-[#D92734]
+                                                        group-hover:bg-[#D92734]
+                                                        group-hover:text-white
+                                                        transition-all duration-300">
+
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.7"
+                                                        d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" />
+
+                                                </svg>
+
+                                            </div>
+
+                                            <div>
+                                                <h4 class="text-sm font-bold text-[#20120F]">
+                                                    Skin & Laser
+                                                </h4>
+
+                                                <p class="text-[10px] text-[#77706D]">
+                                                    Smooth • Clear • Radiant
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Links -->
+                                        <ul class="space-y-0.5 text-xs list-none p-0 m-0">
+
+                                            <li>
+                                                <a href="treatments.html#face-laser" class="mega-link">
+                                                    Face Laser
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#upper-lip" class="mega-link">
+                                                    Upper Lip
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#underarms" class="mega-link">
+                                                    Underarms
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#legs" class="mega-link">
+                                                    Legs Laser
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#chin" class="mega-link">
+                                                    Chin
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#side-locks" class="mega-link">
+                                                    Side Locks
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#neck-lines" class="mega-link">
+                                                    Neck Lines
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#midriff" class="mega-link">
+                                                    Midriff
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#hands" class="mega-link">
+                                                    Hands
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#front" class="mega-link">
+                                                    Front
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#back" class="mega-link">
+                                                    Back
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#bikini" class="mega-link">
+                                                    Bikini
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#buttocks" class="mega-link">
+                                                    Buttocks
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+
+                                    <!-- ================= FACIAL RITUALS ================= -->
+                                    <div class="group px-4 py-3 border-r border-[#E9E2DE]">
+
+                                        <!-- Category Header -->
+                                        <div class="flex items-center gap-3 mb-4">
+
+                                            <div class="flex items-center justify-center
+                                                    w-10 h-10 rounded-xl
+                                                    bg-[#F4E8DE]
+                                                    text-[#B8906B]
+                                                    group-hover:bg-[#B8906B]
+                                                    group-hover:text-white
+                                                    transition-all duration-300">
+
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.7"
+                                                        d="M12 3c4.5 3.5 7 7.2 7 10.5A7 7 0 015 13.5C5 10.2 7.5 6.5 12 3z" />
+
+                                                </svg>
+
+                                            </div>
+
+                                            <div>
+                                                <h4 class="text-sm font-bold text-[#20120F]">
+                                                    Facial Rituals
+                                                </h4>
+
+                                                <p class="text-[10px] text-[#77706D]">
+                                                    Glow • Hydrate • Renew
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Popular Treatment -->
+                                        <a href="treatment-details.html" class="block mb-3 p-3 rounded-xl
+                                                bg-gradient-to-r from-[#FCE8EA] to-white
+                                                border border-[#FCE8EA]
+                                                hover:border-[#D92734]
+                                                hover:shadow-md
+                                                transition-all duration-300">
+
+                                            <div class="flex items-center justify-between">
+
+                                                <div>
+                                                    <div class="flex items-center gap-2">
+
+                                                        <span class="text-xs font-bold text-[#20120F]">
+                                                            Korean Glass Skin
+                                                        </span>
+
+                                                        <span class="px-1.5 py-0.5 rounded-full
+                                                                bg-[#D92734] text-white
+                                                                text-[8px] font-bold uppercase">
+                                                            Popular
+                                                        </span>
+
+                                                    </div>
+
+                                                    <p class="text-[10px] text-[#77706D] mt-1">
+                                                        Signature glass-skin facial
+                                                    </p>
+                                                </div>
+
+                                                <svg class="w-4 h-4 text-[#D92734]" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7" />
+
+                                                </svg>
+
+                                            </div>
+
+                                        </a>
+
+
+                                        <!-- Facial Links -->
+                                        <ul class="space-y-0.5 text-xs list-none p-0 m-0">
+
+                                            <li>
+                                                <a href="treatments.html#medi-facial" class="mega-link">
+                                                    Medi Facial
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#facial-polishing" class="mega-link">
+                                                    Polishing Combined with Facial
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#diamond-polish" class="mega-link">
+                                                    Body Diamond Polish
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#rf-anti-aging-facial" class="mega-link">
+                                                    RF Anti-Aging Facial
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+
+                                    <!-- ================= BODY CONTOURING ================= -->
+                                    <div class="group px-4 py-3">
+
+                                        <!-- Category Header -->
+                                        <div class="flex items-center gap-3 mb-4">
+
+                                            <div class="flex items-center justify-center
+                                                        w-10 h-10 rounded-xl
+                                                        bg-[#EBE6FD]
+                                                        text-[#6300ed]
+                                                        group-hover:bg-[#6300ed]
+                                                        group-hover:text-white
+                                                        transition-all duration-300">
+
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.7"
+                                                        d="M12 3c-3 3-6 5.5-6 10a6 6 0 0012 0c0-4.5-3-7-6-10z" />
+
+                                                </svg>
+
+                                            </div>
+
+                                            <div>
+                                                <h4 class="text-sm font-bold text-[#20120F]">
+                                                    U-Lipo & Body Contouring
+                                                </h4>
+
+                                                <p class="text-[10px] text-[#77706D]">
+                                                    Tone • Shape • Define
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <ul class="space-y-1 text-xs list-none p-0 m-0">
+
+                                            <li>
+                                                <a href="treatments.html#u-lipo" class="mega-link">
+                                                    U-Lipo
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#stomach-countring" class="mega-link">
+                                                    Stomach Countring
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#thigh-countring" class="mega-link">
+                                                    Thigh Contouring
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="treatments.html#arm-countring" class="mega-link">
+                                                    Arm Countring
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+
+                                        <!-- Book CTA -->
+                                        <div class="mt-5 p-4 rounded-2xl
+                           bg-[#20120F] text-white
+                           relative overflow-hidden">
+
+                                            <div class="absolute -right-5 -top-5
+                               w-20 h-20 rounded-full
+                               bg-[#D92734]/30 blur-xl">
+                                            </div>
+
+                                            <div class="relative">
+
+                                                <p class="text-[10px] uppercase
+                                   tracking-wider text-white/60
+                                   font-semibold">
+                                                    Need Help?
+                                                </p>
+
+                                                <h5 class="text-sm font-bold mt-1">
+                                                    Find your perfect treatment
+                                                </h5>
+
+                                                <a href="#bookingModal" data-bs-toggle="modal" class="inline-flex items-center gap-2
+                                   mt-3 text-[10px] font-bold
+                                   text-white
+                                   hover:text-[#FCE8EA]
+                                   transition-colors">
+
+                                                    Book Consultation
+
+                                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor"
+                                                        viewBox="0 0 24 24">
+
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2" d="M5 12h14M13 6l6 6-6 6" />
+
+                                                    </svg>
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
+
+
+                                <!-- ================= BOTTOM BAR ================= -->
+                                <div class="relative px-7 py-3.5
+                   bg-[#FAF8F7]
+                   border-t border-[#E9E2DE]
+                   flex items-center justify-between">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <svg class="w-4 h-4 text-[#D92734]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                                d="M12 8v4l3 2" />
+
+                                            <circle cx="12" cy="12" r="9" stroke-width="1.8" />
+
+                                        </svg>
+
+                                        <span class="text-[10px] text-[#77706D]">
+                                            Professional aesthetic treatments at your doorstep
+                                        </span>
+
+                                    </div>
+
+                                    <a href="contact.html" class="text-[10px] font-bold text-[#D92734]
+                       hover:underline">
+                                        Talk to an Expert →
+                                    </a>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -265,9 +627,11 @@
         <div class="p-6">
             <!-- Header in drawer -->
             <div class="flex items-center justify-between pb-6 border-b border-border">
-                <span class="text-xl font-bold text-dark font-serif">Smooth N Shine</span>
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="Smooth N Shine" class="h-8 w-auto object-contain">
+                </a>
                 <button id="closeDrawerBtn" type="button"
-                    class="w-8 h-8 rounded-full bg-background flex items-center justify-center text-muted">
+                    class="w-8 h-8 rounded-full bg-background flex items-center justify-center text-muted hover:text-dark transition-colors">
                     <i data-lucide="x" class="w-4 h-4"></i>
                 </button>
             </div>
@@ -275,6 +639,7 @@
             <!-- Drawer Links -->
             <div class="py-6 space-y-4 text-sm font-medium text-text">
                 <a href="index.html" class="block text-primary font-bold">Home</a>
+                <a href="about.html" class="block">About Us</a>
                 <a href="treatments.html" class="block">All Treatments</a>
                 <a href="offers.html" class="block">Exclusive Offers</a>
                 <a href="experts.html" class="block">Meet Dermatologists</a>
@@ -298,598 +663,960 @@
         </div>
     </div>
 
-    <!-- ================= HERO SLIDER SECTION (Swiper.js) ================= -->
-    <section class="relative bg-dark text-white overflow-hidden">
-        <div class="swiper hero-swiper w-full">
-            <div class="swiper-wrapper">
+    <!-- ================= HERO BANNER SECTION ================= -->
 
-                <!-- Slide 1 -->
-                <div class="swiper-slide relative py-5 lg:py-5">
-                    <div
-                        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <div class="lg:col-span-7 space-y-6">
-                            <span
-                                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-secondary text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
-                                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-secondary"></i> Premium Aesthetics At
-                                Your Doorstep
-                            </span>
-                            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-serif leading-[1.15] text-white">
-                                Beauty & Aesthetic Treatments, <br><span class="text-primary">At Your Doorstep</span>
-                            </h1>
-                            <p class="text-sm sm:text-base text-white/80 max-w-xl leading-relaxed">
-                                Professional treatments, trusted dermatologists, and US-FDA approved technologies — all
-                                in the comfort and privacy of your home.
-                            </p>
-                            <div class="flex flex-wrap gap-4 pt-2">
-                                <a href="booking.html"
-                                    class="px-7 py-3.5 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-sm shadow-xl transition-all flex items-center gap-2">
-                                    <i data-lucide="calendar" class="w-4 h-4"></i> Book Appointment
-                                </a>
-                                <a href="treatments.html"
-                                    class="px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 transition-all">
-                                    Explore Treatments
-                                </a>
-                            </div>
-                        </div>
+    <section class="relative min-h-[580px] sm:min-h-[620px] lg:min-h-[680px] overflow-hidden bg-dark text-white">
 
-                        <!-- Right Image with Floating Badges -->
-                        <div class="lg:col-span-5 relative">
-                            <div
-                                class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
-                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=90"
-                                    alt="Aesthetic Facial Treatment" class="w-full h-full object-cover">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent">
-                                </div>
-                            </div>
+        <!-- BACKGROUND IMAGE -->
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjMyd2puYzduazBqamx2dnB6bHU2aXdsb2hrMTJsazk1aGM4dTdzdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ud32Y1FRMhBAI8XZ6Q/giphy.gif"
+            alt="Premium Aesthetic Treatment" class="absolute inset-0 w-full h-full object-cover">
 
-                            <!-- Floating Card 1: Verified Experts -->
-                            <div
-                                class="absolute -top-4 -left-4 sm:top-6 sm:-left-8 bg-white/95 backdrop-blur-md text-dark p-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-border">
-                                <div
-                                    class="w-10 h-10 rounded-xl bg-green-100 text-success flex items-center justify-center">
-                                    <i data-lucide="shield-check" class="w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-xs font-bold">100% Certified</h4>
-                                    <p class="text-[10px] text-muted">MD Dermatologists</p>
-                                </div>
-                            </div>
+        <!-- DARK OVERLAY -->
+        <div class="absolute inset-0 bg-black/20"></div>
 
-                            <!-- Floating Card 2: Happy Clients -->
-                            <div
-                                class="absolute -bottom-6 -right-4 sm:bottom-6 sm:-right-8 bg-white/95 backdrop-blur-md text-dark p-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-border">
-                                <div
-                                    class="w-10 h-10 rounded-xl bg-red-50 text-primary flex items-center justify-center">
-                                    <i data-lucide="star" class="w-5 h-5 fill-primary text-primary"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-xs font-bold">1,000+ Clients</h4>
-                                    <p class="text-[10px] text-muted">4.9/5 Star Rating</p>
-                                </div>
-                            </div>
-                        </div>
+        <!-- LEFT GRADIENT FOR TEXT READABILITY -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20"></div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 flex min-h-[580px] sm:min-h-[620px] lg:min-h-[680px] items-center">
+
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-10">
+
+                <div class="max-w-3xl">
+
+                    <!-- BADGE -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full
+                    bg-white/10 border border-white/20 backdrop-blur-md">
+
+                        <i data-lucide="sparkles" class="w-4 h-4 text-secondary"></i>
+
+                        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em]">
+                            Premium Aesthetics At Your Doorstep
+                        </span>
+
                     </div>
-                </div>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide relative py-5 lg:py-5">
-                    <div
-                        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <div class="lg:col-span-7 space-y-6">
-                            <span
-                                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-secondary text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
-                                <i data-lucide="zap" class="w-3.5 h-3.5 text-secondary"></i> US-FDA Approved Machinery
-                            </span>
-                            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-serif leading-[1.15] text-white">
-                                Professional Aesthetic <br><span class="text-primary">Treatments At Home</span>
-                            </h2>
-                            <p class="text-sm sm:text-base text-white/80 max-w-xl leading-relaxed">
-                                Painless Triple-Wavelength Laser Hair Reduction and High-Intensity Ultrasonic Body
-                                Slimming brought directly to your room.
-                            </p>
-                            <div class="flex flex-wrap gap-4 pt-2">
-                                <a href="treatments.html#laser-hair"
-                                    class="px-7 py-3.5 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-sm shadow-xl transition-all">
-                                    View Laser Packages
-                                </a>
-                                <a href="offers.html"
-                                    class="px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 transition-all">
-                                    Explore 40% Off
-                                </a>
-                            </div>
-                        </div>
 
-                        <div class="lg:col-span-5 relative">
-                            <div
-                                class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
-                                <img src="https://images.unsplash.com/photo-1731514771613-991a02407132?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Laser Hair Reduction" class="w-full h-full object-cover">
-                            </div>
-                        </div>
+                    <!-- HEADING -->
+                    <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+                    font-bold font-serif leading-[1.08]">
+
+                        Beauty & Aesthetic Treatments
+
+                        <span class="block mt-2 text-primary">
+                            At Your Doorstep
+                        </span>
+
+                    </h1>
+
+
+                    <!-- DESCRIPTION -->
+                    <p class="mt-6 max-w-2xl text-sm sm:text-base lg:text-lg
+                    leading-relaxed text-white/80">
+
+                        Professional treatments, trusted dermatologists,
+                        and advanced aesthetic technologies — all in the
+                        comfort and privacy of your home.
+
+                    </p>
+
+
+                    <!-- BUTTONS -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <!-- BOOK APPOINTMENT -->
+                        <a href="booking.html" class="group inline-flex items-center gap-2
+                        rounded-full bg-primary
+                        px-7 py-3.5
+                        text-sm font-bold text-white
+                        shadow-[0_10px_35px_rgba(217,39,52,0.40)]
+                        transition-all duration-300
+                        hover:-translate-y-1
+                        hover:bg-primary-dark">
+
+                            <i data-lucide="calendar" class="h-4 w-4"></i>
+
+                            Book Appointment
+
+                            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform
+                            duration-300 group-hover:translate-x-1"></i>
+
+                        </a>
+
+
+                        <!-- EXPLORE TREATMENTS -->
+                        <a href="treatments.html" class="inline-flex items-center gap-2
+                        rounded-full
+                        border border-white/30
+                        bg-white/10
+                        px-7 py-3.5
+                        text-sm font-bold text-white
+                        backdrop-blur-md
+                        transition-all duration-300
+                        hover:-translate-y-1
+                        hover:bg-white/20">
+
+                            Explore Treatments
+
+                            <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+
+                        </a>
+
                     </div>
-                </div>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide relative py-5 lg:py-5">
-                    <div
-                        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <div class="lg:col-span-7 space-y-6">
-                            <span
-                                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-secondary text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
-                                <i data-lucide="heart" class="w-3.5 h-3.5 text-secondary"></i> 7-Step Sterile Protocol
+
+                    <!-- TRUST ITEMS -->
+                    <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+
+                        <!-- CERTIFIED EXPERTS -->
+                        <div class="flex items-center gap-2">
+
+                            <i data-lucide="shield-check" class="h-4 w-4 text-secondary"></i>
+
+                            <span class="text-xs sm:text-sm text-white/75">
+                                Certified Experts
                             </span>
-                            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-serif leading-[1.15] text-white">
-                                Your Beauty. <br>Your Home. <span class="text-primary">Your Time.</span>
-                            </h2>
-                            <p class="text-sm sm:text-base text-white/80 max-w-xl leading-relaxed">
-                                No salon traffic. No waiting lounges. Just pure luxury clinical relaxation whenever you
-                                desire.
-                            </p>
-                            <div class="flex flex-wrap gap-4 pt-2">
-                                <a href="booking.html"
-                                    class="px-7 py-3.5 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-sm shadow-xl transition-all">
-                                    Book Your Slot Now
-                                </a>
-                            </div>
+
                         </div>
 
-                        <div class="lg:col-span-5 relative">
-                            <div
-                                class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
-                                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=90"
-                                    alt="Spa and Wellness" class="w-full h-full object-cover">
-                            </div>
+
+                        <!-- HOME SERVICE -->
+                        <div class="flex items-center gap-2">
+
+                            <i data-lucide="home" class="h-4 w-4 text-secondary"></i>
+
+                            <span class="text-xs sm:text-sm text-white/75">
+                                Home Service
+                            </span>
+
                         </div>
+
+
+                        <!-- RATING -->
+                        <div class="flex items-center gap-2">
+
+                            <i data-lucide="star" class="h-4 w-4 text-secondary"></i>
+
+                            <span class="text-xs sm:text-sm text-white/75">
+                                4.9/5 Rated
+                            </span>
+
+                        </div>
+
                     </div>
+
                 </div>
 
             </div>
 
-            <!-- Hero Pagination & Arrows -->
-            <div class="hero-pagination absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2"></div>
         </div>
+
     </section>
 
-    <!-- ================= SEARCH / QUICK BOOKING PANEL ================= -->
-    <section class="relative -mt-8 z-30 max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="bg-white rounded-3xl p-4 sm:p-6 shadow-[0_15px_40px_rgba(32,18,15,0.08)] border border-border">
-            <form action="treatments.html" method="GET"
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 items-center">
-                <!-- City -->
-                <div class="bg-background px-4 py-2.5 rounded-2xl border border-border flex items-center gap-2.5">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0"></i>
-                    <div class="w-full">
-                        <label class="block text-[10px] uppercase font-bold text-muted">City</label>
-                        <select name="city" class="w-full bg-transparent text-xs font-bold text-text outline-none">
-                            <option value="mumbai">Mumbai</option>
-                            <option value="navi-mumbai">Navi Mumbai</option>
-                            <option value="thane">Thane</option>
-                            <option value="pune">Pune</option>
-                            <option value="delhi-ncr">Delhi NCR</option>
-                        </select>
-                    </div>
-                </div>
 
-                <!-- Treatment -->
-                <div class="bg-background px-4 py-2.5 rounded-2xl border border-border flex items-center gap-2.5">
-                    <i data-lucide="sparkles" class="w-4 h-4 text-primary shrink-0"></i>
-                    <div class="w-full">
-                        <label class="block text-[10px] uppercase font-bold text-muted">Treatment</label>
-                        <select name="service" class="w-full bg-transparent text-xs font-bold text-text outline-none">
-                            <option value="all">All Treatments</option>
-                            <option value="korean-facial">Korean Glass Skin</option>
-                            <option value="laser-hair">Laser Hair Reduction</option>
-                            <option value="body-slimming">Body Slimming & U-Lipo</option>
-                            <option value="chemical-peel">Chemical Peels</option>
-                        </select>
-                    </div>
-                </div>
 
-                <!-- Date -->
-                <div class="bg-background px-4 py-2.5 rounded-2xl border border-border flex items-center gap-2.5">
-                    <i data-lucide="calendar" class="w-4 h-4 text-primary shrink-0"></i>
-                    <div class="w-full">
-                        <label class="block text-[10px] uppercase font-bold text-muted">Select Date</label>
-                        <input type="date" name="date"
-                            class="w-full bg-transparent text-xs font-bold text-text outline-none">
-                    </div>
-                </div>
-
-                <!-- Time Slot -->
-                <div class="bg-background px-4 py-2.5 rounded-2xl border border-border flex items-center gap-2.5">
-                    <i data-lucide="clock" class="w-4 h-4 text-primary shrink-0"></i>
-                    <div class="w-full">
-                        <label class="block text-[10px] uppercase font-bold text-muted">Time Slot</label>
-                        <select name="time" class="w-full bg-transparent text-xs font-bold text-text outline-none">
-                            <option value="morning">10:00 AM - 01:00 PM</option>
-                            <option value="afternoon">01:00 PM - 04:00 PM</option>
-                            <option value="evening">04:00 PM - 08:00 PM</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Button -->
-                <button type="submit"
-                    class="h-full min-h-[48px] rounded-2xl bg-primary hover:bg-primary-dark text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-md">
-                    <i data-lucide="search" class="w-4 h-4"></i>
-                    <span>Find Treatments</span>
-                </button>
-            </form>
-        </div>
-    </section>
 
     <!-- ================= SERVICE CATEGORIES ================= -->
+
     <section class="py-5 sm:py-5">
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- ================= SECTION HEADER ================= -->
             <div class="flex items-end justify-between mb-8">
+
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-[2px] text-primary">Browse By Area</span>
-                    <h2 class="text-2xl sm:text-4xl font-bold font-serif text-dark mt-1">Explore Our Services</h2>
+                    <span class="text-xs font-bold uppercase tracking-[2px] text-primary">
+                        Browse By Area
+                    </span>
+
+                    <h2 class="text-2xl sm:text-4xl font-bold font-serif text-dark mt-1">
+                        Explore Our Services
+                    </h2>
                 </div>
-                <a href="treatments.html"
-                    class="text-xs sm:text-sm font-bold text-primary hover:underline flex items-center gap-1">
-                    View All <i data-lucide="arrow-right" class="w-4 h-4"></i>
+
+
+                <!-- View All -->
+                <a href="treatments.html" class="text-xs sm:text-sm font-bold text-primary
+                       hover:underline flex items-center gap-1
+                       whitespace-nowrap">
+
+                    View All
+
+                    <i data-lucide="arrow-right" class="w-4 h-4">
+                    </i>
+
                 </a>
+
             </div>
 
-            <!-- Categories Grid / Mobile Scroll -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 overflow-x-auto pb-2">
 
-                <!-- Category 1 -->
-                <a href="treatments.html?cat=skin"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-full rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1728727187824-85f1c610a671?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Skin Treatments"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+            <!-- =====================================================
+             HORIZONTAL SERVICES SCROLL
+        ====================================================== -->
+
+            <div class="flex gap-4
+                   overflow-x-auto
+                   overflow-y-hidden
+                   pb-4
+                   snap-x snap-mandatory
+                   scroll-smooth
+                   touch-pan-x
+                   scrollbar-hide">
+
+
+                <!-- ================= CATEGORY 1 ================= -->
+                <a href="treatments.html?cat=upper-lip" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://images.unsplash.com/photo-1643630661247-2474f10e4f70?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dXBwZXIlMjBsaXB8ZW58MHx8MHx8fDA%3D"
+                            alt="Upper Lip" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Skin Care</span>
+
+                    <span class="service-title">
+                        Upper Lip
+                    </span>
+
                 </a>
 
-                <!-- Category 2 -->
-                <a href="treatments.html?cat=facial"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-full rounded-2xl overflow-hidden mb-3">
+
+                <!-- ================= CATEGORY 2 ================= -->
+                <a href="treatments.html?cat=face" class="service-card">
+
+                    <div class="service-image">
+
                         <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=200&q=80"
-                            alt="Facials" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                            alt="Face" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Facials</span>
+
+                    <span class="service-title">
+                        Face
+                    </span>
+
                 </a>
 
-                <!-- Category 3 -->
-                <a href="treatments.html?cat=laser"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-full rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=200&q=80"
-                            alt="Laser Treatments"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+
+                <!-- ================= CATEGORY 3 ================= -->
+                <a href="treatments.html?cat=chin" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://images.unsplash.com/photo-1741934023052-26baf5535088?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ1fHx8ZW58MHx8fHx8"
+                            alt="Chin" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Laser Care</span>
+
+                    <span class="service-title">
+                        Chin
+                    </span>
+
                 </a>
 
-                <!-- Category 4 -->
-                <a href="treatments.html?cat=hair"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-full rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=200&q=80"
-                            alt="Hair Care"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+
+                <!-- ================= CATEGORY 4 ================= -->
+                <a href="treatments.html?cat=side-locks" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://images.unsplash.com/photo-1640479694087-1ad66fbb082a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8"
+                            alt="Side Locks" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Hair Spa</span>
+
+                    <span class="service-title">
+                        Side Locks
+                    </span>
+
                 </a>
 
-                <!-- Category 5 -->
-                <a href="treatments.html?cat=body"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-28 rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=200&q=80"
-                            alt="Body Treatments"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+
+                <!-- ================= CATEGORY 5 ================= -->
+                <a href="treatments.html?cat=underarms" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1661475628423-400fb64c996b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dW5kZXIlMjB0aGUlMjBhcm18ZW58MHx8MHx8fDA%3D"
+                            alt="Underarms" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Body Slim</span>
+
+                    <span class="service-title">
+                        Underarms
+                    </span>
+
                 </a>
 
-                <!-- Category 6 -->
-                <a href="treatments.html?cat=facial"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-28 rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=200&q=80"
-                            alt="Anti Aging"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+
+                <!-- ================= CATEGORY 6 ================= -->
+                <a href="treatments.html?cat=facial" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1671717725128-aa3f2e857c8c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
+                            alt="Anti Aging" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Anti-Aging</span>
+
+                    <span class="service-title">
+                        Anti-Aging
+                    </span>
+
                 </a>
 
-                <!-- Category 7 -->
-                <a href="offers.html"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-28 rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80"
-                            alt="Bridal" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+
+                <!-- ================= CATEGORY 7 ================= -->
+                <a href="treatments.html?cat=bikini" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7U0SldyaKoL7ersq6bFc62sgItYgttmFlZMYFQ5hkZg&s=10"
+                            alt="Bikini" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Bridal Glow</span>
+
+                    <span class="service-title">
+                        Bikini
+                    </span>
+
                 </a>
 
-                <!-- Category 8 -->
-                <a href="treatments.html?cat=body"
-                    class="group bg-white p-2 rounded-3xl border border-border shadow-sm hover:shadow-md hover:border-primary transition-all text-center flex flex-col items-center">
-                    <div class="w-full h-28 rounded-2xl overflow-hidden mb-3">
-                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=200&q=80"
-                            alt="Wellness"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+
+                <!-- ================= CATEGORY 8 ================= -->
+                <a href="treatments.html?cat=body" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://images.unsplash.com/photo-1647004692483-c5d942fe1137?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZhY2lhbHxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Facial" class="service-img">
+
                     </div>
-                    <span class="text-xs font-bold text-dark group-hover:text-primary">Wellness</span>
+
+                    <span class="service-title">
+                        Facial
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 9 ================= -->
+                <a href="treatments.html?cat=neckline" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1671717724505-d4b9b70c30a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
+                            alt="Neckline" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        NeckLine
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 10 ================= -->
+                <a href="treatments.html?cat=midriff" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1664375262634-4fbcbfc0ddb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fHx8fHx8"
+                            alt="Midriff" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        Midriff
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 11 ================= -->
+                <a href="treatments.html?cat=hands" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1661497566854-7a75d3e98996?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fHx8fHx8"
+                            alt="Hands" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        Hands
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 12 ================= -->
+                <a href="treatments.html?cat=u-lipo" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://livelight.co.in/resources/assets/images/service2-4.jpg" alt="U-Lipo"
+                            class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        U-Lipo
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 13 ================= -->
+                <a href="treatments.html?cat=thigh-contouring" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1683121152376-2458cf1d5a1f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fHx8fHx8"
+                            alt="Thigh Contouring" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        Thigh Contouring
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 14 ================= -->
+                <a href="treatments.html?cat=medi-facial" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxescPOaWr6Tcb_NhpCOthTc7Njfxx3xxteVYuyiipw&s=10"
+                            alt="Medi Facial" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        Medi Facial
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 15 ================= -->
+                <a href="treatments.html?cat=korean-facial" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://plus.unsplash.com/premium_photo-1661255395799-a300794397fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8a29yZWFuJTIwZmFjaWFsfGVufDB8fDB8fHww"
+                            alt="Korean Facial" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        Korean Facial
+                    </span>
+
+                </a>
+
+
+                <!-- ================= CATEGORY 16 ================= -->
+                <a href="treatments.html?cat=body-diamond-polish" class="service-card">
+
+                    <div class="service-image">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-I6U0U8-rc3DlZ0HbebSgqZNdwWAXJV_ZEDzZW_QH9w&s=10"
+                            alt="Body Diamond Polish" class="service-img">
+
+                    </div>
+
+                    <span class="service-title">
+                        Body Diamond Polish
+                    </span>
+
                 </a>
 
             </div>
+
         </div>
+
     </section>
 
+
     <!-- ================= Most Booked ================= -->
-    <section class="bg-gray-50 pb-12 pt-6 px-4 sm:px-6 md:px-12 text-gray-900">
+    <section class="bg-gray-50 pb-5 pt-6 px-4 sm:px-6 md:px-12 text-gray-900">
         <div class="max-w-7xl mx-auto bg-white p-5 sm:p-8 rounded-3xl shadow-sm border border-gray-100">
-
-            <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Most Booked</h2>
-                <span class="text-xs sm:text-sm text-gray-500 font-medium">Urban Beauty Services</span>
-            </div>
-
-            <!-- Category Tabs Filter -->
-            <div class="flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-2 mb-8" id="categoryTabs">
-                <button onclick="switchCategory('salon')" id="tab-salon"
+            <!-- ================= SECTION HEADER ================= -->
+            <div class="flex items-center justify-between mb-6 gap-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight"> Most Booked </h2> <span
+                    class="text-xs sm:text-sm text-gray-500 font-medium whitespace-nowrap"> Urban Beauty Services
+                </span>
+            </div> <!-- ================= CATEGORY TABS ================= -->
+            <div id="categoryTabs"
+                class="filter-scroll flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-2 mb-8"> <!-- Salon -->
+                <button type="button" onclick="switchCategory('salon')" id="tab-salon"
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 whitespace-nowrap bg-primary-light text-primary shadow-xs border border-pink-200/50">
-                    Salon for Women
-                </button>
-                <button onclick="switchCategory('hydraglo')" id="tab-hydraglo"
+                    Salon for Women </button>
+                <!-- HydraGlo -->
+                <button type="button" onclick="switchCategory('hydraglo')" id="tab-hydraglo"
                     class="px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-gray-200">
-                    HydraGlo Facials
-                </button>
-                <button onclick="switchCategory('laser')" id="tab-laser"
+                    HydraGlo Facials </button>
+                <!-- Laser -->
+                <button type="button" onclick="switchCategory('laser')" id="tab-laser"
                     class="px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-gray-200">
-                    Laser Treatments
-                </button>
-            </div>
-
+                    Laser Treatments </button>
+            </div> <!-- ================= SERVICE CARDS ================= -->
             <div id="cardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <!-- Dynamic service cards rendered by JS -->
+                <!-- Cards rendered by JavaScript -->
             </div>
-
         </div>
-
-        <!-- <div
-            class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-gray-900/60 via-gray-900/30 to-transparent backdrop-blur-xs pointer-events-none flex justify-center">
-
-            <div
-                class="pointer-events-auto bg-gray-900 text-white rounded-full shadow-2xl border border-gray-800 px-6 py-3 flex items-center justify-between gap-6 min-w-[320px] max-w-md w-full transition-all duration-300 transform translate-y-0">
-
-                <div class="flex flex-col">
-                    <span class="text-xs text-gray-400 font-medium flex items-center gap-1">
-                        <i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-primary"></i> Cart Summary
-                    </span>
-                    <div class="flex items-baseline gap-2">
-                        <span id="cartTotalPrice" class="font-bold text-lg text-white">₹0</span>
-                        <span id="cartItemsLabel" class="text-xs text-gray-400">0 items</span>
-                    </div>
-                </div>
-
-                <div class="relative flex items-center justify-center h-12">
-                    <a id="servicesGrid" href="booking.html"
-                        class="group relative h-full flex items-center justify-center no-underline">
-                        <div
-                            class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-xl flex items-center justify-center transition-transform duration-200 group-hover:scale-105 active:scale-95 border-2 border-white/20">
-                            <i data-lucide="calendar-plus" class="w-6 h-6"></i>
-
-                        
-                            <span id="bookingBadge"
-                                class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-gray-900 flex items-center justify-center shadow-lg badge-pop">
-                                0
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-
-                <a href="booking.html"
-                    class="bg-primary hover:bg-primary-hover text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-primary/30 active:scale-95 flex items-center gap-1.5 no-underline">
-                    <span>Book Now</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                </a>
-
-            </div>
-        </div> -->
-
-
+        <!-- ===================================================== CART SUMMARY Desktop / Tablet ====================================================== -->
+        <div
+            class="hidden mt-6 sm:flex bg-gray-900 text-white rounded-full shadow-2xl border border-gray-800 px-5 sm:px-6 py-3 items-center justify-between gap-5 min-w-[320px] max-w-md w-[calc(100%-32px)] transition-all duration-300 mx-auto">
+            <!-- Cart Information -->
+            <div class="flex flex-col"> <span class="text-xs text-gray-400 font-medium flex items-center gap-1"> <i
+                        data-lucide="shopping-bag" class="w-3.5 h-3.5 text-primary"></i> Cart Summary </span>
+                <div class="flex items-baseline gap-2"> <span id="cartTotalPrice" class="font-bold text-lg text-white">
+                        ₹0 </span> <span id="cartItemsLabel" class="text-xs text-gray-400"> 0 items </span> </div>
+            </div> <!-- Cart Icon -->
+            <div class="h-12 w-12 flex items-center justify-center">
+                <div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center"> <i
+                        data-lucide="shopping-bag" class="w-5 h-5 text-primary"> </i> </div>
+            </div> <!-- Book Now --> <a href="booking.html"
+                class="bg-primary hover:bg-primary-hover text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-primary/30 active:scale-95 flex items-center gap-1.5 no-underline">
+                <span>Book Now</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"> </i> </a>
+        </div>
     </section>
 
     <!-- ================= POPULAR TREATMENTS & INTERACTIVE FILTER ================= -->
-    <section class="py-5 sm:py-5 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-8 sm:py-12 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden">
+        <!-- Background subtle decorative elements -->
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none overflow-hidden opacity-30">
+            <div class="absolute -top-24 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-10 w-80 h-80 bg-purple/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-10">
-                <span class="text-xs font-bold uppercase tracking-[2px] text-primary">Doctor Recommended</span>
-                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-dark mt-1">Popular Treatments</h2>
-                <p class="text-xs sm:text-sm text-muted mt-2">Clinical precision delivered with sterile, single-use
-                    tools at home.</p>
+                <span
+                    class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[2.5px] text-primary bg-primary/10 px-3.5 py-1 rounded-full border border-primary/20">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> US-FDA Cleared Tech
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-dark mt-3">Popular Clinical Treatments</h2>
+                <p class="text-xs sm:text-sm text-muted mt-2">Certified MD Dermatologist protocols delivered with
+                    sterile, single-use clinical equipment at your doorstep.</p>
 
-                <!-- Filter Buttons -->
-                <div
-                    class="filter-scroll flex justify-start               sm:justify-center gap-2 pt-6 flex-nowrap sm:flex-wrap px-2 sm:px-0">
+                <!-- Filter Buttons (Single Row with Mobile Horizontal Scroll) -->
+                <div class="w-full pt-6 overflow-hidden">
 
-                    <button type="button" data-category="all"
-                        class="treatment-filter-btn flex-shrink-0 px-5 py-2 rounded-full text-xs font-bold bg-primary text-white shadow-md">
-                        All
-                    </button>
+                    <div class="flex flex-nowrap items-center
+                                    justify-start sm:justify-start
+                                    gap-2 sm:gap-3
+                                    w-full
+                                    overflow-x-auto
+                                    overflow-y-hidden
+                                    px-3 sm:px-2
+                                    pb-2
+                                    scroll-smooth
+                                    whitespace-nowrap
+                                    [scrollbar-width:none]
+                                    [-ms-overflow-style:none]
+                                    [&::-webkit-scrollbar]:hidden">
 
-                    <button type="button" data-category="skin"
-                        class="treatment-filter-btn flex-shrink-0 px-5 py-2 rounded-full text-xs font-bold bg-white text-text border border-border">
-                        Skin
-                    </button>
+                        <!-- ALL TREATMENTS -->
+                        <button type="button" data-category="all" class="treatment-filter-btn
+                                    flex-none shrink-0
+                                    whitespace-nowrap
+                                    inline-flex items-center justify-center
+                                    h-10
+                                    px-5
+                                    rounded-full
+                                    text-xs font-bold
+                                    bg-primary text-white
+                                    border border-primary
+                                    shadow-md shadow-primary/20
+                                    hover:scale-105
+                                    transition-all duration-200">
+                            All Treatments
+                        </button>
 
-                    <button type="button" data-category="facial"
-                        class="treatment-filter-btn flex-shrink-0 px-5 py-2 rounded-full text-xs font-bold bg-white text-text border border-border">
-                        Facial
-                    </button>
 
-                    <button type="button" data-category="laser"
-                        class="treatment-filter-btn flex-shrink-0 px-5 py-2 rounded-full text-xs font-bold bg-white text-text border border-border">
-                        Laser
-                    </button>
+                        <!-- FACIAL -->
+                        <button type="button" data-category="facial" class="treatment-filter-btn
+                                        flex-none shrink-0
+                                        whitespace-nowrap
+                                        inline-flex items-center justify-center
+                                        h-10
+                                        px-5
+                                        rounded-full
+                                        text-xs font-bold
+                                        bg-white text-text
+                                        border border-border
+                                        hover:border-primary
+                                        hover:text-primary
+                                        hover:bg-primary/5
+                                        hover:scale-105
+                                        transition-all duration-200">
 
-                    <button type="button" data-category="body"
-                        class="treatment-filter-btn flex-shrink-0 px-5 py-2 rounded-full text-xs font-bold bg-white text-text border border-border">
-                        Body
-                    </button>
+                            <span class="mr-1">✨</span>
+                            Facials &amp; Hydra
+
+                        </button>
+
+
+                        <!-- SKIN GLOW -->
+                        <button type="button" data-category="skin" class="treatment-filter-btn
+                                        flex-none shrink-0
+                                        whitespace-nowrap
+                                        inline-flex items-center justify-center
+                                        h-10
+                                        px-5
+                                        rounded-full
+                                        text-xs font-bold
+                                        bg-white text-text
+                                        border border-border
+                                        hover:border-primary
+                                        hover:text-primary
+                                        hover:bg-primary/5
+                                        hover:scale-105
+                                        transition-all duration-200">
+
+                            <span class="mr-1">💎</span>
+                            Skin Glow
+
+                        </button>
+
+
+                        <!-- DIODE LASER -->
+                        <button type="button" data-category="laser" class="treatment-filter-btn
+                                        flex-none shrink-0
+                                        whitespace-nowrap
+                                        inline-flex items-center justify-center
+                                        h-10
+                                        px-5
+                                        rounded-full
+                                        text-xs font-bold
+                                        bg-white text-text
+                                        border border-border
+                                        hover:border-primary
+                                        hover:text-primary
+                                        hover:bg-primary/5
+                                        hover:scale-105
+                                        transition-all duration-200">
+
+                            <span class="mr-1">⚡</span>
+                            Diode Laser
+
+                        </button>
+
+
+                        <!-- BODY CONTOURING -->
+                        <button type="button" data-category="body" class="treatment-filter-btn
+                                        flex-none shrink-0
+                                        whitespace-nowrap
+                                        inline-flex items-center justify-center
+                                        h-10
+                                        px-5
+                                        rounded-full
+                                        text-xs font-bold
+                                        bg-white text-text
+                                        border border-border
+                                        hover:border-primary
+                                        hover:text-primary
+                                        hover:bg-primary/5
+                                        hover:scale-105
+                                        transition-all duration-200">
+
+                            <span class="mr-1">🔥</span>
+                            Body Contouring
+
+                        </button>
+
+                    </div>
 
                 </div>
             </div>
 
-            <!-- Treatments 10 Card Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Treatments Card Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
 
-                <!-- 1. Korean Facial -->
-                <div class="treatment-card bg-background rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                <!-- 1. Korean Glass Skin Hydrofacial -->
+                <div class="treatment-card bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group"
                     data-category="facial skin">
                     <div>
-                        <div class="relative aspect-[4/3] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=85"
-                                alt="Korean Facial" class="w-full h-full object-cover">
+                        <div
+                            class="relative h-52 w-full overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100/50 to-white flex items-center justify-center p-3 border-b border-border/60">
+                            <img src="assets/images/treatment-hydrofacial.jpg"
+                                alt="Korean Glass Skin Hydrofacial Machine"
+                                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm">
                             <span
-                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-primary text-white text-[10px] font-bold">✨
-                                Best Seller</span>
+                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-primary to-rose-600 text-white text-[10px] font-bold shadow-md flex items-center gap-1">
+                                ✨ Best Seller
+                            </span>
+                            <span
+                                class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[10px] text-white font-medium flex items-center gap-1 shadow-sm">
+                                <i data-lucide="sparkles" class="w-3 h-3 text-cyan-300"></i> Hydro + LED
+                            </span>
                         </div>
-                        <div class="p-5 space-y-2">
+                        <div class="p-4 space-y-2">
                             <div class="flex items-center justify-between text-xs text-muted">
-                                <span class="flex items-center gap-1 text-warning font-bold"><i data-lucide="star"
-                                        class="w-3.5 h-3.5 fill-warning"></i> 4.9 (420)</span>
-                                <span><i data-lucide="clock" class="w-3.5 h-3.5 inline"></i> 75 mins</span>
+                                <span
+                                    class="flex items-center gap-1 text-amber-500 font-bold bg-amber-50 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> 4.9
+                                    (420)
+                                </span>
+                                <span
+                                    class="flex items-center gap-1 text-slate-500 font-medium bg-slate-100 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="clock" class="w-3.5 h-3.5"></i> 75 mins
+                                </span>
                             </div>
-                            <h3 class="text-base font-bold text-dark font-serif">Korean Glass Skin Facial</h3>
-                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Authentic 7-step glass skin
-                                infusion for intense hydration, pore shrinking, and glass reflection.</p>
+                            <h3
+                                class="text-base font-bold text-dark font-serif group-hover:text-primary transition-colors line-clamp-1">
+                                Korean Glass Skin Facial</h3>
+                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Authentic 7-step hydro-infusion
+                                with vortex suction, triple serum delivery, and LED mask healing.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                <span
+                                    class="text-[10px] font-semibold bg-primary/10 text-primary px-2 py-0.5 rounded-md">Vortex
+                                    Peel</span>
+                                <span
+                                    class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">7-Color
+                                    LED</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <div class="flex items-baseline gap-2 mb-3">
-                            <span class="text-lg font-bold text-dark">₹2,199</span>
-                            <span class="text-xs text-muted line-through">₹3,499</span>
-                            <span class="text-[10px] font-bold text-success">37% OFF</span>
-                        </div>
+                    <div class="p-4 pt-0">
                         <div class="grid grid-cols-2 gap-2">
-                            <a href="treatment-details.html"
-                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary transition-colors">Details</a>
+                            <a href="machine-details.html"
+                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary hover:text-primary transition-colors">Details</a>
                             <button data-open-modal="booking" data-treatment="Korean Glass Skin Facial"
-                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs font-bold transition-colors">Book
+                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold transition-all shadow-md shadow-primary/20">Book
                                 Now</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Medi Facial -->
-                <div class="treatment-card bg-background rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
-                    data-category="facial skin">
+                <!-- 2. Diamond Microdermabrasion -->
+                <div class="treatment-card bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group"
+                    data-category="skin facial">
                     <div>
-                        <div class="relative aspect-[4/3] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=600&q=85"
-                                alt="Medi Facial" class="w-full h-full object-cover">
+                        <div
+                            class="relative h-52 w-full overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100/50 to-white flex items-center justify-center p-3 border-b border-border/60">
+                            <img src="assets/images/treatment-microdermabrasion.jpg"
+                                alt="Diamond Microdermabrasion Machine"
+                                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm">
                             <span
-                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-purple text-white text-[10px] font-bold">Clinical
-                                Hydra</span>
+                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-[10px] font-bold shadow-md flex items-center gap-1">
+                                💎 Clinical Peel
+                            </span>
+                            <span
+                                class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[10px] text-white font-medium flex items-center gap-1 shadow-sm">
+                                <i data-lucide="shield-check" class="w-3 h-3 text-emerald-400"></i> Diamond Tip
+                            </span>
                         </div>
-                        <div class="p-5 space-y-2">
+                        <div class="p-4 space-y-2">
                             <div class="flex items-center justify-between text-xs text-muted">
-                                <span class="flex items-center gap-1 text-warning font-bold"><i data-lucide="star"
-                                        class="w-3.5 h-3.5 fill-warning"></i> 4.8 (310)</span>
-                                <span><i data-lucide="clock" class="w-3.5 h-3.5 inline"></i> 60 mins</span>
+                                <span
+                                    class="flex items-center gap-1 text-amber-500 font-bold bg-amber-50 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> 4.8
+                                    (310)
+                                </span>
+                                <span
+                                    class="flex items-center gap-1 text-slate-500 font-medium bg-slate-100 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="clock" class="w-3.5 h-3.5"></i> 60 mins
+                                </span>
                             </div>
-                            <h3 class="text-base font-bold text-dark font-serif">Medical-Grade Medi Facial</h3>
-                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Vortex deep pore extraction,
-                                lactic acid exfoliation, and LED light healing.</p>
+                            <h3
+                                class="text-base font-bold text-dark font-serif group-hover:text-primary transition-colors line-clamp-1">
+                                Diamond Microdermabrasion</h3>
+                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Medical diamond-crystal suction
+                                exfoliation to remove dead cells, open pores, and fade acne scars.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                <span
+                                    class="text-[10px] font-semibold bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md">Pore
+                                    Shrink</span>
+                                <span
+                                    class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Scar
+                                    Renew</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <div class="flex items-baseline gap-2 mb-3">
-                            <span class="text-lg font-bold text-dark">₹1,899</span>
-                            <span class="text-xs text-muted line-through">₹2,800</span>
-                        </div>
+                    <div class="p-4 pt-0">
+
                         <div class="grid grid-cols-2 gap-2">
-                            <a href="treatments.html#medi-facial"
-                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary transition-colors">Details</a>
-                            <button data-open-modal="booking" data-treatment="Medi Facial"
-                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs font-bold transition-colors">Book
+                            <a href="machine-details.html"
+                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary hover:text-primary transition-colors">Details</a>
+                            <button data-open-modal="booking" data-treatment="Microdermabrasion"
+                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold transition-all shadow-md shadow-primary/20">Book
                                 Now</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. Laser Hair Reduction -->
-                <div class="treatment-card bg-background rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                <!-- 3. Triple Diode Laser Hair Reduction -->
+                <div class="treatment-card bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group"
                     data-category="laser skin">
                     <div>
-                        <div class="relative aspect-[4/3] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Laser Hair Reduction" class="w-full h-full object-cover">
+                        <div
+                            class="relative h-52 w-full overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100/50 to-white flex items-center justify-center p-2 border-b border-border/60">
+                            <img src="assets/images/treatment-laser-hair.jpg" alt="Triple Diode Laser System"
+                                class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500 shadow-inner">
                             <span
-                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-secondary text-white text-[10px] font-bold">Triple
-                                Diode</span>
+                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white text-[10px] font-bold shadow-md flex items-center gap-1">
+                                ❄️ Sub-Zero ICE
+                            </span>
+                            <span
+                                class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[10px] text-white font-medium flex items-center gap-1 shadow-sm">
+                                <i data-lucide="zap" class="w-3 h-3 text-amber-400"></i> 1064+755+808nm
+                            </span>
                         </div>
-                        <div class="p-5 space-y-2">
+                        <div class="p-4 space-y-2">
                             <div class="flex items-center justify-between text-xs text-muted">
-                                <span class="flex items-center gap-1 text-warning font-bold"><i data-lucide="star"
-                                        class="w-3.5 h-3.5 fill-warning"></i> 4.9 (540)</span>
-                                <span><i data-lucide="clock" class="w-3.5 h-3.5 inline"></i> 60 mins</span>
+                                <span
+                                    class="flex items-center gap-1 text-amber-500 font-bold bg-amber-50 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> 4.9
+                                    (540)
+                                </span>
+                                <span
+                                    class="flex items-center gap-1 text-slate-500 font-medium bg-slate-100 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="clock" class="w-3.5 h-3.5"></i> 60 mins
+                                </span>
                             </div>
-                            <h3 class="text-base font-bold text-dark font-serif">Laser Hair Reduction (LHR)</h3>
-                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Painless sub-zero chill tip diode
-                                laser targeting hair follicles permanently.</p>
+                            <h3
+                                class="text-base font-bold text-dark font-serif group-hover:text-primary transition-colors line-clamp-1">
+                                Triple Diode Laser (LHR)</h3>
+                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Painless sub-zero chill tip
+                                3-wavelength diode laser targeting deep follicles for permanent hair reduction.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                <span
+                                    class="text-[10px] font-semibold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-md">Painless
+                                    ICE</span>
+                                <span
+                                    class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">All
+                                    Skin Types</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <div class="flex items-baseline gap-2 mb-3">
-                            <span class="text-lg font-bold text-dark">₹1,999</span>
-                            <span class="text-xs text-muted line-through">₹3,500</span>
-                        </div>
+                    <div class="p-4 pt-0">
+
                         <div class="grid grid-cols-2 gap-2">
-                            <a href="treatments.html#laser-hair"
-                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary transition-colors">Details</a>
+                            <a href="machine-details.html"
+                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary hover:text-primary transition-colors">Details</a>
                             <button data-open-modal="booking" data-treatment="Laser Hair Reduction"
-                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs font-bold transition-colors">Book
+                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold transition-all shadow-md shadow-primary/20">Book
                                 Now</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4. Body Slimming -->
-                <div class="treatment-card bg-background rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                <!-- 4. Body Slimming & Contouring -->
+                <div class="treatment-card bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group"
                     data-category="body">
                     <div>
-                        <div class="relative aspect-[4/3] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=85"
-                                alt="Body Slimming" class="w-full h-full object-cover">
+                        <div
+                            class="relative h-52 w-full overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100/50 to-white flex items-center justify-center p-2 border-b border-border/60">
+                            <img src="assets/images/treatment-body-slimming.jpg"
+                                alt="Derma Rays Ultrasonic Cavitation & RF Slimming Machine"
+                                class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500 shadow-inner">
                             <span
-                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-success text-white text-[10px] font-bold">Inch
-                                Loss</span>
+                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white text-[10px] font-bold shadow-md flex items-center gap-1">
+                                🔥 Inch Loss
+                            </span>
+                            <span
+                                class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[10px] text-white font-medium flex items-center gap-1 shadow-sm">
+                                <i data-lucide="activity" class="w-3 h-3 text-orange-400"></i> Cavitation + RF
+                            </span>
                         </div>
-                        <div class="p-5 space-y-2">
+                        <div class="p-4 space-y-2">
                             <div class="flex items-center justify-between text-xs text-muted">
-                                <span class="flex items-center gap-1 text-warning font-bold"><i data-lucide="star"
-                                        class="w-3.5 h-3.5 fill-warning"></i> 4.8 (215)</span>
-                                <span><i data-lucide="clock" class="w-3.5 h-3.5 inline"></i> 60 mins</span>
+                                <span
+                                    class="flex items-center gap-1 text-amber-500 font-bold bg-amber-50 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> 4.8
+                                    (215)
+                                </span>
+                                <span
+                                    class="flex items-center gap-1 text-slate-500 font-medium bg-slate-100 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="clock" class="w-3.5 h-3.5"></i> 60 mins
+                                </span>
                             </div>
-                            <h3 class="text-base font-bold text-dark font-serif">Comprehensive Body Slimming</h3>
-                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Targeted fat cavitation & RF
-                                thermal skin tightening for arms, tummy and thighs.</p>
+                            <h3
+                                class="text-base font-bold text-dark font-serif group-hover:text-primary transition-colors line-clamp-1">
+                                Body Slimming & RF Lift</h3>
+                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Targeted ultrasonic fat
+                                cavitation and multipolar RF thermal skin tightening for tummy, arms, and thighs.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                <span
+                                    class="text-[10px] font-semibold bg-orange-50 text-orange-700 px-2 py-0.5 rounded-md">Fat
+                                    Cavitation</span>
+                                <span
+                                    class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Skin
+                                    Tightening</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <div class="flex items-baseline gap-2 mb-3">
-                            <span class="text-lg font-bold text-dark">₹2,499</span>
-                            <span class="text-xs text-muted line-through">₹4,000</span>
-                        </div>
+                    <div class="p-4 pt-0">
+
                         <div class="grid grid-cols-2 gap-2">
-                            <a href="treatments.html#body-slimming"
-                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary transition-colors">Details</a>
+                            <a href="machine-details.html"
+                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary hover:text-primary transition-colors">Details</a>
                             <button data-open-modal="booking" data-treatment="Body Slimming"
-                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs font-bold transition-colors">Book
+                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold transition-all shadow-md shadow-primary/20">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Diode Laser & Carbon Laser Peel -->
+                <div class="treatment-card bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group"
+                    data-category="laser skin facial">
+                    <div>
+                        <div
+                            class="relative h-52 w-full overflow-hidden bg-gradient-to-b from-slate-50 via-slate-100/50 to-white flex items-center justify-center p-2 border-b border-border/60">
+                            <img src="assets/images/treatment-diode-laser.jpg" alt="Clinical Diode Laser Stand Machine"
+                                class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500 shadow-inner">
+                            <span
+                                class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-[10px] font-bold shadow-md flex items-center gap-1">
+                                🌟 Hollywood Peel
+                            </span>
+                            <span
+                                class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[10px] text-white font-medium flex items-center gap-1 shadow-sm">
+                                <i data-lucide="sun" class="w-3 h-3 text-yellow-300"></i> Laser Toning
+                            </span>
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <div class="flex items-center justify-between text-xs text-muted">
+                                <span
+                                    class="flex items-center gap-1 text-amber-500 font-bold bg-amber-50 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> 4.9
+                                    (380)
+                                </span>
+                                <span
+                                    class="flex items-center gap-1 text-slate-500 font-medium bg-slate-100 px-2 py-0.5 rounded-full">
+                                    <i data-lucide="clock" class="w-3.5 h-3.5"></i> 60 mins
+                                </span>
+                            </div>
+                            <h3
+                                class="text-base font-bold text-dark font-serif group-hover:text-primary transition-colors line-clamp-1">
+                                Carbon Laser & Diode Toning</h3>
+                            <p class="text-xs text-muted leading-relaxed line-clamp-2">Activated charcoal laser facial
+                                to blast stubborn blackheads, minimize pores, and impart instant porcelain radiance.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                <span
+                                    class="text-[10px] font-semibold bg-purple-50 text-purple-700 px-2 py-0.5 rounded-md">Carbon
+                                    Peel</span>
+                                <span
+                                    class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Laser
+                                    Glow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="machine-details.html"
+                                class="py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text hover:border-primary hover:text-primary transition-colors">Details</a>
+                            <button data-open-modal="booking" data-treatment="Carbon Laser Facial"
+                                class="py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold transition-all shadow-md shadow-primary/20">Book
                                 Now</button>
                         </div>
                     </div>
@@ -897,12 +1624,6 @@
 
             </div>
 
-            <div class="text-center mt-10">
-                <a href="treatments.html"
-                    class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-dark text-white text-xs font-bold hover:bg-primary transition-colors">
-                    Explore All 25+ Treatments <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-            </div>
         </div>
     </section>
 
@@ -927,14 +1648,14 @@
                     <div>
                         <span class="px-3 py-1 rounded-full bg-red-100 text-primary text-[10px] font-bold">First
                             Booking</span>
-                        <h3 class="text-xl font-bold text-dark font-serif mt-3">Flat ₹500 OFF</h3>
+                        <h3 class="text-xl font-bold text-dark font-serif mt-3">Flat ₹50 OFF</h3>
                         <p class="text-xs text-muted mt-1">Valid on any facial or laser service above ₹1,499.</p>
                     </div>
                     <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
                         <span
                             class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">FIRST500</span>
                         <button data-code="FIRST500"
-                            class="copy-coupon-btn text-xs font-bold text-primary hover:underline flex items-center gap-1">
+                            class="copy-coupon-btn text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-dashed text-primary flex items-center gap-1">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
                         </button>
                     </div>
@@ -943,41 +1664,23 @@
                 <!-- Offer 2 -->
                 <div class="bg-white rounded-3xl p-6 border border-border shadow-sm flex flex-col justify-between">
                     <div>
-                        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple text-[10px] font-bold">Glow
-                            Combo</span>
-                        <h3 class="text-xl font-bold text-dark font-serif mt-3">Free Diamond Polish</h3>
-                        <p class="text-xs text-muted mt-1">Get complimentary back polish with any Korean Facial package.
-                        </p>
+                        <span
+                            class="px-3 py-1 rounded-full bg-purple-100 text-purple text-[10px] font-bold">Package</span>
+                        <h3 class="text-xl font-bold text-dark font-serif mt-3">Flat 20% OFF</h3>
+                        <p class="text-xs text-muted mt-1">On 5 sessions + complimentary service according to your
+                            session</p>
                     </div>
                     <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
                         <span
                             class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">GLOWFREE</span>
                         <button data-code="GLOWFREE"
-                            class="copy-coupon-btn text-xs font-bold text-purple hover:underline flex items-center gap-1">
+                            class="copy-coupon-btn text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-dashed text-primary flex items-center gap-1">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
                         </button>
                     </div>
                 </div>
 
                 <!-- Offer 3 -->
-                <div class="bg-white rounded-3xl p-6 border border-border shadow-sm flex flex-col justify-between">
-                    <div>
-                        <span class="px-3 py-1 rounded-full bg-amber-100 text-warning text-[10px] font-bold">Festive
-                            Special</span>
-                        <h3 class="text-xl font-bold text-dark font-serif mt-3">Buy 2 Get 1 Free</h3>
-                        <p class="text-xs text-muted mt-1">Book 2 sessions of Laser Hair Reduction & get 1 free.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
-                        <span
-                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">FESTIVE3</span>
-                        <button data-code="FESTIVE3"
-                            class="copy-coupon-btn text-xs font-bold text-warning hover:underline flex items-center gap-1">
-                            <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Offer 4 -->
                 <div class="bg-white rounded-3xl p-6 border border-border shadow-sm flex flex-col justify-between">
                     <div>
                         <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">Body
@@ -989,7 +1692,27 @@
                         <span
                             class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">BODY30</span>
                         <button data-code="BODY30"
-                            class="copy-coupon-btn text-xs font-bold text-success hover:underline flex items-center gap-1">
+                            class="copy-coupon-btn text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-dashed text-primary flex items-center gap-1">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Offer 4 -->
+
+
+                <div class="bg-white rounded-3xl p-6 border border-border shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="px-3 py-1 rounded-full bg-amber-100 text-warning text-[10px] font-bold">Festive
+                            Special</span>
+                        <h3 class="text-xl font-bold text-dark font-serif mt-3">Buy 2 Get 1 Free</h3>
+                        <p class="text-xs text-muted mt-1">Book 2 sessions of Laser Hair Reduction & get 1 free.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
+                        <span
+                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">FESTIVE3</span>
+                        <button data-code="FESTIVE3"
+                            class="copy-coupon-btn text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-dashed text-primary flex items-center gap-1">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
                         </button>
                     </div>
@@ -1010,12 +1733,13 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
                 <!-- Package 1 -->
-                <div class="bg-background rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between">
+                <div
+                    class="bg-background rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-lg">
                     <div class="space-y-4">
                         <span class="px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold">✨ Best for
                             Radiance</span>
-                        <h3 class="text-2xl font-bold font-serif text-dark">Glow & Hydration Combo</h3>
-                        <p class="text-xs text-muted leading-relaxed">Complete facial and dermal rejuvenation protocol.
+                        <h3 class="text-2xl font-bold font-serif text-dark">Facial with Hand</h3>
+                        <p class="text-xs text-muted leading-relaxed">Complete facial and hand service.
                         </p>
                         <div class="py-3 border-y border-border space-y-2 text-xs text-text">
                             <div class="flex items-center gap-2"><i data-lucide="check"
@@ -1028,9 +1752,9 @@
                     </div>
                     <div class="pt-6">
                         <div class="flex items-baseline gap-2 mb-4">
-                            <span class="text-2xl font-extrabold text-dark">₹3,499</span>
-                            <span class="text-xs text-muted line-through">₹5,500</span>
-                            <span class="text-xs font-bold text-success">Save ₹2,001</span>
+                            <span class="text-2xl font-extrabold text-dark">₹5,500</span>
+                            <span class="text-xs text-muted line-through">₹7,500</span>
+                            <span class="text-xs font-bold text-success">Save ₹1,500</span>
                         </div>
                         <a href="booking.html?package=glow-hydration"
                             class="w-full py-3 rounded-2xl bg-primary hover:bg-primary-dark text-white font-bold text-xs text-center block transition-colors">
@@ -1041,29 +1765,29 @@
 
                 <!-- Package 2 -->
                 <div
-                    class="bg-dark text-white rounded-3xl p-8 border border-secondary/30 shadow-xl flex flex-col justify-between relative overflow-hidden">
+                    class="bg-dark text-white rounded-3xl p-8 border border-secondary/30 shadow-xl flex flex-col justify-between relative overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-lg">
                     <span
                         class="absolute top-4 right-4 px-3 py-1 rounded-full bg-secondary text-dark text-[10px] font-bold">POPULAR</span>
                     <div class="space-y-4">
-                        <span class="px-3 py-1 rounded-full bg-white/10 text-secondary text-xs font-bold">👰 Bridal Glow
-                            Ritual</span>
-                        <h3 class="text-2xl font-bold font-serif text-white">Bridal Glow Master Package</h3>
-                        <p class="text-xs text-white/70 leading-relaxed">Head-to-toe clinical transformation for your
-                            special day.</p>
+                        <span class="px-3 py-1 rounded-full bg-white/10 text-secondary text-xs font-bold">🏃‍♀️ Full
+                            Body</span>
+                        <h3 class="text-2xl font-bold font-serif text-white">Complete Full Body</h3>
+                        <p class="text-xs text-white/70 leading-relaxed">Non-surgical inch loss, body polishing and skin
+                            tightening.</p>
                         <div class="py-3 border-y border-white/10 space-y-2 text-xs text-white/90">
                             <div class="flex items-center gap-2"><i data-lucide="check"
-                                    class="w-4 h-4 text-secondary"></i> 24K Gold & Peptide Facial</div>
+                                    class="w-4 h-4 text-secondary"></i>U-Lipo Ultrasonic Cavitation</div>
                             <div class="flex items-center gap-2"><i data-lucide="check"
-                                    class="w-4 h-4 text-secondary"></i> Full Body Diamond Flake Polish</div>
+                                    class="w-4 h-4 text-secondary"></i>Stomach Contouring & RF Tightening</div>
                             <div class="flex items-center gap-2"><i data-lucide="check"
-                                    class="w-4 h-4 text-secondary"></i> Organic Hair Spa & Scalp Detox</div>
+                                    class="w-4 h-4 text-secondary"></i>Diamond Flake Skin Smoothing</div>
                         </div>
                     </div>
                     <div class="pt-6">
                         <div class="flex items-baseline gap-2 mb-4">
-                            <span class="text-2xl font-extrabold text-white">₹5,999</span>
-                            <span class="text-xs text-white/50 line-through">₹9,800</span>
-                            <span class="text-xs font-bold text-secondary">Save ₹3,801</span>
+                            <span class="text-2xl font-extrabold text-white">₹12,000</span>
+                            <span class="text-xs text-white/50 line-through">₹15,000</span>
+                            <span class="text-xs font-bold text-secondary">Save ₹3,000</span>
                         </div>
                         <a href="booking.html?package=bridal-glow"
                             class="w-full py-3 rounded-2xl bg-primary hover:bg-primary-dark text-white font-bold text-xs text-center block transition-colors">
@@ -1073,27 +1797,28 @@
                 </div>
 
                 <!-- Package 3 -->
-                <div class="bg-background rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between">
+                <div
+                    class="bg-background rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-lg">
                     <div class="space-y-4">
-                        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple text-xs font-bold">🏃‍♀️ Full Body
-                            Sculpt</span>
-                        <h3 class="text-2xl font-bold font-serif text-dark">Complete Body Sculpting</h3>
-                        <p class="text-xs text-muted leading-relaxed">Non-surgical inch loss, body polishing and skin
-                            tightening.</p>
+                        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple text-xs font-bold">part of
+                            body</span>
+                        <h3 class="text-2xl font-bold font-serif text-dark">Face with Back</h3>
+                        <p class="text-xs text-muted leading-relaxed"> Korean Glass Skin 7-Step Facial + Back Polish
+                            Hydra Medi-Facial Deep Infusion + LED Light Collagen Stimulation</p>
                         <div class="py-3 border-y border-border space-y-2 text-xs text-text">
                             <div class="flex items-center gap-2"><i data-lucide="check"
-                                    class="w-4 h-4 text-success"></i> U-Lipo Ultrasonic Cavitation</div>
+                                    class="w-4 h-4 text-success"></i> Korean Glass Skin 7-Step Facial</div>
                             <div class="flex items-center gap-2"><i data-lucide="check"
-                                    class="w-4 h-4 text-success"></i> Stomach Contouring & RF Tightening</div>
+                                    class="w-4 h-4 text-success"></i>Hydra Medi-Facial Deep Infusion</div>
                             <div class="flex items-center gap-2"><i data-lucide="check"
                                     class="w-4 h-4 text-success"></i> Diamond Flake Skin Smoothing</div>
                         </div>
                     </div>
                     <div class="pt-6">
                         <div class="flex items-baseline gap-2 mb-4">
-                            <span class="text-2xl font-extrabold text-dark">₹4,499</span>
-                            <span class="text-xs text-muted line-through">₹7,000</span>
-                            <span class="text-xs font-bold text-success">Save ₹2,501</span>
+                            <span class="text-2xl font-extrabold text-dark">₹5,759</span>
+                            <span class="text-xs text-muted line-through">₹7,198</span>
+                            <span class="text-xs font-bold text-success">Save ₹1,439</span>
                         </div>
                         <a href="booking.html?package=body-sculpt"
                             class="w-full py-3 rounded-2xl bg-primary hover:bg-primary-dark text-white font-bold text-xs text-center block transition-colors">
@@ -1276,7 +2001,7 @@
                 </div>
                 <a href="experts.html"
                     class="text-xs sm:text-sm font-bold text-primary hover:underline flex items-center gap-1">
-                    All Doctors <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    All Experts <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
 
@@ -1285,52 +2010,49 @@
                 <!-- Doctor 1 -->
                 <div
                     class="bg-background rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-lg transition-shadow text-center">
-                    <div class="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-md">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=85"
-                            alt="Dr. Radhika Sen" class="w-full h-full object-cover">
+                    <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-md">
+                        <img src="assets/images/Mehjabeen copy.jpeg" alt="Mehjabeen" class="w-full h-full object-fit">
                     </div>
-                    <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified
-                        MD</span>
-                    <h3 class="text-lg font-bold font-serif text-dark mt-2">Dr. Radhika Sen</h3>
-                    <p class="text-xs text-primary font-semibold">Chief Dermatologist</p>
-                    <p class="text-xs text-muted mt-1">14+ Years Experience • Laser & Peels</p>
-                    <button data-open-modal="booking" data-treatment="Consultation - Dr. Radhika Sen"
+                    <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓
+                        Verified</span>
+                    <h3 class="text-lg font-bold font-serif text-dark mt-2">Mehjabeen</h3>
+                    <p class="text-xs text-primary font-semibold">Beauty Expert</p>
+                    <p class="text-xs text-muted mt-1">10+ Years Experience • Laser & Peels</p>
+                    <button data-open-modal="booking" data-treatment="Consultation - Mehjabeen"
                         class="mt-4 w-full py-2.5 rounded-xl bg-dark text-white text-xs font-bold hover:bg-primary transition-colors">
                         Book With Expert
                     </button>
                 </div>
 
-                <!-- Doctor 2 -->
+                <!-- Doctor 1 -->
                 <div
                     class="bg-background rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-lg transition-shadow text-center">
-                    <div class="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-md">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=85"
-                            alt="Dr. Alok Verma" class="w-full h-full object-cover">
+                    <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-md">
+                        <img src="assets/images/Mehjabeen copy.jpeg" alt="Mehjabeen" class="w-full h-full object-fit">
                     </div>
-                    <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified
-                        MD</span>
-                    <h3 class="text-lg font-bold font-serif text-dark mt-2">Dr. Alok Verma</h3>
-                    <p class="text-xs text-purple font-semibold">Laser Aesthetic Surgeon</p>
-                    <p class="text-xs text-muted mt-1">11+ Years Experience • U-Lipo & LHR</p>
-                    <button data-open-modal="booking" data-treatment="Consultation - Dr. Alok Verma"
+                    <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓
+                        Verified</span>
+                    <h3 class="text-lg font-bold font-serif text-dark mt-2">Mehjabeen</h3>
+                    <p class="text-xs text-primary font-semibold">Beauty Expert</p>
+                    <p class="text-xs text-muted mt-1">10+ Years Experience • Laser & Peels</p>
+                    <button data-open-modal="booking" data-treatment="Consultation - Mehjabeen"
                         class="mt-4 w-full py-2.5 rounded-xl bg-dark text-white text-xs font-bold hover:bg-primary transition-colors">
                         Book With Expert
                     </button>
                 </div>
 
-                <!-- Doctor 3 -->
+                <!-- Doctor 1 -->
                 <div
                     class="bg-background rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-lg transition-shadow text-center">
-                    <div class="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-md">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPC-qpeK8_MSAHJlhoXwjt603iT7GsovVoZtNBHrzXFQ&s"
-                            alt="Dr. Natasha Kapur" class="w-full h-full object-cover">
+                    <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-md">
+                        <img src="assets/images/Mehjabeen copy.jpeg" alt="Mehjabeen" class="w-full h-full object-fit">
                     </div>
-                    <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified
-                        MD</span>
-                    <h3 class="text-lg font-bold font-serif text-dark mt-2">Dr. Mo Saleem</h3>
-                    <p class="text-xs text-secondary font-semibold">Cosmetic Dermatologist</p>
-                    <p class="text-xs text-muted mt-1">9+ Years Experience • Korean Glass Skin</p>
-                    <button data-open-modal="booking" data-treatment="Consultation - Dr. Natasha Kapur"
+                    <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓
+                        Verified</span>
+                    <h3 class="text-lg font-bold font-serif text-dark mt-2">Mehjabeen</h3>
+                    <p class="text-xs text-primary font-semibold">Beauty Expert</p>
+                    <p class="text-xs text-muted mt-1">10+ Years Experience • Laser & Peels</p>
+                    <button data-open-modal="booking" data-treatment="Consultation - Mehjabeen"
                         class="mt-4 w-full py-2.5 rounded-xl bg-dark text-white text-xs font-bold hover:bg-primary transition-colors">
                         Book With Expert
                     </button>
@@ -1469,7 +2191,7 @@
                 <article
                     class="bg-background rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-shadow">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1512290900676-26c2a4a2f5b1?auto=format&fit=crop&w=600&q=85"
+                        <img src="https://www.drpraneethclinic.com/wp-content/uploads/elementor/thumbs/Diode-Laser-Hair-Removal-treatment-pmpol8t1fzmhohc6hs88lqetnywfyv4g7g429npji4.jpg"
                             alt="Laser Hair Guide"
                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
@@ -1590,11 +2312,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
 
                 <div class="lg:col-span-2 space-y-4">
-                    <a href="index.html" class="inline-block">
-                        <span class="text-2xl font-bold font-serif text-white">Smooth N Shine</span>
-                        <span
-                            class="block text-[9px] tracking-[3px] font-bold text-secondary uppercase mt-0.5">Aesthetics
-                            At Doorstep</span>
+                    <a href="index.html" class="inline-block" title="Smooth N Shine">
+                        <img src="assets/images/logo-white.svg" alt="Smooth N Shine - Aesthetic Home Service"
+                            class="site-logo-footer h-11 w-auto object-contain">
                     </a>
                     <p class="text-xs text-white/70 max-w-sm leading-relaxed">
                         Pioneering clinical excellence and advanced aesthetic dermatology right at your doorstep. Safe,
@@ -1673,33 +2393,56 @@
     <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
     <nav id="mobileBottomNav"
         class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+
         <div class="relative h-full grid grid-cols-5 items-center px-1">
+
+            <!-- HOME -->
             <a href="index.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
                 <i data-lucide="home" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Home</span>
             </a>
+
+            <!-- SERVICES -->
             <a href="treatments.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="sparkles" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Services</span>
             </a>
-            <a href="booking.html" class="group relative h-full flex items-center justify-center no-underline">
+
+            <!-- BOOKING -->
+            <a href="booking.html" id="mobileBookingButton"
+                class="group relative h-full flex items-center justify-center no-underline"
+                style="background-color: transparent !important;">
+
                 <div
                     class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+
                     <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+
+                    <!-- BOOKING NOTIFICATION -->
+                    <span id="mobileBookingBadge"
+                        class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-white flex items-center justify-center shadow-lg badge-pop">
+                        0
+                    </span>
+
                 </div>
             </a>
+
+            <!-- OFFERS -->
             <a href="offers.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="tag" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Offers</span>
             </a>
+
+            <!-- ACCOUNT -->
             <a href="dashboard.html"
                 class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="user" class="w-5 h-5"></i>
                 <span class="text-[10px] font-bold">Account</span>
             </a>
+
         </div>
     </nav>
 
@@ -1792,9 +2535,11 @@
                         <select name="treatment" required
                             class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
                             <option value="Korean Glass Skin Facial">Korean Glass Skin Facial</option>
-                            <option value="Laser Hair Reduction">Laser Hair Reduction</option>
+                            <option value="Microdermabrasion">Diamond Microdermabrasion</option>
+                            <option value="Laser Hair Reduction">Laser Hair Reduction (LHR)</option>
+                            <option value="Body Slimming">Body Slimming & Contouring</option>
+                            <option value="Carbon Laser Facial">Carbon Laser & Diode Toning</option>
                             <option value="Medical Medi-Facial">Medical Medi-Facial</option>
-                            <option value="Body Slimming & U-Lipo">Body Slimming & U-Lipo</option>
                             <option value="Chemical Peels">Chemical Peels</option>
                             <option value="Doctor Consultation">General Doctor Consultation</option>
                         </select>
@@ -1844,6 +2589,32 @@
     <!-- Main JS -->
     <script src="js/script.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+
+        document.querySelectorAll('.scrollbar-hide').forEach((slider) => {
+
+            slider.addEventListener('wheel', function (event) {
+
+                /*
+                 * Desktop par mouse wheel ko
+                 * horizontal scrolling mein convert karega.
+                 */
+
+                if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+
+                    event.preventDefault();
+
+                    slider.scrollLeft += event.deltaY;
+
+                }
+
+            }, {
+                passive: false
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>

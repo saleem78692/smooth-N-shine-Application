@@ -13,16 +13,18 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#D92734', dark: '#B71F2A', light: '#FCE8EA' },
-                        purple: { DEFAULT: '#6300ED', light: '#EBE6FD' },
-                        secondary: { DEFAULT: '#B8906B', light: '#F4E8DE' },
-                        dark: '#20120F',
-                        text: '#3A302D',
-                        muted: '#77706D',
-                        background: '#FAF8F7',
-                        border: '#E9E2DE',
+                        primary: { DEFAULT: '#A66373', dark: '#7E4150', light: '#FAF2EF' },
+                        purple: { DEFAULT: '#A66373', light: '#DFC2C9' },
+                        secondary: { DEFAULT: '#C57668', dark: '#A85B4E', light: '#EAA597' },
+                        coral: { DEFAULT: '#C57668', light: '#EAA597' },
+                        lavender: { DEFAULT: '#DFC2C9', light: '#FAF4F0' },
+                        dark: '#2B1A20',
+                        text: '#2B1A20',
+                        muted: '#78636B',
+                        background: '#FAF4F0',
+                        border: '#ECDAD5',
                         success: '#238B65',
-                        warning: '#D69A28'
+                        warning: '#C57668'
                     },
                     fontFamily: {
                         serif: ['"DM Serif Display"', 'Georgia', 'serif'],
@@ -41,7 +43,9 @@
 
     <!-- Dashboard Mobile Topbar -->
     <header class="lg:hidden bg-white border-b border-border h-16 px-4 flex items-center justify-between sticky top-0 z-40">
-        <a href="index.html" class="font-serif font-bold text-lg text-dark">Smooth N Shine</a>
+        <a href="index.html" class="flex items-center">
+            <img src="assets/images/logo.svg" alt="Smooth N Shine" class="h-8 w-auto object-contain">
+        </a>
         <button id="openDashboardSidebarBtn" type="button" class="w-9 h-9 rounded-xl bg-background border border-border flex items-center justify-center text-text">
             <i data-lucide="menu" class="w-5 h-5"></i>
         </button>
@@ -58,9 +62,8 @@
                 
                 <!-- Brand Header -->
                 <div class="flex items-center justify-between">
-                    <a href="index.html" class="flex flex-col">
-                        <span class="text-xl font-bold font-serif text-dark">Smooth N Shine</span>
-                        <span class="text-[8px] tracking-[2px] font-bold text-secondary uppercase">Aesthetics Portal</span>
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Smooth N Shine" class="h-8 w-auto object-contain">
                     </a>
                     <button id="closeDashboardSidebarBtn" type="button" class="lg:hidden text-muted">
                         <i data-lucide="x" class="w-5 h-5"></i>
@@ -234,30 +237,58 @@
         </main>
     </div>
 
-    <!-- Mobile Bottom Nav -->
-    <nav id="mobileBottomNav" class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-md md:hidden">
+    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav id="mobileBottomNav"
+        class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
+
         <div class="relative h-full grid grid-cols-5 items-center px-1">
-            <a href="index.html" class="h-full flex flex-col items-center justify-center gap-1 text-text">
+
+            <!-- HOME -->
+            <a href="index.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
                 <i data-lucide="home" class="w-5 h-5"></i>
-                <span class="text-[10px]">Home</span>
+                <span class="text-[10px] font-bold">Home</span>
             </a>
-            <a href="treatments.html" class="h-full flex flex-col items-center justify-center gap-1 text-text">
+
+            <!-- SERVICES -->
+            <a href="treatments.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="sparkles" class="w-5 h-5"></i>
-                <span class="text-[10px]">Services</span>
+                <span class="text-[10px] font-bold">Services</span>
             </a>
-            <a href="booking.html" class="relative h-full flex items-center justify-center">
-                <div class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+
+            <!-- BOOKING -->
+            <a href="booking.html" id="mobileBookingButton"
+                class="group relative h-full flex items-center justify-center no-underline" style="background-color: transparent !important;">
+
+                <div
+                    class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+
                     <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+
+                    <!-- BOOKING NOTIFICATION -->
+                    <span id="mobileBookingBadge"
+                        class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-white flex items-center justify-center shadow-lg badge-pop">
+                        0
+                    </span>
+
                 </div>
             </a>
-            <a href="offers.html" class="h-full flex flex-col items-center justify-center gap-1 text-text">
+
+            <!-- OFFERS -->
+            <a href="offers.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="tag" class="w-5 h-5"></i>
-                <span class="text-[10px]">Offers</span>
+                <span class="text-[10px] font-bold">Offers</span>
             </a>
-            <a href="dashboard.html" class="h-full flex flex-col items-center justify-center gap-1 text-primary font-bold">
+
+            <!-- ACCOUNT -->
+            <a href="dashboard.html"
+                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
                 <i data-lucide="user" class="w-5 h-5"></i>
-                <span class="text-[10px]">Account</span>
+                <span class="text-[10px] font-bold">Account</span>
             </a>
+
         </div>
     </nav>
 
