@@ -3,7 +3,6 @@
 ======================================================== */
 
 const servicesData = {
-
   /* ================= SALON ================= */
   salon: [
     {
@@ -42,7 +41,7 @@ const servicesData = {
       initialQty: 0,
     },
 
-     {
+    {
       id: "back-1",
       title: "Back",
       price: 3599,
@@ -54,7 +53,7 @@ const servicesData = {
       initialQty: 0,
     },
 
-     {
+    {
       id: "stomach-1",
       title: "Stomach",
       price: 2500,
@@ -79,12 +78,11 @@ const servicesData = {
     },
   ],
 
-
   /* ================= HYDRAGLO / FACIAL ================= */
   hydraglo: [
     {
       id: "facial-1",
-      title: "Korean Glass Skin Facial",
+      title: "Korean Facial",
       price: 3599,
       duration: "1 hr 15 mins",
       badge: "Most Booked",
@@ -96,13 +94,13 @@ const servicesData = {
 
     {
       id: "facial-2",
-      title: "Deep Hydration Glow Facial",
-      price: 1499,
+      title: "Body diamond polish (per part)",
+      price: 2399,
       duration: "1 hr 00 mins",
       badge: "Trending",
       subtitle: "Instant Hydration & Radiance",
       image:
-        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DkwGkvW8OQlKuZLV06RfFhuI9dPh0qUBrzwyT9DqlQ&s=10",
       initialQty: 0,
     },
 
@@ -126,50 +124,50 @@ const servicesData = {
       badge: "Anti-Aging",
       subtitle: "Firm & Youthful Looking Skin",
       image:
-        "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hACPDNvNHvhDDPjNxrguKsphIUCeDxltssth0ckIeg&s",
       initialQty: 0,
     },
 
     {
       id: "facial-5",
       title: "Korean Premium Facial",
-      price: 2999,
+      price: 4599,
       duration: "1 hr 30 mins",
       badge: "Premium",
       subtitle: "Deep Cleanse + Brightening",
       image:
-        "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1647004692483-c5d942fe1137?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW50aSUyMGFnaW5nfGVufDB8fDB8fHww",
       initialQty: 0,
     },
 
     {
       id: "facial-6",
-      title: "Anti-Pigmentation Facial",
-      price: 2499,
+      title: "Underarms",
+      price: 1079,
       duration: "1 hr 10 mins",
       badge: "Skin Care",
       subtitle: "Helps Improve Uneven Skin Tone",
       image:
-        "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Kk3R3GV2wT5NnncwCr1hGq65RM2jDxi-IRPn7C8kfA&s=10",
       initialQty: 0,
     },
 
     {
       id: "facial-7",
-      title: "Acne & Acne Scar Facial",
-      price: 2699,
+      title: "Bikini",
+      price: 3599,
       duration: "1 hr 15 mins",
       badge: "Skin Care",
       subtitle: "Deep Cleanse & Clarifying Care",
       image:
-        "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=400&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7U0SldyaKoL7ersq6bFc62sgItYgttmFlZMYFQ5hkZg&s=10",
       initialQty: 0,
     },
 
     {
       id: "facial-8",
-      title: "Facial + Body Diamond Polish",
-      price: 4999,
+      title: "Full Body (7 Part)",
+      price: 14000,
       duration: "2 hr 00 mins",
       badge: "Combo",
       subtitle: "Complete Glow & Polish",
@@ -179,23 +177,21 @@ const servicesData = {
     },
   ],
 
-
   /* ================= LASER ================= */
   laser: [
     {
       id: "laser-1",
-      title: "Full Body Laser Hair Reduction",
-      price: 3999,
+      title: "Face",
+      price: 3599,
       duration: "2 hr 30 mins",
       badge: "Best Value",
       subtitle: "Painless Cooling Technology",
       image:
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80",
+        "https://plus.unsplash.com/premium_photo-1661255395799-a300794397fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZhY2UlMjBmYWNpYWx8ZW58MHx8MHx8fDA%3D",
       initialQty: 0,
     },
   ],
 };
-
 
 /* ========================================================
    ACTIVE CATEGORY
@@ -203,42 +199,32 @@ const servicesData = {
 
 let activeCategory = "salon";
 
-
 /* ========================================================
    CART
 ======================================================== */
 
 let cart = {};
 
-
 /* ========================================================
    INITIAL CART
 ======================================================== */
 
 Object.keys(servicesData).forEach((category) => {
-
   servicesData[category].forEach((item) => {
-
     if (item.initialQty > 0) {
-
       cart[item.id] = {
         ...item,
         qty: item.initialQty,
       };
-
     }
-
   });
-
 });
-
 
 /* ========================================================
    RENDER SERVICE CARDS
 ======================================================== */
 
 function renderCards() {
-
   const grid = document.getElementById("cardsGrid");
 
   if (!grid) return;
@@ -247,10 +233,7 @@ function renderCards() {
 
   grid.innerHTML = items
     .map((item) => {
-
-      const qty = cart[item.id]
-        ? cart[item.id].qty
-        : 0;
+      const qty = cart[item.id] ? cart[item.id].qty : 0;
 
       return `
         <div
@@ -299,10 +282,9 @@ function renderCards() {
 
               ${
                 qty > 0
+                  ? /* ACTIVE STEPPER */
 
-                  /* ACTIVE STEPPER */
-
-                  ? `
+                    `
                     <div
                       class="flex items-center justify-between w-full bg-white border-2 border-primary rounded-lg px-2 py-1 shadow-md text-primary font-bold text-sm"
                      style="margin-left:100px;">
@@ -339,10 +321,9 @@ function renderCards() {
 
                     </div>
                   `
+                  : /* ADD BUTTON */
 
-                  /* ADD BUTTON */
-
-                  : `
+                    `
                     <button
                       type="button"
                       onclick="updateQuantity('${item.id}', 1)"
@@ -427,10 +408,8 @@ function renderCards() {
 
         </div>
       `;
-
     })
     .join("");
-
 
   /* ========================================================
      RECREATE LUCIDE ICONS
@@ -440,118 +419,80 @@ function renderCards() {
     lucide.createIcons();
   }
 
-
   /* ========================================================
      UPDATE CART
   ======================================================== */
 
   updateCartSummary();
-
 }
-
 
 /* ========================================================
    UPDATE QUANTITY
 ======================================================== */
 
 function updateQuantity(serviceId, change) {
-
   let serviceItem = null;
-
 
   /* ================= FIND SERVICE ================= */
 
   for (const category in servicesData) {
-
     const found = servicesData[category].find(
-      (service) => service.id === serviceId
+      (service) => service.id === serviceId,
     );
 
     if (found) {
-
       serviceItem = found;
 
       break;
-
     }
-
   }
-
 
   if (!serviceItem) return;
 
-
   /* ================= CURRENT QUANTITY ================= */
 
-  const currentQty = cart[serviceId]
-    ? cart[serviceId].qty
-    : 0;
-
+  const currentQty = cart[serviceId] ? cart[serviceId].qty : 0;
 
   /* ================= NEW QUANTITY ================= */
 
   const newQty = currentQty + change;
 
-
   /* ================= REMOVE ITEM ================= */
 
   if (newQty <= 0) {
-
     delete cart[serviceId];
-
-  }
-
+  } else {
 
   /* ================= ADD / UPDATE ITEM ================= */
-
-  else {
-
     cart[serviceId] = {
       ...serviceItem,
       qty: newQty,
     };
-
   }
-
 
   /* ================= RE-RENDER ================= */
 
   renderCards();
-
 }
-
 
 /* ========================================================
    SWITCH CATEGORY
 ======================================================== */
 
 function switchCategory(category) {
-
   activeCategory = category;
 
-
-  const categories = [
-    "salon",
-    "hydraglo",
-    "laser"
-  ];
-
+  const categories = ["salon", "hydraglo", "laser"];
 
   categories.forEach((cat) => {
-
-    const tabBtn =
-      document.getElementById(`tab-${cat}`);
-
+    const tabBtn = document.getElementById(`tab-${cat}`);
 
     if (!tabBtn) return;
-
 
     /* ================= ACTIVE ================= */
 
     if (cat === category) {
-
-      tabBtn.className =
-        `
+      tabBtn.className = `
         px-5 py-2.5
         rounded-full
         text-sm
@@ -565,16 +506,10 @@ function switchCategory(category) {
         border
         border-pink-200/50
         `;
-
-    }
-
+    } else {
 
     /* ================= INACTIVE ================= */
-
-    else {
-
-      tabBtn.className =
-        `
+      tabBtn.className = `
         px-5 py-2.5
         rounded-full
         text-sm
@@ -586,18 +521,13 @@ function switchCategory(category) {
         text-gray-600
         hover:bg-gray-200
         `;
-
     }
-
   });
-
 
   /* ================= RENDER ================= */
 
   renderCards();
-
 }
-
 
 /* ========================================================
    UPDATE CART SUMMARY
@@ -605,52 +535,35 @@ function switchCategory(category) {
 ======================================================== */
 
 function updateCartSummary() {
+  const badgeEl = document.getElementById("mobileBookingBadge");
 
-  const badgeEl =
-    document.getElementById("mobileBookingBadge");
+  const totalPriceEl = document.getElementById("cartTotalPrice");
 
-  const totalPriceEl =
-    document.getElementById("cartTotalPrice");
-
-  const itemsLabelEl =
-    document.getElementById("cartItemsLabel");
-
+  const itemsLabelEl = document.getElementById("cartItemsLabel");
 
   let totalItems = 0;
 
   let totalPrice = 0;
 
-
   /* ================= CALCULATE CART ================= */
 
   Object.values(cart).forEach((item) => {
-
     totalItems += item.qty;
 
     totalPrice += item.price * item.qty;
-
   });
-
 
   /* ================= PRICE ================= */
 
   if (totalPriceEl) {
-
-    totalPriceEl.innerText =
-      `₹${totalPrice.toLocaleString("en-IN")}`;
-
+    totalPriceEl.innerText = `₹${totalPrice.toLocaleString("en-IN")}`;
   }
-
 
   /* ================= ITEMS ================= */
 
   if (itemsLabelEl) {
-
-    itemsLabelEl.innerText =
-      `${totalItems} item${totalItems === 1 ? "" : "s"}`;
-
+    itemsLabelEl.innerText = `${totalItems} item${totalItems === 1 ? "" : "s"}`;
   }
-
 
   /* ====================================================
      MOBILE BOOKING BADGE
@@ -658,20 +571,16 @@ function updateCartSummary() {
 
   if (!badgeEl) return;
 
-
   /* ================= SHOW ================= */
 
   if (totalItems > 0) {
-
     /* Set Count */
 
     badgeEl.innerText = totalItems;
 
-
     /* Show Badge */
 
     badgeEl.classList.remove("hidden");
-
 
     /* Restart Animation */
 
@@ -680,41 +589,25 @@ function updateCartSummary() {
     void badgeEl.offsetWidth;
 
     badgeEl.classList.add("badge-pop");
-
-  }
-
+  } else {
 
   /* ================= HIDE ================= */
-
-  else {
-
     badgeEl.classList.add("hidden");
-
   }
-
 }
-
 
 /* ========================================================
    PAGE LOAD
 ======================================================== */
 
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
+document.addEventListener("DOMContentLoaded", function () {
+  /* Render Cards */
 
-    /* Render Cards */
+  renderCards();
 
-    renderCards();
+  /* Create Lucide Icons */
 
-
-    /* Create Lucide Icons */
-
-    if (typeof lucide !== "undefined") {
-
-      lucide.createIcons();
-
-    }
-
+  if (typeof lucide !== "undefined") {
+    lucide.createIcons();
   }
-);
+});

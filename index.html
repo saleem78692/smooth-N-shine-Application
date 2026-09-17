@@ -665,54 +665,77 @@
 
     <!-- ================= HERO BANNER SECTION ================= -->
 
-    <section class="relative min-h-[580px] sm:min-h-[620px] lg:min-h-[680px] overflow-hidden bg-dark text-white">
+    <!-- ================= HERO VIDEO SECTION ================= -->
+    <section class="relative h-[500px] sm:h-[500px] lg:h-[500px] overflow-hidden bg-dark text-white">
 
-        <!-- BACKGROUND IMAGE -->
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjMyd2puYzduazBqamx2dnB6bHU2aXdsb2hrMTJsazk1aGM4dTdzdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ud32Y1FRMhBAI8XZ6Q/giphy.gif"
-            alt="Premium Aesthetic Treatment" class="absolute inset-0 w-full h-full object-cover">
+        <!-- ================= BACKGROUND VIDEO ================= -->
+            <video src="assets/images/Purple canyon YouTube intro.mp4" autoplay muted loop playsinline preload="auto"
+            class="absolute inset-0 w-full h-full object-cover">
 
-        <!-- DARK OVERLAY -->
-        <div class="absolute inset-0 bg-black/20"></div>
+            Your browser does not support the video tag.
 
-        <!-- LEFT GRADIENT FOR TEXT READABILITY -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20"></div>
+        </video>
 
-        <!-- CONTENT -->
-        <div class="relative z-10 flex min-h-[580px] sm:min-h-[620px] lg:min-h-[680px] items-center">
 
-            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-10">
+        <!-- ================= DARK OVERLAY ================= -->
+        <div class="absolute inset-0 bg-black/25"></div>
+
+
+        <!-- ================= LEFT GRADIENT ================= -->
+        <div class="absolute inset-0 bg-gradient-to-r
+                from-black/50
+                via-black/40
+                to-black/10">
+        </div>
+
+
+        <!-- ================= BOTTOM GRADIENT ================= -->
+        <div class="absolute inset-x-0 bottom-0 h-40
+                bg-gradient-to-t from-black/50 to-transparent">
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+        <div class="relative z-10 flex h-[500px] sm:h-[500px] lg:h-[500px] items-center">
+
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+                   pt-5 sm:pt-5 lg:pt-5 pb-16">
 
                 <div class="max-w-3xl">
 
-                    <!-- BADGE -->
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full
-                    bg-white/10 border border-white/20 backdrop-blur-md">
 
-                        <i data-lucide="sparkles" class="w-4 h-4 text-secondary"></i>
-
-                        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em]">
-                            Premium Aesthetics At Your Doorstep
-                        </span>
-
-                    </div>
+                 
 
 
-                    <!-- HEADING -->
-                    <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl
-                    font-bold font-serif leading-[1.08]">
+                    <!-- ================= HEADING ================= -->
+                    <h1 class="
+                           text-2xl
+                           sm:text-3xl
+                           md:text-5xl
+                           lg:text-5xl
+                           font-bold
+                           font-serif
+                           leading-[1.08]
+                           tracking-tight">
 
-                        Beauty & Aesthetic Treatments
+                        Beauty &amp; Aesthetic Treatments
 
-                        <span class="block mt-2 text-primary">
+                        <span class="block mt-2
+                               text-primary">
                             At Your Doorstep
                         </span>
 
                     </h1>
 
 
-                    <!-- DESCRIPTION -->
-                    <p class="mt-6 max-w-2xl text-sm sm:text-base lg:text-lg
-                    leading-relaxed text-white/80">
+                    <!-- ================= DESCRIPTION ================= -->
+                    <p class="mt-6
+                           max-w-2xl
+                           text-sm
+                           sm:text-base
+                           lg:text-lg
+                           leading-relaxed
+                           text-white/80">
 
                         Professional treatments, trusted dermatologists,
                         and advanced aesthetic technologies — all in the
@@ -721,59 +744,103 @@
                     </p>
 
 
-                    <!-- BUTTONS -->
-                    <div class="mt-8 flex flex-wrap gap-4">
+                    <!-- ================= BUTTONS ================= -->
+                    <div class="mt-8
+                           flex flex-col
+                           sm:flex-row
+                           flex-wrap
+                           gap-3 sm:gap-4">
+
 
                         <!-- BOOK APPOINTMENT -->
-                        <a href="booking.html" class="group inline-flex items-center gap-2
-                        rounded-full bg-primary
-                        px-7 py-3.5
-                        text-sm font-bold text-white
-                        shadow-[0_10px_35px_rgba(217,39,52,0.40)]
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:bg-primary-dark">
+                        <a href="booking.html" class="group
+                               inline-flex
+                               items-center
+                               justify-center
+                               gap-2
+                               rounded-full
+                               bg-primary
+                               px-4
+                               py-3
+                               text-sm
+                               font-bold
+                               text-white
+                               shadow-[0_10px_35px_rgba(217,39,52,0.40)]
+                               transition-all
+                               duration-300
+                               hover:-translate-y-1
+                               hover:bg-primary-dark
+                               active:scale-95">
 
-                            <i data-lucide="calendar" class="h-4 w-4"></i>
+                            <i data-lucide="calendar" class="h-4 w-4">
+                            </i>
 
-                            Book Appointment
+                            <span>
+                                Book Appointment
+                            </span>
 
-                            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform
-                            duration-300 group-hover:translate-x-1"></i>
+                            <i data-lucide="arrow-right" class="h-4 w-4
+                                   transition-transform
+                                   duration-300
+                                   group-hover:translate-x-1">
+                            </i>
 
                         </a>
 
 
                         <!-- EXPLORE TREATMENTS -->
-                        <a href="treatments.html" class="inline-flex items-center gap-2
-                        rounded-full
-                        border border-white/30
-                        bg-white/10
-                        px-7 py-3.5
-                        text-sm font-bold text-white
-                        backdrop-blur-md
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:bg-white/20">
+                        <a href="treatments.html" class="inline-flex
+                               items-center
+                               justify-center
+                               gap-2
+                               rounded-full
+                               border
+                               border-white/30
+                               bg-white/10
+                               px-5
+                               py-3
+                               text-sm
+                               font-bold
+                               text-white
+                               backdrop-blur-md
+                               transition-all
+                               duration-300
+                               hover:-translate-y-1
+                               hover:bg-white/20
+                               active:scale-95">
 
-                            Explore Treatments
+                            <span>
+                                Explore Treatments
+                            </span>
 
-                            <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+                            <i data-lucide="arrow-up-right" class="h-4 w-4">
+                            </i>
 
                         </a>
 
                     </div>
 
 
-                    <!-- TRUST ITEMS -->
-                    <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+                    <!-- ================= TRUST ITEMS ================= -->
+                    <div class="mt-8
+                           flex flex-wrap
+                           gap-x-6
+                           gap-y-3">
+
 
                         <!-- CERTIFIED EXPERTS -->
-                        <div class="flex items-center gap-2">
+                        <div class="flex
+                               items-center
+                               gap-2">
 
-                            <i data-lucide="shield-check" class="h-4 w-4 text-secondary"></i>
+                            <i data-lucide="shield-check" class="h-4 w-4
+                                   text-secondary
+                                   shrink-0">
+                            </i>
 
-                            <span class="text-xs sm:text-sm text-white/75">
+                            <span class="text-xs
+                                   sm:text-sm
+                                   text-white/75">
                                 Certified Experts
                             </span>
 
@@ -781,11 +848,18 @@
 
 
                         <!-- HOME SERVICE -->
-                        <div class="flex items-center gap-2">
+                        <div class="flex
+                               items-center
+                               gap-2">
 
-                            <i data-lucide="home" class="h-4 w-4 text-secondary"></i>
+                            <i data-lucide="home" class="h-4 w-4
+                                   text-secondary
+                                   shrink-0">
+                            </i>
 
-                            <span class="text-xs sm:text-sm text-white/75">
+                            <span class="text-xs
+                                   sm:text-sm
+                                   text-white/75">
                                 Home Service
                             </span>
 
@@ -793,11 +867,18 @@
 
 
                         <!-- RATING -->
-                        <div class="flex items-center gap-2">
+                        <div class="flex
+                               items-center
+                               gap-2">
 
-                            <i data-lucide="star" class="h-4 w-4 text-secondary"></i>
+                            <i data-lucide="star" class="h-4 w-4
+                                   text-secondary
+                                   shrink-0">
+                            </i>
 
-                            <span class="text-xs sm:text-sm text-white/75">
+                            <span class="text-xs
+                                   sm:text-sm
+                                   text-white/75">
                                 4.9/5 Rated
                             </span>
 
@@ -2062,91 +2143,164 @@
         </div>
     </section>
 
-    <!-- ================= TESTIMONIALS SLIDER (Swiper.js) ================= -->
+    <!-- ================= TESTIMONIALS SLIDER ================= -->
     <section class="py-16 sm:py-20 bg-background">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-xs font-bold uppercase tracking-[2px] text-primary">Client Stories</span>
-                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-dark mt-1">Loved by 1,000+ Clients</h2>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- ================= SECTION HEADER ================= -->
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-10">
+                <div class="text-left max-w-2xl"> <span class="text-xs font-bold uppercase tracking-[2px] text-primary">
+                        Client Stories </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-dark mt-1"> Loved by 1,000+ Clients </h2>
+                    <p class="text-sm text-muted mt-2"> Real experiences from our happy clients. </p>
+                </div>
+                <button type="button" onclick="openReviewModal()"
+                    class="flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-primary text-white text-sm font-bold shadow-md hover:shadow-lg hover:bg-primary-dark transition-all duration-300">
+                    <i data-lucide="pen-line" class="w-4 h-4"></i> Write a Review </button>
             </div>
-
             <div class="swiper testimonial-swiper pb-10">
                 <div class="swiper-wrapper">
+                    <!-- 1.  -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="h-full bg-white p-7 rounded-3xl border border-border shadow-sm hover:shadow-lg transition-shadow duration-300 space-y-4">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-warning"> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i>
+                            </div>
+                            <!-- Review -->
+                            <p class="text-xs sm:text-sm text-text italic leading-relaxed"> "Professional and skilled at her job. Exellent services." </p>
 
-                    <!-- Review 1 -->
-                    <div class="swiper-slide bg-white p-7 rounded-3xl border border-border shadow-sm space-y-4">
-                        <div class="flex items-center gap-1 text-warning">
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                        </div>
-                        <p class="text-xs sm:text-sm text-text italic leading-relaxed">
-                            "The Korean Glass Skin facial at home was unbelievable! The aesthetician brought sealed
-                            instruments and the glow lasted over 3 weeks. Absolutely zero hassle."
-                        </p>
-                        <div class="flex items-center gap-3 pt-2 border-t border-border">
-                            <div
-                                class="w-10 h-10 rounded-full bg-primary-light text-primary font-bold flex items-center justify-center text-xs">
-                                AK</div>
-                            <div>
-                                <h4 class="text-xs font-bold text-dark">Ananya Kapoor</h4>
-                                <p class="text-[10px] text-muted">Bandra West, Mumbai • Korean Facial</p>
+                            <!-- User -->
+                            <div class="flex items-center gap-3 pt-3 border-t border-border">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-light text-primary font-bold flex items-center justify-center text-xs">
+                                    MB </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-dark"> Manasavi Balsara </h4>
+                                    <p class="text-[10px] text-muted"> jun 10, 2024 </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Review 2 -->
-                    <div class="swiper-slide bg-white p-7 rounded-3xl border border-border shadow-sm space-y-4">
-                        <div class="flex items-center gap-1 text-warning">
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                        </div>
-                        <p class="text-xs sm:text-sm text-text italic leading-relaxed">
-                            "I was hesitant about laser at home, but their machine had genuine contact cooling.
-                            Completely painless session with zero redness. Truly 5-star service."
-                        </p>
-                        <div class="flex items-center gap-3 pt-2 border-t border-border">
-                            <div
-                                class="w-10 h-10 rounded-full bg-purple-100 text-purple font-bold flex items-center justify-center text-xs">
-                                RM</div>
-                            <div>
-                                <h4 class="text-xs font-bold text-dark">Rhea Mehta</h4>
-                                <p class="text-[10px] text-muted">Juhu, Mumbai • Laser Hair Reduction</p>
+                     <!-- 2.  -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="h-full bg-white p-7 rounded-3xl border border-border shadow-sm hover:shadow-lg transition-shadow duration-300 space-y-4">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-warning"> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i>
+                            </div>
+                            <!-- Review -->
+                            <p class="text-xs sm:text-sm text-text italic leading-relaxed"> "She is a perfect my leser sessions. Calm does her job well." </p>
+
+                            <!-- User -->
+                            <div class="flex items-center gap-3 pt-3 border-t border-border">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-light text-primary font-bold flex items-center justify-center text-xs">
+                                    RC </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-dark"> Ratna Chowdhary </h4>
+                                    <p class="text-[10px] text-muted"> jun 07, 2024 </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Review 3 -->
-                    <div class="swiper-slide bg-white p-7 rounded-3xl border border-border shadow-sm space-y-4">
-                        <div class="flex items-center gap-1 text-warning">
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-warning"></i>
-                        </div>
-                        <p class="text-xs sm:text-sm text-text italic leading-relaxed">
-                            "The U-Lipo slimming package gave me 3 cm reduction on my waist before my brother's wedding.
-                            Professional doctor guidance throughout."
-                        </p>
-                        <div class="flex items-center gap-3 pt-2 border-t border-border">
-                            <div
-                                class="w-10 h-10 rounded-full bg-secondary-light text-secondary font-bold flex items-center justify-center text-xs">
-                                PS</div>
-                            <div>
-                                <h4 class="text-xs font-bold text-dark">Pooja Sharma</h4>
-                                <p class="text-[10px] text-muted">Powai, Mumbai • Body Slimming</p>
+                     <!-- 3.  -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="h-full bg-white p-7 rounded-3xl border border-border shadow-sm hover:shadow-lg transition-shadow duration-300 space-y-4">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-warning"> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i>
+                            </div>
+                            <!-- Review -->
+                            <p class="text-xs sm:text-sm text-text italic leading-relaxed"> "She is a very hummable and experienced in her job." </p>
+
+                            <!-- User -->
+                            <div class="flex items-center gap-3 pt-3 border-t border-border">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-light text-primary font-bold flex items-center justify-center text-xs">
+                                    RK </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-dark"> Archana Naresh kshirsagar </h4>
+                                    <p class="text-[10px] text-muted"> jun 03, 2024 </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-                <div class="testimonial-pagination flex justify-center gap-2 mt-4"></div>
+                     <!-- 4.  -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="h-full bg-white p-7 rounded-3xl border border-border shadow-sm hover:shadow-lg transition-shadow duration-300 space-y-4">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-warning"> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i>
+                            </div>
+                            <!-- Review -->
+                            <p class="text-xs sm:text-sm text-text italic leading-relaxed"> "Nice Experience very good service." </p>
+
+                            <!-- User -->
+                            <div class="flex items-center gap-3 pt-3 border-t border-border">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-light text-primary font-bold flex items-center justify-center text-xs">
+                                    MP </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-dark"> Mrs Pawar </h4>
+                                    <p class="text-[10px] text-muted"> Apr 30, 2024 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- 5.  -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="h-full bg-white p-7 rounded-3xl border border-border shadow-sm hover:shadow-lg transition-shadow duration-300 space-y-4">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-warning"> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i> <i data-lucide="star"
+                                    class="w-4 h-4 fill-warning"></i>
+                            </div>
+                            <!-- Review -->
+                            <p class="text-xs sm:text-sm text-text italic leading-relaxed"> "Mahjabeen was wonderful helping me thru my first leser session explained and performed the process very smoothly and informatively." </p>
+
+                            <!-- User -->
+                            <div class="flex items-center gap-3 pt-3 border-t border-border">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-light text-primary font-bold flex items-center justify-center text-xs">
+                                    N </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-dark"> Nisheeta </h4>
+                                    <p class="text-[10px] text-muted"> Apr 07, 2024 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- Pagination -->
+                <div class="testimonial-pagination flex justify-center gap-2 mt-6"></div>
             </div>
         </div>
     </section>
@@ -2355,10 +2509,9 @@
                     <h4 class="text-xs font-bold uppercase tracking-wider text-secondary mb-4">Treatments</h4>
                     <ul class="space-y-2 text-xs text-white/75 list-none p-0 m-0">
                         <li><a href="treatments.html#laser-hair" class="hover:text-white">Laser Hair Reduction</a></li>
-                        <li><a href="treatment-details.html" class="hover:text-white">Korean Glass Skin</a></li>
-                        <li><a href="treatments.html#medi-facial" class="hover:text-white">Medi Facials</a></li>
-                        <li><a href="treatments.html#body-slimming" class="hover:text-white">Body Slimming</a></li>
-                        <li><a href="treatments.html#chemical-peels" class="hover:text-white">Chemical Peels</a></li>
+                        <li><a href="treatments.html#u-lipo&body-contouring" class="hover:text-white">U-Lipo & Body
+                                Contouring</a></li>
+                        <li><a href="treatments.html#medi-facial" class="hover:text-white">Facial Treatments</a></li>
                     </ul>
                 </div>
 
@@ -2366,9 +2519,9 @@
                     <h4 class="text-xs font-bold uppercase tracking-wider text-secondary mb-4">Support & Care</h4>
                     <ul class="space-y-2 text-xs text-white/75 list-none p-0 m-0 mb-4">
                         <li><a href="contact.html" class="hover:text-white">Help Center</a></li>
-                        <li><a href="booking.html" class="hover:text-white">Booking Guidelines</a></li>
-                        <li><a href="dashboard.html" class="hover:text-white">Customer Portal</a></li>
-                        <li><a href="contact.html" class="hover:text-white">Privacy & Terms</a></li>
+                        <!-- <li><a href="booking.html" class="hover:text-white">Booking Guidelines</a></li> -->
+                        <!-- <li><a href="dashboard.html" class="hover:text-white">Customer Portal</a></li> -->
+                        <!-- <li><a href="contact.html" class="hover:text-white">Privacy & Terms</a></li> -->
                     </ul>
                     <div class="text-xs text-white/60 space-y-1">
                         <p class="flex items-center gap-2"><i data-lucide="phone"
@@ -2581,6 +2734,110 @@
                     </button>
                 </div>
             </form>
+        </div>
+    </div>
+
+
+    <!-- ================= WRITE REVIEW MODAL ==================== -->
+    <!-- ========================================================= -->
+    <div id="reviewModal"
+        class="fixed inset-0 z-[10000] hidden items-center justify-center bg-black/60 backdrop-blur-sm px-4 py-6">
+        <!-- Modal -->
+        <div class="relative w-full max-w-lg max-h-[90vh] overflow-y-auto bg-white rounded-3xl shadow-2xl">
+            <!-- ================= MODAL HEADER ================= -->
+            <div
+                class="sticky top-0 z-10 bg-white px-6 sm:px-7 py-5 border-b border-border flex items-center justify-between">
+                <div> <span class="text-[10px] font-bold uppercase tracking-[2px] text-primary"> Client Feedback </span>
+                    <h3 class="text-xl sm:text-2xl font-bold font-serif text-dark mt-1"> Write a Review </h3>
+                </div>
+                <!-- Close -->
+                <button type="button" onclick="closeReviewModal()"
+                    class="w-9 h-9 rounded-full bg-gray-100 hover:bg-primary-light text-dark hover:text-primary flex items-center justify-center transition-colors">
+                    <i data-lucide="x" class="w-5 h-5"></i> </button>
+            </div>
+            <!-- ================= REVIEW FORM ================= -->
+
+            <form id="reviewForm" onsubmit="submitReview(event)" class="p-6 sm:p-7 space-y-5"> <!-- Name -->
+                <div>
+                    <label class="block text-xs font-bold text-dark mb-2"> Your Name </label> <input type="text"
+                        name="name" required placeholder="Enter your name"
+                        class="w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-dark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition">
+                </div>
+                <!-- Mobile -->
+                <div>
+                    <label class="block text-xs font-bold text-dark mb-2"> Mobile Number </label> <input type="tel"
+                        name="mobile" required placeholder="Enter mobile number"
+                        class="w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-dark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition">
+                </div>
+                <!-- Treatment -->
+                <div>
+                    <label class="block text-xs font-bold text-dark mb-2"> Treatment </label> <select name="treatment"
+                        required
+                        class="w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-dark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition">
+                        <option value="">Select treatment</option>
+                        <option>Korean Glass Skin Facial</option>
+                        <option>Laser Hair Reduction</option>
+                        <option>Medical Medi-Facial</option>
+                        <option>Body Slimming & U-Lipo</option>
+                        <option>Chemical Peels</option>
+                        <option>Skin Rejuvenation</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <!-- Rating -->
+                <div>
+                    <label class="block text-xs font-bold text-dark mb-2"> Your Rating </label>
+                    <div id="ratingStars" class="flex items-center gap-2"> <button type="button" onclick="setRating(1)"
+                            data-rating="1" class="rating-star hover:text-warning transition"
+                            style="background-color: transparent !important; color: #a66373 !important;">
+                            <i data-lucide="star" class="w-7 h-7"></i>
+                        </button>
+                        <button type="button" onclick="setRating(2)" data-rating="2"
+                            class="rating-star hover:text-warning transition"
+                            style="background-color: transparent !important; color: #a66373 !important;"> <i
+                                data-lucide="star" class="w-7 h-7"></i>
+                        </button>
+                        <button type="button" onclick="setRating(3)" data-rating="3"
+                            class="rating-star hover:text-warning transition"
+                            style="background-color: transparent !important; color: #a66373 !important;"> <i
+                                data-lucide="star" class="w-7 h-7"></i>
+                        </button>
+                        <button type="button" onclick="setRating(4)" data-rating="4"
+                            class="rating-star hover:text-warning transition"
+                            style="background-color: transparent !important; color: #a66373 !important;"> <i
+                                data-lucide="star" class="w-7 h-7"></i>
+                        </button>
+                        <button type="button" onclick="setRating(5)" data-rating="5"
+                            class="rating-star hover:text-warning transition"
+                            style="background-color: transparent !important; color: #a66373 !important;"> <i
+                                data-lucide="star" class="w-7 h-7"></i>
+                        </button>
+                    </div>
+                    <input type="hidden" id="reviewRating" name="rating" value="">
+                    <p id="ratingError" class="hidden text-[11px] text-red-500 mt-1"> Please select a rating. </p>
+                </div> <!-- Review -->
+                <div>
+                    <label class="block text-xs font-bold text-dark mb-2"> Your Review </label>
+                    <textarea name="review" required rows="4" maxlength="500" placeholder="Share your experience..."
+                        class="w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-dark outline-none resize-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition"></textarea>
+                </div> <!-- Submit -->
+                <button type="submit"
+                    class="w-full py-3.5 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary-dark shadow-md hover:shadow-lg transition-all duration-300">
+                    Submit Review
+                </button>
+            </form>
+            <!-- ================= SUCCESS MESSAGE ================= -->
+            <div id="reviewSuccess" class="hidden p-8 text-center">
+                <div
+                    class="w-16 h-16 mx-auto rounded-full bg-primary-light text-primary flex items-center justify-center mb-4">
+                    <i data-lucide="check" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold font-serif text-dark"> Thank You! </h3>
+                <p class="text-sm text-muted mt-2"> Your review has been submitted successfully. </p> <button
+                    type="button" onclick="closeReviewModal()"
+                    class="mt-6 px-6 py-3 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary-dark transition">
+                    Done </button>
+            </div>
         </div>
     </div>
 
