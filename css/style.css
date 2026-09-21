@@ -27,10 +27,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.font-serif {
-    font-family: 'DM Serif Display', Georgia, serif;
-}
-
 /* ================= ALL BUTTONS STYLING (#A66373) ================= */
 button:not([class*="bg-transparent"]):not([class*="bg-white"]):not(.modal-close-btn):not(.faq-question):not(.swiper-pagination-bullet),
 .btn-primary,
@@ -42,7 +38,7 @@ a[href="#bookingModal"]:not([class*="text-"]):not([class*="bg-transparent"]),
 [data-open-modal="booking"]:not([class*="text-"]):not([class*="bg-transparent"]),
 [data-bs-target="#bookingModal"]:not([class*="text-"]):not([class*="bg-transparent"]),
 .treatment-filter-btn.bg-primary {
-    background-color: #A66373 !important;
+    background-color: #A66373;
     border-color: #A66373 !important;
     color: #FFFFFF !important;
     transition: all 0.25s ease-in-out;
@@ -464,4 +460,171 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
         height: 115px;
     }
 
+}
+
+
+
+/* header css  */
+
+/* ---------------------------------------------
+       Treatments Mega Menu
+    --------------------------------------------- */
+
+.has-mega-menu:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+}
+
+
+/* ---------------------------------------------
+       Concerns Dropdown
+    --------------------------------------------- */
+
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+/* ---------------------------------------------
+       Mega Menu Links
+    --------------------------------------------- */
+
+.mega-link {
+    display: block;
+    padding: 0.25rem 0.375rem;
+    font-size: 9.5px;
+    line-height: 1.25rem;
+    border-radius: 0.375rem;
+    color: #66555C;
+    transition: all 0.2s ease;
+}
+
+
+.mega-link:hover {
+    background: #FCE8EA;
+    color: #D92734;
+}
+
+
+/* Facial Links */
+.facial-link:hover {
+    background: #F4E8DE;
+    color: #A66373;
+}
+
+
+/* Body Links */
+.body-link:hover {
+    background: #EBE6FD;
+    color: #6300ED;
+}
+
+
+/* ---------------------------------------------
+       Smooth Animation
+    --------------------------------------------- */
+
+.mega-menu,
+.dropdown-menu {
+    will-change: transform, opacity;
+}
+
+
+/* ---------------------------------------------
+       Prevent Mega Menu Overflow
+    --------------------------------------------- */
+
+@media (max-width: 1100px) and (min-width: 1024px) {
+
+    .mega-menu {
+        width: 570px !important;
+    }
+
+    nav {
+        gap: 1rem !important;
+    }
+
+}
+
+
+
+/* Expert css  */
+
+
+
+
+
+.expert-card {
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.expert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(43, 26, 32, .12);
+}
+
+.doctor-image {
+    transition: transform .5s ease;
+}
+
+.expert-card:hover .doctor-image {
+    transform: scale(1.06);
+}
+
+.badge-pop {
+    animation: badgePop .8s ease-in-out infinite alternate;
+}
+
+@keyframes badgePop {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+}
+
+.hero-pattern {
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, .08) 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 30%, rgba(255, 255, 255, .06) 0 2px, transparent 3px),
+        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, .06) 0 2px, transparent 3px);
+    background-size: 100px 100px;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 68px;
+    }
+}
+
+
+/* User dashboard CSS  */
+
+#dashboardSidebar > div:first-child {
+    scrollbar-width: thin;
+    scrollbar-color: #d8b9c0 transparent;
+}
+
+#dashboardSidebar > div:first-child::-webkit-scrollbar {
+    width: 5px;
+}
+
+#dashboardSidebar > div:first-child::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#dashboardSidebar > div:first-child::-webkit-scrollbar-thumb {
+    background: #d8b9c0;
+    border-radius: 10px;
+}
+
+#dashboardSidebar > div:first-child::-webkit-scrollbar-thumb:hover {
+    background: #A66373;
 }

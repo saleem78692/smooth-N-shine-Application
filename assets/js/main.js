@@ -12,8 +12,7 @@ const servicesData = {
       duration: "1 hr 15 mins",
       badge: null,
       subtitle: null,
-      image:
-        "https://images.unsplash.com/photo-1643630661247-2474f10e4f70?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dXBwZXIlMjBsaXB8ZW58MHx8MHx8fDA%3D",
+      image: "assets/images/upper-lip.png",
       initialQty: 0,
     },
 
@@ -24,8 +23,7 @@ const servicesData = {
       duration: "1 hr 30 mins",
       badge: "Most Booked",
       subtitle: null,
-      image:
-        "https://plus.unsplash.com/premium_photo-1661497566854-7a75d3e98996?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fHx8fHx8",
+      image: "assets/images/full-hand.webp",
       initialQty: 0,
     },
 
@@ -36,8 +34,7 @@ const servicesData = {
       duration: "1 hr 30 mins",
       badge: "Most Booked",
       subtitle: null,
-      image:
-        "https://plus.unsplash.com/premium_photo-1661726996340-8398be0d48ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVncyUyMGxhc2VyJTIwcmVkdWN0aW9ufGVufDB8fDB8fHww",
+      image: "assets/images/legs1.jpeg",
       initialQty: 0,
     },
 
@@ -48,34 +45,22 @@ const servicesData = {
       duration: "1 hr 30 mins",
       badge: "Most Booked",
       subtitle: null,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2qc3Tu4NamtdO0yGRw_0VxAtuSQGuJf5oSHtuqfEIIg&s=10",
+      image: "https://barewaxingandlaser.com/wp-content/uploads/2026/03/Bare-Waxing-And-Laser-Waxa-nd-Skincare-Huntington-Beach-Laser-Hair-Removal-for-Womens-Lower-Backs.jpg",
       initialQty: 0,
     },
 
     {
       id: "stomach-1",
-      title: "Stomach",
-      price: 2500,
+      title: "Under Arms",
+      price: 1079,
       duration: "1 hr 30 mins",
       badge: "Most Booked",
       subtitle: null,
-      image:
-        "https://images.unsplash.com/photo-1768479619859-8ee2556a04b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHN0b21hY2glMjBib2R5JTIwY29udG91cmluZ3xlbnwwfHwwfHx8MA%3D%3D",
+      image: "assets/images/underarms.png",
       initialQty: 0,
     },
 
-    {
-      id: "pedi-1",
-      title: "Korean Mani & Pedi",
-      price: 3599,
-      duration: "1 hr 55 mins",
-      badge: "Candle Massage",
-      subtitle: null,
-      image:
-        "https://images.unsplash.com/photo-1647004692483-c5d942fe1137?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGtvcmVhbiUyMGZhY2lhbHxlbnwwfHwwfHx8MA%3D%3D",
-      initialQty: 0,
-    },
+   
   ],
 
   /* ================= HYDRAGLO / FACIAL ================= */
@@ -142,13 +127,12 @@ const servicesData = {
 
     {
       id: "facial-6",
-      title: "Underarms",
-      price: 1079,
+      title: "Buttocks",
+      price: 3599,
       duration: "1 hr 10 mins",
       badge: "Skin Care",
       subtitle: "Helps Improve Uneven Skin Tone",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Kk3R3GV2wT5NnncwCr1hGq65RM2jDxi-IRPn7C8kfA&s=10",
+      image: "assets/images/buttocks1.jpeg",
       initialQty: 0,
     },
 
@@ -159,8 +143,7 @@ const servicesData = {
       duration: "1 hr 15 mins",
       badge: "Skin Care",
       subtitle: "Deep Cleanse & Clarifying Care",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7U0SldyaKoL7ersq6bFc62sgItYgttmFlZMYFQ5hkZg&s=10",
+      image: "assets/images/bikini1.avif",
       initialQty: 0,
     },
 
@@ -171,8 +154,7 @@ const servicesData = {
       duration: "2 hr 00 mins",
       badge: "Combo",
       subtitle: "Complete Glow & Polish",
-      image:
-        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80",
+      image: "assets/images/full-body(7parts).png",
       initialQty: 0,
     },
   ],
@@ -186,8 +168,7 @@ const servicesData = {
       duration: "2 hr 30 mins",
       badge: "Best Value",
       subtitle: "Painless Cooling Technology",
-      image:
-        "https://plus.unsplash.com/premium_photo-1661255395799-a300794397fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZhY2UlMjBmYWNpYWx8ZW58MHx8MHx8fDA%3D",
+      image: "https://www.informclinic.com/backend/service/section/facialhair1.jpg",
       initialQty: 0,
     },
   ],
@@ -462,8 +443,7 @@ function updateQuantity(serviceId, change) {
   if (newQty <= 0) {
     delete cart[serviceId];
   } else {
-
-  /* ================= ADD / UPDATE ITEM ================= */
+    /* ================= ADD / UPDATE ITEM ================= */
     cart[serviceId] = {
       ...serviceItem,
       qty: newQty,
@@ -507,8 +487,7 @@ function switchCategory(category) {
         border-pink-200/50
         `;
     } else {
-
-    /* ================= INACTIVE ================= */
+      /* ================= INACTIVE ================= */
       tabBtn.className = `
         px-5 py-2.5
         rounded-full
@@ -590,8 +569,7 @@ function updateCartSummary() {
 
     badgeEl.classList.add("badge-pop");
   } else {
-
-  /* ================= HIDE ================= */
+    /* ================= HIDE ================= */
     badgeEl.classList.add("hidden");
   }
 }
@@ -611,3 +589,588 @@ document.addEventListener("DOMContentLoaded", function () {
     lucide.createIcons();
   }
 });
+
+// Treatments js
+
+/* =========================================================
+           TREATMENTS DATA
+        ========================================================= */
+
+const treatments = [
+  /* ================= LASER ================= */
+
+  {
+    name: "Upper Lip",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹1,079",
+    image: "assets/images/upper-lip.png",
+  },
+
+  {
+    name: "Chin",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹1,079",
+    image:
+      "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80",
+  },
+
+  {
+    name: "Side Locks",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹1,079",
+    image: "assets/images/side-lockes.png",
+  },
+
+  {
+    name: "Underarms",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹1,079",
+    image: "assets/images/underarms.png",
+  },
+
+  {
+    name: "Neck Line",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹1,179",
+    image: "assets/images/neck.jpeg",
+  },
+
+  {
+    name: "Midriff",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹1,439",
+    image: "https://www.eveclinics.co.uk/wp-content/uploads/2019/05/tummy-tuck-600x400.png",
+  },
+
+  {
+    name: "Face",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹3,599",
+    image: "https://www.informclinic.com/backend/service/section/facialhair1.jpg",
+  },
+
+  {
+    name: "Hands",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹3,599",
+    image: "assets/images/full-hand.webp",
+  },
+
+  {
+    name: "Front",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹3,599",
+    image: "https://soleabeautylounge.com/wp-content/uploads/2022/11/laser-treatment-on-the-chest.jpg",
+  },
+
+  {
+    name: "Back",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹3,599",
+    image: "https://barewaxingandlaser.com/wp-content/uploads/2026/03/Bare-Waxing-And-Laser-Waxa-nd-Skincare-Huntington-Beach-Laser-Hair-Removal-for-Womens-Lower-Backs.jpg",
+  },
+
+  {
+    name: "Bikini",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹3,599",
+    image: "assets/images/bikini1.avif",
+  },
+
+  {
+    name: "Buttocks",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹3,599",
+    image: "assets/images/buttocks1.jpeg",
+  },
+
+  {
+    name: "Legs",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹4,799",
+    image: "assets/images/legs1.jpeg",
+  },
+
+  {
+    name: "Full Body (5 Part)",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹12,000",
+    image: "assets/images/full-body(5parts).png",
+  },
+
+  {
+    name: "Full Body (7 Part)",
+    category: "laser",
+    label: "Laser Hair Reduction",
+    price: "₹14,000",
+    image: "assets/images/full-body(7parts).png",
+  },
+
+  /* ================= BODY ================= */
+
+  {
+    name: "U-Lipo",
+    category: "body",
+    label: "Body Slimming",
+    price: "₹2,500",
+    image: "assets/images/u-lipo.png",
+  },
+
+  {
+    name: "Stomach Contouring",
+    category: "body",
+    label: "Body Contouring",
+    price: "₹2,500",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-65F2-8NOlU9VA8A-jAwRFWhMkASRcmEeSYVTApwTLqLDR-PWII7-jg&s=10"
+  },
+
+  {
+    name: "Thigh Contouring",
+    category: "body",
+    label: "Body Contouring",
+    price: "₹2,500",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVmU5UJsfCcLJhqdkmjCzmyPwuwWdThpDkDATfPBNUg&s=10"
+  },
+
+  {
+    name: "Arm Contouring",
+    category: "body",
+    label: "Body Contouring",
+    price: "₹2,500",
+    image:"https://ayubplasticsurgery.com/img/Plastic-surgery-armliftslider1.jpg"
+  },
+
+  /* ================= FACIAL ================= */
+
+  {
+    name: "Korean Facial",
+    category: "facial",
+    label: "Facial",
+    price: "₹3,599",
+    image:
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80",
+  },
+
+  {
+    name: "Medi Facial",
+    category: "facial",
+    label: "Facial",
+    price: "₹3,599",
+    image:
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80",
+  },
+
+  {
+    name: "Polishing Combined with Facial",
+    category: "facial",
+    label: "Facial",
+    price: "₹2,999",
+    image:
+      "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=80",
+  },
+
+  {
+    name: "Body Diamond Polish",
+    category: "facial",
+    label: "Body Polish",
+    price: "₹2,399",
+    image:
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+  },
+
+  {
+    name: "RF with Anti-Aging Facial",
+    category: "facial",
+    label: "Anti-Aging Facial",
+    price: "₹2,399",
+    image:
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+/* =========================================================
+           RENDER TREATMENTS
+        ========================================================= */
+
+function renderTreatments(filter = "all", search = "") {
+  const grid = document.getElementById("treatmentGrid");
+
+  const noResults = document.getElementById("noResults");
+
+  const searchText = search.toLowerCase().trim();
+
+  const filtered = treatments.filter((item) => {
+    const categoryMatch = filter === "all" || item.category === filter;
+
+    const searchMatch =
+      item.name.toLowerCase().includes(searchText) ||
+      item.label.toLowerCase().includes(searchText);
+
+    return categoryMatch && searchMatch;
+  });
+
+  grid.innerHTML = "";
+
+  if (filtered.length === 0) {
+    noResults.classList.remove("hidden");
+
+    return;
+  }
+
+  noResults.classList.add("hidden");
+
+  filtered.forEach((item) => {
+    const detailsUrl = `treatment-details.html?treatment=${encodeURIComponent(item.name)}`;
+
+    const card = document.createElement("div");
+
+    card.className =
+      "treatment-card bg-white rounded-3xl overflow-hidden border border-border";
+
+    card.innerHTML = `
+
+                    <!-- IMAGE -->
+                    <a
+                        href="${detailsUrl}"
+                        class="block relative h-56 overflow-hidden group"
+                        aria-label="View ${item.name} details">
+
+                        <img
+                            src="${item.image}"
+                            alt="${item.name}"
+                            class="treatment-image w-full h-full object-cover"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80'">
+
+                        <div
+                            class="image-overlay absolute inset-0">
+                        </div>
+
+
+                        <!-- Category -->
+                        <div
+                            class="absolute top-4 left-4">
+
+                            <span
+                                class="bg-white/95 backdrop-blur-sm text-primary text-[11px] font-bold px-3 py-1.5 rounded-full">
+
+                                ${item.label}
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Price -->
+                        <div
+                            class="absolute bottom-4 left-4 text-white">
+
+                            <div class="text-xs opacity-80">
+                                Starting from
+                            </div>
+
+                            <div class="text-xl font-bold">
+                                ${item.price}
+                            </div>
+
+                        </div>
+
+
+                        <!-- Arrow -->
+                        <div
+                            class="absolute right-4 bottom-4 w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+
+                            <i data-lucide="arrow-up-right"
+                                class="w-5 h-5">
+                            </i>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- CONTENT -->
+                    <div class="p-5">
+
+                        <div
+                            class="text-xs uppercase tracking-widest text-primary font-bold mb-2">
+
+                            ${item.category}
+
+                        </div>
+
+
+                        <!-- TITLE CLICKABLE -->
+                        <a
+                            href="${detailsUrl}"
+                            class="group inline-block">
+
+                            <h3
+                                class="text-xl font-bold text-dark group-hover:text-primary transition">
+
+                                ${item.name}
+
+                            </h3>
+
+                        </a>
+
+
+                        <p
+                            class="text-sm text-muted mt-2">
+
+                            Single session • Professional treatment
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between gap-3 mt-5">
+
+                            <a
+                                href="${detailsUrl}"
+                                class="text-sm font-bold text-primary hover:underline">
+
+                                View Details
+
+                            </a>
+
+
+                            <!-- IMPORTANT:
+                                 Book button is NOT inside <a>
+                                 so it will open modal properly -->
+
+                            <button
+                                type="button"
+                                onclick='openBooking(${JSON.stringify(item.name)})'
+                                class="bg-primary hover:bg-primary-dark text-white px-4 py-2.5 rounded-full text-sm font-bold transition">
+
+                                Book Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+    grid.appendChild(card);
+  });
+
+  /*
+   * Lucide icons are dynamically added
+   * after innerHTML.
+   */
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+/* =========================================================
+           FILTER
+        ========================================================= */
+
+let currentFilter = "all";
+
+document.querySelectorAll(".filter-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    currentFilter = button.dataset.filter;
+
+    const search = document.getElementById("treatmentSearch").value;
+
+    renderTreatments(currentFilter, search);
+  });
+});
+
+/* =========================================================
+           SEARCH
+        ========================================================= */
+
+document
+  .getElementById("treatmentSearch")
+  .addEventListener("input", function () {
+    renderTreatments(currentFilter, this.value);
+  });
+
+/* =========================================================
+           BOOKING MODAL
+        ========================================================= */
+
+function openBooking(treatment = "") {
+  const modal = document.getElementById("bookingModal");
+
+  const selectedTreatment = document.getElementById("selectedTreatment");
+
+  const treatmentSelect = document.getElementById("treatmentSelect");
+
+  selectedTreatment.value = treatment;
+
+  /*
+   * Try to select matching treatment
+   */
+
+  if (treatment) {
+    let found = false;
+
+    for (const option of treatmentSelect.options) {
+      if (option.value.toLowerCase() === treatment.toLowerCase()) {
+        treatmentSelect.value = option.value;
+
+        found = true;
+
+        break;
+      }
+    }
+
+    /*
+     * If exact option isn't available,
+     * add it temporarily.
+     */
+
+    if (!found) {
+      const option = document.createElement("option");
+
+      option.value = treatment;
+      option.textContent = treatment;
+
+      treatmentSelect.appendChild(option);
+
+      treatmentSelect.value = treatment;
+    }
+  }
+
+  modal.classList.add("show");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closeBooking() {
+  const modal = document.getElementById("bookingModal");
+
+  modal.classList.remove("show");
+
+  document.body.style.overflow = "";
+}
+
+/* =========================================================
+           SUBMIT BOOKING
+        ========================================================= */
+
+function submitBooking(event) {
+  event.preventDefault();
+
+  const form = document.getElementById("bookingForm");
+
+  const success = document.getElementById("bookingSuccess");
+
+  success.classList.remove("hidden");
+
+  setTimeout(() => {
+    success.classList.add("hidden");
+
+    form.reset();
+
+    closeBooking();
+  }, 2500);
+}
+
+/* =========================================================
+           MODAL OUTSIDE CLICK
+        ========================================================= */
+
+document
+  .getElementById("bookingModal")
+  .addEventListener("click", function (event) {
+    if (event.target === this) {
+      closeBooking();
+    }
+  });
+
+/* =========================================================
+           ESCAPE KEY
+        ========================================================= */
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeBooking();
+
+    closeMobileMenu();
+  }
+});
+
+/* =========================================================
+           MOBILE MENU
+        ========================================================= */
+
+function openMobileMenu() {
+  document.getElementById("mobileMenu").classList.add("open");
+
+  document.getElementById("mobileOverlay").classList.remove("hidden");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closeMobileMenu() {
+  document.getElementById("mobileMenu").classList.remove("open");
+
+  document.getElementById("mobileOverlay").classList.add("hidden");
+
+  document.body.style.overflow = "";
+}
+
+/* =========================================================
+           CATEGORY FROM URL
+           Example:
+           treatments.html?category=laser
+        ========================================================= */
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const urlCategory = urlParams.get("category");
+
+if (urlCategory && ["laser", "body", "facial"].includes(urlCategory)) {
+  currentFilter = urlCategory;
+
+  document.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.classList.remove("active");
+
+    if (btn.dataset.filter === urlCategory) {
+      btn.classList.add("active");
+    }
+  });
+}
+
+/* =========================================================
+           INITIAL RENDER
+        ========================================================= */
+
+renderTreatments(currentFilter, "");
+
+/* =========================================================
+           INITIAL LUCIDE
+        ========================================================= */
+
+if (window.lucide) {
+  lucide.createIcons();
+}

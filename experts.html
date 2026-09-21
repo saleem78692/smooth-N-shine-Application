@@ -4,151 +4,1522 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meet Our Certified Dermatologists & Experts | Smooth N Shine</title>
-    <meta name="description" content="Meet our board-certified MD Dermatologists, laser surgeons and cosmetic doctors." />
 
+    <title>Meet Our Certified Dermatologists & Experts | Smooth N Shine</title>
+
+    <meta name="description" content="Meet the certified dermatologists and aesthetic experts at Smooth N Shine." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+     <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#A66373', dark: '#7E4150', light: '#FAF2EF' },
-                        purple: { DEFAULT: '#A66373', light: '#DFC2C9' },
-                        secondary: { DEFAULT: '#C57668', dark: '#A85B4E', light: '#EAA597' },
-                        coral: { DEFAULT: '#C57668', light: '#EAA597' },
-                        lavender: { DEFAULT: '#DFC2C9', light: '#FAF4F0' },
+                        primary: {
+                            DEFAULT: '#A66373',
+                            dark: '#7E4150',
+                            light: '#FAF2EF'
+                        },
+
+                        purple: {
+                            DEFAULT: '#A66373',
+                            dark: '#7E4150',
+                            light: '#DFC2C9'
+                        },
+
+                        secondary: {
+                            DEFAULT: '#C57668',
+                            dark: '#A85B4E',
+                            light: '#EAA597'
+                        },
+
+                        coral: {
+                            DEFAULT: '#C57668',
+                            dark: '#A85B4E',
+                            light: '#EAA597'
+                        },
+
+                        lavender: {
+                            DEFAULT: '#DFC2C9',
+                            light: '#FAF4F0'
+                        },
+
                         dark: '#2B1A20',
                         text: '#2B1A20',
                         muted: '#78636B',
                         background: '#FAF4F0',
                         border: '#ECDAD5',
+
                         success: '#238B65',
                         warning: '#C57668'
                     },
+
                     fontFamily: {
-                        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
-                        sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+                        serif: [
+                            '"DM Serif Display"',
+                            'Georgia',
+                            'serif'
+                        ],
+
+                        sans: [
+                            '"DM Sans"',
+                            'system-ui',
+                            'sans-serif'
+                        ]
+                    },
+
+                    boxShadow: {
+                        soft: '0 10px 40px rgba(43,26,32,0.08)',
+                        card: '0 20px 50px rgba(43,26,32,0.10)'
                     }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+
+
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-background text-text font-sans antialiased">
 
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
+<body class="bg-background text-text antialiased">
+
+
+    <!-- ================= TOP OFFER BAR ================= -->
+    <div class="bg-[#2B1A20] text-xs sm:text-sm py-2.5 px-4 text-white">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="text-[#EAA597] font-bold">✨ Special Offer:</span>
+                <span class="text-white/90">Get exclusive savings of up to 40% on your first doorstep booking!</span>
+            </div>
+            <a href="#bookingModal" data-open-modal="booking"
+                class="hidden sm:inline-flex items-center gap-1 text-[#EAA597] hover:text-[#DFC2C9] font-semibold transition-colors">
+                Book Now <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- ================= STICKY HEADER ================= -->
+    <header
+        class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-[0_4px_20px_rgba(32,18,15,0.04)]">
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <div class="h-20 flex items-center justify-between">
-                <a href="index.html" class="flex items-center shrink-0" title="Smooth N Shine">
-                    <img src="assets/images/logo.svg" alt="Smooth N Shine" class="site-logo-img h-11 w-auto object-contain">
+
+                <!-- ================= LOGO ================= -->
+                <a href="index.html" class="flex items-center shrink-0 no-underline group py-1"
+                    title="Smooth N Shine Aesthetics">
+
+                    <img src="assets/images/logo.svg" alt="Smooth N Shine - Aesthetic Home Service"
+                        class="site-logo-img h-11 w-auto object-contain">
+
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-7">
-                    <a href="index.html" class="text-sm font-medium text-text hover:text-primary">Home</a>
-                    <a href="about.html" class="text-sm font-medium text-text hover:text-primary">About Us</a>
-                    <a href="treatments.html" class="text-sm font-medium text-text hover:text-primary">Treatments</a>
-                    <a href="experts.html" class="text-sm font-semibold text-primary">Experts</a>
-                    <a href="offers.html" class="text-sm font-medium text-text hover:text-primary">Offers</a>
-                    <a href="blogs.html" class="text-sm font-medium text-text hover:text-primary">Blogs</a>
-                    <a href="contact.html" class="text-sm font-medium text-text hover:text-primary">Contact</a>
+
+                <!-- ================= DESKTOP NAVIGATION ================= -->
+                <nav class="hidden lg:flex items-center gap-7 h-full">
+
+                    <!-- About -->
+                    <a href="about.html" class="text-sm font-medium text-text hover:text-primary transition-colors">
+                        About Us
+                    </a>
+
+
+                    <!-- =========================================================
+                     TREATMENTS
+                ========================================================== -->
+                    <div class="relative h-full flex items-center has-mega-menu cursor-pointer">
+
+                        <a href="treatments.html" class="text-sm font-medium text-text hover:text-primary
+                               flex items-center gap-1.5 transition-colors">
+
+                            Treatments
+
+                            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-muted transition-transform">
+                            </i>
+
+                        </a>
+
+
+                        <!-- ================= COMPACT MEGA MENU ================= -->
+                        <div class="mega-menu absolute left-1/2 top-full -translate-x-1/2 pt-1
+                                w-[620px] max-w-[calc(100vw-24px)]
+                                opacity-0 invisible translate-y-2
+                                pointer-events-none
+                                transition-all duration-300 z-[9999]">
+
+                            <div class="relative overflow-hidden
+                                    bg-white
+                                    border border-[#E9E2DE]
+                                    rounded-[18px]
+                                    shadow-[0_15px_45px_rgba(32,18,15,0.14)]">
+
+                                <!-- Decorative Background -->
+                                <div class="absolute -top-16 -right-16
+                                        w-32 h-32 rounded-full
+                                        bg-[#FCE8EA] blur-3xl opacity-60">
+                                </div>
+
+
+                                <div class="relative grid grid-cols-3">
+
+
+                                    <!-- =================================================
+                                     SKIN & LASER
+                                ================================================== -->
+                                    <div class="px-4 py-4 border-r border-[#E9E2DE]">
+
+                                        <!-- Heading -->
+                                        <div class="flex items-center gap-2 mb-2.5">
+
+                                            <div class="flex items-center justify-center
+                                                    w-8 h-8 rounded-lg
+                                                    bg-[#FCE8EA] text-[#D92734]">
+
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.7" d="M12 3v18M3 12h18
+                                                       M5.6 5.6l12.8 12.8
+                                                       M18.4 5.6L5.6 18.4" />
+
+                                                </svg>
+
+                                            </div>
+
+                                            <div>
+
+                                                <h4 class="text-[11px] font-bold text-[#20120F]">
+                                                    Skin & Laser
+                                                </h4>
+
+                                                <p class="text-[8px] text-[#77706D]">
+                                                    Smooth • Clear • Radiant
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Skin Links -->
+                                        <div class="grid grid-cols-2 gap-x-1">
+
+                                            <a href="treatments.html#face-laser" class="mega-link">
+                                                Face Laser
+                                            </a>
+
+                                            <a href="treatments.html#upper-lip" class="mega-link">
+                                                Upper Lip
+                                            </a>
+
+                                            <a href="treatments.html#underarms" class="mega-link">
+                                                Underarms
+                                            </a>
+
+                                            <a href="treatments.html#legs" class="mega-link">
+                                                Legs
+                                            </a>
+
+                                            <a href="treatments.html#chin" class="mega-link">
+                                                Chin
+                                            </a>
+
+                                            <a href="treatments.html#side-locks" class="mega-link">
+                                                Side Locks
+                                            </a>
+
+                                            <a href="treatments.html#neck-lines" class="mega-link">
+                                                Neck Lines
+                                            </a>
+
+                                            <a href="treatments.html#midriff" class="mega-link">
+                                                Midriff
+                                            </a>
+
+                                            <a href="treatments.html#hands" class="mega-link">
+                                                Hands
+                                            </a>
+
+                                            <a href="treatments.html#front" class="mega-link">
+                                                Front
+                                            </a>
+
+                                            <a href="treatments.html#back" class="mega-link">
+                                                Back
+                                            </a>
+
+                                            <a href="treatments.html#bikini" class="mega-link">
+                                                Bikini
+                                            </a>
+
+                                            <a href="treatments.html#buttocks" class="mega-link">
+                                                Buttocks
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- =================================================
+                                     FACIAL RITUALS
+                                ================================================== -->
+                                    <div class="px-4 py-4 border-r border-[#E9E2DE]">
+
+                                        <!-- Heading -->
+                                        <div class="flex items-center gap-2 mb-2.5">
+
+                                            <div class="flex items-center justify-center
+                                                    w-8 h-8 rounded-lg
+                                                    bg-[#F4E8DE] text-[#B8906B]">
+
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.7" d="M12 3c4.5 3.5 7 7.2 7 10.5
+                                                       A7 7 0 015 13.5
+                                                       C5 10.2 7.5 6.5 12 3z" />
+
+                                                </svg>
+
+                                            </div>
+
+                                            <div>
+
+                                                <h4 class="text-[11px] font-bold text-[#20120F]">
+                                                    Facial Rituals
+                                                </h4>
+
+                                                <p class="text-[8px] text-[#77706D]">
+                                                    Glow • Hydrate • Renew
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Featured Treatment -->
+                                        <a href="treatment-details.html" class="group flex items-center justify-between
+                                               p-2.5 mb-2 rounded-lg
+                                               bg-[#FCF0F1]
+                                               border border-[#FCE8EA]
+                                               hover:border-[#D92734]
+                                               transition">
+
+                                            <div>
+
+                                                <div class="flex items-center gap-1">
+
+                                                    <span class="text-[10px] font-bold">
+                                                        Korean Glass Skin
+                                                    </span>
+
+                                                    <span class="px-1 py-[1px]
+                                                             rounded-full
+                                                             bg-[#D92734]
+                                                             text-white
+                                                             text-[6px]
+                                                             font-bold">
+                                                        POPULAR
+                                                    </span>
+
+                                                </div>
+
+                                                <p class="text-[8px] text-[#77706D]">
+                                                    Signature facial
+                                                </p>
+
+                                            </div>
+
+                                            <span class="text-[#D92734] text-xs">
+                                                →
+                                            </span>
+
+                                        </a>
+
+
+                                        <!-- Facial Links -->
+                                        <div class="space-y-0.5">
+
+                                            <a href="treatments.html#medi-facial" class="mega-link facial-link">
+                                                Medi Facial
+                                            </a>
+
+                                            <a href="treatments.html#facial-polishing" class="mega-link facial-link">
+                                                Facial Polishing
+                                            </a>
+
+                                            <a href="treatments.html#diamond-polish" class="mega-link facial-link">
+                                                Diamond Polish
+                                            </a>
+
+                                            <a href="treatments.html#rf-anti-aging-facial"
+                                                class="mega-link facial-link">
+                                                RF Anti-Aging
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- =================================================
+                                     BODY CONTOURING
+                                ================================================== -->
+                                    <div class="px-4 py-4">
+
+                                        <!-- Heading -->
+                                        <div class="flex items-center gap-2 mb-2.5">
+
+                                            <div class="flex items-center justify-center
+                                                    w-8 h-8 rounded-lg
+                                                    bg-[#EBE6FD] text-[#6300ED]">
+
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.7" d="M12 3c-3 3-6 5.5-6 10
+                                                       a6 6 0 0012 0
+                                                       c0-4.5-3-7-6-10z" />
+
+                                                </svg>
+
+                                            </div>
+
+                                            <div>
+
+                                                <h4 class="text-[11px] font-bold text-[#20120F]">
+                                                    Body Contouring
+                                                </h4>
+
+                                                <p class="text-[8px] text-[#77706D]">
+                                                    Tone • Shape • Define
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Body Links -->
+                                        <div class="space-y-0.5">
+
+                                            <a href="treatments.html#u-lipo" class="mega-link body-link">
+                                                U-Lipo
+                                            </a>
+
+                                            <a href="treatments.html#stomach-countring" class="mega-link body-link">
+                                                Stomach Contouring
+                                            </a>
+
+                                            <a href="treatments.html#thigh-countring" class="mega-link body-link">
+                                                Thigh Contouring
+                                            </a>
+
+                                            <a href="treatments.html#arm-countring" class="mega-link body-link">
+                                                Arm Contouring
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- CTA -->
+                                        <a href="#bookingModal" data-bs-toggle="modal" class="mt-3 flex items-center justify-between
+                                               rounded-lg
+                                               bg-[#20120F]
+                                               px-2.5 py-2
+                                               text-white
+                                               hover:bg-[#D92734]
+                                               transition">
+
+                                            <span class="text-[8px] font-semibold">
+                                                Need help choosing?
+                                            </span>
+
+                                            <span class="text-[9px] font-bold">
+                                                Book →
+                                            </span>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- ================= MEGA MENU FOOTER ================= -->
+                                <div class="flex items-center justify-between
+                                        px-4 py-2
+                                        bg-[#FAF8F7]
+                                        border-t border-[#E9E2DE]">
+
+                                    <span class="text-[8px] text-[#77706D]">
+                                        ✦ Professional treatments at your doorstep
+                                    </span>
+
+                                    <a href="contact.html" class="text-[8px] font-bold text-[#D92734]
+                                           hover:underline">
+                                        Talk to Expert →
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================================================
+                     CONCERNS DROPDOWN
+                ========================================================== -->
+                    <div class="relative h-full flex items-center has-dropdown cursor-pointer">
+
+                        <a href="concerns.html" class="text-sm font-medium text-text hover:text-primary
+                               flex items-center gap-1.5 transition-colors">
+
+                            Concerns
+
+                            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-muted">
+                            </i>
+
+                        </a>
+
+
+                        <div class="dropdown-menu absolute left-0 top-full pt-2
+                                w-60 opacity-0 invisible translate-y-2
+                                pointer-events-none
+                                transition-all duration-300">
+
+                            <div class="bg-white border border-border
+                                    rounded-2xl shadow-xl p-4
+                                    space-y-1 text-xs text-text">
+
+                                <a href="concerns.html?concern=scars" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Acne & Acne Scars
+                                </a>
+
+                                <a href="concerns.html?concern=melasma" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Pigmentation & Melasma
+                                </a>
+
+                                <a href="concerns.html?concern=lines" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Aging & Fine Lines
+                                </a>
+
+                                <a href="concerns.html?concern=skin" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Dull & Uneven Skin
+                                </a>
+
+                                <a href="concerns.html?concern=texture" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Open Pores & Texture
+                                </a>
+
+                                <a href="concerns.html?concern=hair" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Unwanted Body Hair
+                                </a>
+
+                                <a href="concerns.html?concern=management" class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                    Weight Management
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Other Navigation -->
+                    <a href="experts.html" class="text-sm font-medium text-text hover:text-primary transition-colors">
+                        Experts
+                    </a>
+
+                    <a href="offers.html" class="text-sm font-medium text-text hover:text-primary transition-colors">
+                        Offers
+                    </a>
+
+                    <a href="blogs.html" class="text-sm font-medium text-text hover:text-primary transition-colors">
+                        Blogs
+                    </a>
+
+                    <a href="contact.html" class="text-sm font-medium text-text hover:text-primary transition-colors">
+                        Contact
+                    </a>
+
                 </nav>
 
-                <div class="flex items-center gap-3">
-                    <a href="booking.html" class="h-10 px-5 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center gap-2 text-xs font-bold shadow-md">
-                        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
-                        <span>Book Appointment</span>
+
+                <!-- =============================================================
+                 DESKTOP RIGHT ACTIONS
+            ============================================================== -->
+                <div class="hidden lg:flex items-center gap-3">
+
+                    <!-- Location -->
+                    <div class="flex items-center gap-1.5
+                            text-xs font-semibold
+                            bg-background
+                            px-3.5 py-2
+                            rounded-full
+                            border border-border
+                            text-dark">
+
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary">
+                        </i>
+
+                        <span>Mumbai</span>
+
+                    </div>
+
+
+                    <!-- Search -->
+                    <a href="treatments.html" class="w-10 h-10
+                           rounded-full
+                           border border-border
+                           bg-white
+                           text-text
+                           flex items-center justify-center
+                           hover:bg-primary
+                           hover:text-white
+                           transition-colors">
+
+                        <i data-lucide="search" class="w-4 h-4">
+                        </i>
+
                     </a>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="text-xs font-bold text-text
+                           hover:text-primary
+                           px-3 py-2">
+
+                        Login
+
+                    </a>
+
+
+                    <!-- Book Appointment -->
+                    <a href="booking.html" class="h-10 px-5
+                           rounded-full
+                           bg-primary
+                           hover:bg-primary-dark
+                           text-white
+                           flex items-center justify-center
+                           gap-2
+                           text-xs font-bold
+                           transition-all
+                           shadow-[0_4px_15px_rgba(217,39,52,0.25)]">
+
+                        <i data-lucide="calendar" class="w-3.5 h-3.5">
+                        </i>
+
+                        <span>Book Appointment</span>
+
+                    </a>
+
                 </div>
+
+
+                <!-- =============================================================
+                 MOBILE HEADER ACTIONS
+            ============================================================== -->
+                <div class="flex lg:hidden items-center gap-2">
+
+                    <!-- Search -->
+                    <a href="treatments.html" class="w-9 h-9
+                           rounded-full
+                           bg-background
+                           border border-border
+                           flex items-center justify-center
+                           text-text">
+
+                        <i data-lucide="search" class="w-4 h-4">
+                        </i>
+
+                    </a>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="w-9 h-9
+                           rounded-full
+                           bg-background
+                           border border-border
+                           flex items-center justify-center
+                           text-text">
+
+                        <i data-lucide="user" class="w-4 h-4">
+                        </i>
+
+                    </a>
+
+
+                    <!-- Hamburger -->
+                    <button id="mobileHamburgerBtn" type="button" aria-label="Toggle Menu" class="w-9 h-9
+                           rounded-full
+                           bg-primary
+                           text-white
+                           flex items-center justify-center">
+
+                        <i data-lucide="menu" class="w-5 h-5">
+                        </i>
+
+                    </button>
+
+                </div>
+
             </div>
+
         </div>
+
     </header>
 
-    <!-- HEADER HERO BANNER -->
-    <section class="bg-dark text-white py-14 lg:py-16 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="text-xs font-bold uppercase tracking-[2px] text-secondary">Medical Leadership</span>
-            <h1 class="text-3xl sm:text-5xl font-bold font-serif text-white mt-1">Our Board of Dermatologists</h1>
-            <p class="text-xs sm:text-sm text-white/75 mt-2 max-w-xl">
-                Every doorstep aesthetic treatment is designed, calibrated, and supervised by certified MD Dermatologists.
-            </p>
+    <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+    <div id="drawerBackdrop"
+        class="fixed inset-0 bg-dark/60 backdrop-blur-sm z-[9998] hidden opacity-0 transition-opacity duration-300">
+    </div>
+    <div id="mobileNavDrawer"
+        class="fixed top-0 right-0 bottom-0 w-[300px] sm:w-[340px] bg-white z-[9999] shadow-2xl translate-x-full transition-transform duration-300 flex flex-col justify-between overflow-y-auto">
+        <div class="p-6">
+            <!-- Header in drawer -->
+            <div class="flex items-center justify-between pb-6 border-b border-border">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="Smooth N Shine" class="h-8 w-auto object-contain">
+                </a>
+                <button id="closeDrawerBtn" type="button"
+                    class="w-8 h-8 rounded-full bg-background flex items-center justify-center text-muted hover:text-dark transition-colors">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+
+            <!-- Drawer Links -->
+            <div class="py-6 space-y-4 text-sm font-medium text-text">
+                <a href="index.html" class="block text-primary font-bold">Home</a>
+                <a href="about.html" class="block">About Us</a>
+                <a href="treatments.html" class="block">All Treatments</a>
+                <a href="offers.html" class="block">Exclusive Offers</a>
+                <a href="experts.html" class="block">Meet Dermatologists</a>
+                <a href="blogs.html" class="block">Skincare Blog</a>
+                <a href="contact.html" class="block">Contact & Coverage</a>
+                <a href="dashboard.html" class="block">User Dashboard</a>
+            </div>
         </div>
+
+        <div class="p-6 bg-background border-t border-border space-y-3">
+            <a href="booking.html"
+                class="w-full py-3 rounded-xl bg-primary text-white text-center font-bold text-xs flex items-center justify-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4"></i> Book Appointment
+            </a>
+            <div class="flex gap-2">
+                <a href="login.html"
+                    class="w-1/2 py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text bg-white">Login</a>
+                <a href="register.html"
+                    class="w-1/2 py-2.5 rounded-xl border border-border text-center text-xs font-semibold text-text bg-white">Register</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+    <section class="relative overflow-hidden bg-primary-light py-5 sm:py-10">
+
+        <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary/10">
+        </div>
+
+        <div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-secondary/10">
+        </div>
+
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+            <div class="max-w-3xl">
+
+                <div
+                    class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-sm mb-6">
+
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+
+                    Our Experts
+
+                </div>
+
+
+                <h1 class="font-serif text-2xl sm:text-6xl lg:text-7xl leading-tight text-dark">
+
+                    Our Board of
+                    <span class="text-primary">
+                        Dermatologists
+                    </span>
+
+                </h1>
+
+
+                <p class="mt-3 text-muted text-[15px] sm:text-lg leading-8 max-w-2xl">
+
+                    Discover personalised aesthetic treatments delivered
+                    by trained professionals at the comfort of your home.
+
+                </p>
+
+
+                <div class="flex flex-wrap gap-4 mt-8">
+
+                    <a href="booking.html"
+                        class="bg-primary hover:bg-primary-dark text-white px-3 sm:px-7 py-2 sm:py-4 rounded-full font-bold transition shadow-lg">
+
+                        Book Appointment
+
+                    </a>
+
+                    <a href="treatments.html"
+                        class="border border-primary text-primary hover:bg-primary hover:text-white px-3 sm:px-7 py-2 sm:py-4 rounded-full font-bold transition">
+
+                        Explore Treatments
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- EXPERTS DIRECTORY -->
-    <section class="py-14">
+
+
+    <!-- =========================================================
+         EXPERTS DIRECTORY
+    ========================================================== -->
+
+    <section class="py-14 sm:py-16 lg:py-20">
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <!-- 1 -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-background shadow-md">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=85" alt="Dr. Radhika Sen" class="w-full h-full object-cover">
+
+            <!-- SECTION HEADER -->
+
+            <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+
+                <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[2px] text-primary">
+
+                    <span class="w-6 h-px bg-primary"></span>
+
+                    Meet Our Experts
+
+                    <span class="w-6 h-px bg-primary"></span>
+
+                </span>
+
+
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold font-serif text-dark">
+
+                    Experienced Hands.
+                    <span class="text-primary">
+                        Trusted Care.
+                    </span>
+
+                </h2>
+
+
+                <p class="mt-4 text-sm text-muted leading-relaxed">
+
+                    Our medical team combines dermatology expertise,
+                    advanced technology and personalized treatment planning
+                    to deliver safe aesthetic care.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- EXPERT GRID -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8">
+
+
+                <!-- =================================================
+                     DOCTOR 1
+                ================================================== -->
+
+                <article class="expert-card bg-white rounded-3xl overflow-hidden border border-border shadow-soft p-6">
+
+                    <!-- IMAGE -->
+
+                    <div class="relative mx-auto w-36 h-36">
+
+                        <div class="absolute inset-0 rounded-full bg-primary/10 scale-110">
+                        </div>
+
+                        <div
+                            class="relative w-36 h-36 rounded-full overflow-hidden border-4 border-background shadow-md">
+
+                            <img src="assets/images/Mehjabeen copy.jpeg" alt="Dr. Radhika Sen"
+                                class="doctor-image w-full h-full object-cover" loading="lazy">
+
+                        </div>
+
+
+                        <!-- VERIFIED -->
+
+                        <div
+                            class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-success text-white border-4 border-white flex items-center justify-center">
+
+                            <i data-lucide="badge-check" class="w-4 h-4">
+                            </i>
+
+                        </div>
+
                     </div>
-                    <div class="text-center space-y-2">
-                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified MD</span>
-                        <h3 class="text-xl font-bold font-serif text-dark mt-2">Dr. Radhika Sen</h3>
-                        <p class="text-xs text-primary font-semibold">Chief Dermatologist</p>
-                        <p class="text-xs text-muted">MD, DNB (Dermatology) • 14+ Years Exp.</p>
-                        <p class="text-xs text-muted leading-relaxed pt-2">Specialist in Q-Switch laser pigmentation, autologous PRP therapies and Korean dermal protocols.</p>
+
+
+                    <!-- CONTENT -->
+
+                    <div class="text-center mt-6">
+
+                        <span
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-success text-[10px] font-bold">
+
+                            <i data-lucide="check-circle" class="w-3 h-3">
+                            </i>
+
+                            Verified MD
+
+                        </span>
+
+
+                        <h3 class="text-xl font-bold font-serif text-dark mt-4">
+
+                            Dr. Mahjabeen
+
+                        </h3>
+
+
+                        <p class="text-xs text-primary font-bold mt-1">
+
+                            Chief Dermatologist
+
+                        </p>
+
+
+                        <p class="text-xs text-muted mt-2">
+
+                            MD, DNB (Dermatology)
+                            <span class="mx-1">•</span>
+                            10+ Years Exp.
+
+                        </p>
+
+
+                        <p class="text-xs text-muted leading-relaxed mt-4">
+
+                            Specialist in Q-Switch laser pigmentation,
+                            autologous PRP therapies and Korean dermal
+                            protocols.
+
+                        </p>
+
                     </div>
-                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
-                        <span class="text-xs font-bold text-dark">₹500 / Consult</span>
-                        <a href="booking.html?doctor=dr-radhika-sen" class="px-4 py-2 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary-dark">Book Slot</a>
+
+
+                    <!-- FOOTER -->
+
+                    <div class="mt-6 pt-5 border-t border-border flex items-center justify-between gap-3">
+
+                        <div>
+
+                            <p class="text-[10px] text-muted uppercase font-bold tracking-wide">
+                                Consultation
+                            </p>
+
+                            <p class="text-sm font-bold text-dark mt-1">
+                                ₹500
+                            </p>
+
+                        </div>
+
+
+                        <a href="booking.html?doctor=dr-radhika-sen"
+                            class="px-4 py-2.5 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary-dark transition">
+
+                            Book Slot
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     DOCTOR 2
+                ================================================== -->
+
+                <article class="expert-card bg-white rounded-3xl overflow-hidden border border-border shadow-soft p-6">
+
+                    <!-- IMAGE -->
+
+                    <div class="relative mx-auto w-36 h-36">
+
+                        <div class="absolute inset-0 rounded-full bg-primary/10 scale-110">
+                        </div>
+
+                        <div
+                            class="relative w-36 h-36 rounded-full overflow-hidden border-4 border-background shadow-md">
+
+                            <img src="assets/images/Mehjabeen copy.jpeg" alt="Dr. Radhika Sen"
+                                class="doctor-image w-full h-full object-cover" loading="lazy">
+
+                        </div>
+
+
+                        <!-- VERIFIED -->
+
+                        <div
+                            class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-success text-white border-4 border-white flex items-center justify-center">
+
+                            <i data-lucide="badge-check" class="w-4 h-4">
+                            </i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTENT -->
+
+                    <div class="text-center mt-6">
+
+                        <span
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-success text-[10px] font-bold">
+
+                            <i data-lucide="check-circle" class="w-3 h-3">
+                            </i>
+
+                            Verified MD
+
+                        </span>
+
+
+                        <h3 class="text-xl font-bold font-serif text-dark mt-4">
+
+                            Dr. Mahjabeen
+
+                        </h3>
+
+
+                        <p class="text-xs text-primary font-bold mt-1">
+
+                            Chief Dermatologist
+
+                        </p>
+
+
+                        <p class="text-xs text-muted mt-2">
+
+                            MD, DNB (Dermatology)
+                            <span class="mx-1">•</span>
+                            10+ Years Exp.
+
+                        </p>
+
+
+                        <p class="text-xs text-muted leading-relaxed mt-4">
+
+                            Specialist in Q-Switch laser pigmentation,
+                            autologous PRP therapies and Korean dermal
+                            protocols.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- FOOTER -->
+
+                    <div class="mt-6 pt-5 border-t border-border flex items-center justify-between gap-3">
+
+                        <div>
+
+                            <p class="text-[10px] text-muted uppercase font-bold tracking-wide">
+                                Consultation
+                            </p>
+
+                            <p class="text-sm font-bold text-dark mt-1">
+                                ₹500
+                            </p>
+
+                        </div>
+
+
+                        <a href="booking.html?doctor=dr-radhika-sen"
+                            class="px-4 py-2.5 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary-dark transition">
+
+                            Book Slot
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- =================================================
+                     DOCTOR 3
+                ================================================== -->
+                <article class="expert-card bg-white rounded-3xl overflow-hidden border border-border shadow-soft p-6">
+
+                    <!-- IMAGE -->
+
+                    <div class="relative mx-auto w-36 h-36">
+
+                        <div class="absolute inset-0 rounded-full bg-primary/10 scale-110">
+                        </div>
+
+                        <div
+                            class="relative w-36 h-36 rounded-full overflow-hidden border-4 border-background shadow-md">
+
+                            <img src="assets/images/Mehjabeen copy.jpeg" alt="Dr. Radhika Sen"
+                                class="doctor-image w-full h-full object-cover" loading="lazy">
+
+                        </div>
+
+
+                        <!-- VERIFIED -->
+
+                        <div
+                            class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-success text-white border-4 border-white flex items-center justify-center">
+
+                            <i data-lucide="badge-check" class="w-4 h-4">
+                            </i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTENT -->
+
+                    <div class="text-center mt-6">
+
+                        <span
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-success text-[10px] font-bold">
+
+                            <i data-lucide="check-circle" class="w-3 h-3">
+                            </i>
+
+                            Verified MD
+
+                        </span>
+
+
+                        <h3 class="text-xl font-bold font-serif text-dark mt-4">
+
+                            Dr. Mahjabeen
+
+                        </h3>
+
+
+                        <p class="text-xs text-primary font-bold mt-1">
+
+                            Chief Dermatologist
+
+                        </p>
+
+
+                        <p class="text-xs text-muted mt-2">
+
+                            MD, DNB (Dermatology)
+                            <span class="mx-1">•</span>
+                            10+ Years Exp.
+
+                        </p>
+
+
+                        <p class="text-xs text-muted leading-relaxed mt-4">
+
+                            Specialist in Q-Switch laser pigmentation,
+                            autologous PRP therapies and Korean dermal
+                            protocols.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- FOOTER -->
+
+                    <div class="mt-6 pt-5 border-t border-border flex items-center justify-between gap-3">
+
+                        <div>
+
+                            <p class="text-[10px] text-muted uppercase font-bold tracking-wide">
+                                Consultation
+                            </p>
+
+                            <p class="text-sm font-bold text-dark mt-1">
+                                ₹500
+                            </p>
+
+                        </div>
+
+
+                        <a href="booking.html?doctor=dr-radhika-sen"
+                            class="px-4 py-2.5 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary-dark transition">
+
+                            Book Slot
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         WHY OUR EXPERTS
+    ========================================================== -->
+
+    <section class="py-14 sm:py-16 bg-white border-y border-border">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+
+                <!-- LEFT -->
+
+                <div>
+
+                    <span class="text-xs font-bold uppercase tracking-[2px] text-primary">
+                        Our Medical Approach
+                    </span>
+
+
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-dark mt-3">
+
+                        Expertise Behind
+                        <span class="text-primary">
+                            Every Treatment
+                        </span>
+
+                    </h2>
+
+
+                    <p class="text-sm text-muted leading-relaxed mt-5 max-w-xl">
+
+                        Our treatment protocols are designed around individual
+                        skin concerns, treatment goals and professional
+                        dermatological assessment.
+
+                    </p>
+
+
+                    <a href="treatments.html"
+                        class="inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary-dark transition">
+
+                        Explore Treatments
+
+                        <i data-lucide="arrow-right" class="w-4 h-4">
+                        </i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- RIGHT -->
+
+                <div class="grid grid-cols-2 gap-4">
+
+
+                    <div class="rounded-2xl bg-background border border-border p-5">
+
+                        <div
+                            class="w-11 h-11 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+
+                            <i data-lucide="stethoscope" class="w-5 h-5">
+                            </i>
+
+                        </div>
+
+                        <h3 class="font-bold text-sm text-dark mt-4">
+                            Expert Assessment
+                        </h3>
+
+                        <p class="text-xs text-muted leading-relaxed mt-2">
+                            Professional assessment before treatment.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rounded-2xl bg-background border border-border p-5">
+
+                        <div class="w-11 h-11 rounded-xl bg-purple-light text-primary flex items-center justify-center">
+
+                            <i data-lucide="shield-check" class="w-5 h-5">
+                            </i>
+
+                        </div>
+
+                        <h3 class="font-bold text-sm text-dark mt-4">
+                            Safety Focused
+                        </h3>
+
+                        <p class="text-xs text-muted leading-relaxed mt-2">
+                            Treatment protocols focused on safety.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rounded-2xl bg-background border border-border p-5">
+
+                        <div
+                            class="w-11 h-11 rounded-xl bg-secondary-light text-white flex items-center justify-center">
+
+                            <i data-lucide="sparkles" class="w-5 h-5">
+                            </i>
+
+                        </div>
+
+                        <h3 class="font-bold text-sm text-dark mt-4">
+                            Modern Technology
+                        </h3>
+
+                        <p class="text-xs text-muted leading-relaxed mt-2">
+                            Advanced aesthetic treatment technologies.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rounded-2xl bg-background border border-border p-5">
+
+                        <div
+                            class="w-11 h-11 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+
+                            <i data-lucide="heart-handshake" class="w-5 h-5">
+                            </i>
+
+                        </div>
+
+                        <h3 class="font-bold text-sm text-dark mt-4">
+                            Personalized Care
+                        </h3>
+
+                        <p class="text-xs text-muted leading-relaxed mt-2">
+                            Plans tailored to individual concerns.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section class="py-14 sm:py-16">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div
+                class="relative overflow-hidden rounded-3xl bg-dark text-white px-6 py-10 sm:px-10 sm:py-12 text-center">
+
+                <div class="absolute -top-20 -right-20 w-56 h-56 rounded-full bg-primary/30 blur-3xl">
+                </div>
+
+                <div class="absolute -bottom-20 -left-20 w-56 h-56 rounded-full bg-secondary/20 blur-3xl">
+                </div>
+
+
+                <div class="relative">
+
+                    <span class="text-xs font-bold uppercase tracking-[2px] text-secondary">
+                        Start Your Journey
+                    </span>
+
+
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif mt-3">
+
+                        Ready to Meet Your
+                        <span class="text-secondary">
+                            Skin Expert?
+                        </span>
+
+                    </h2>
+
+
+                    <p class="text-sm text-white/65 max-w-xl mx-auto mt-4">
+
+                        Book a consultation and discuss your skin and
+                        aesthetic treatment goals with our team.
+
+                    </p>
+
+
+                    <a href="booking.html"
+                        class="inline-flex items-center justify-center gap-2 mt-7 px-6 py-3 rounded-full bg-white text-dark text-xs font-bold hover:bg-primary-light transition">
+
+                        Book Appointment
+
+                        <i data-lucide="arrow-right" class="w-4 h-4">
+                        </i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white pt-16 pb-24 md:pb-12 border-t border-[#381B15]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="inline-block" title="Smooth N Shine">
+                        <img src="assets/images/logo-white.svg" alt="Smooth N Shine - Aesthetic Home Service"
+                            class="site-logo-footer h-11 w-auto object-contain">
+                    </a>
+                    <p class="text-xs text-white/70 max-w-sm leading-relaxed">
+                        Pioneering clinical excellence and advanced aesthetic dermatology right at your doorstep. Safe,
+                        US-FDA approved technologies operated by certified dermatologists.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors text-white text-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors text-white text-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors text-white text-sm">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/918850666361"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-success flex items-center justify-center transition-colors text-white text-sm">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- 2 -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-background shadow-md">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=85" alt="Dr. Alok Verma" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-center space-y-2">
-                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified MD</span>
-                        <h3 class="text-xl font-bold font-serif text-dark mt-2">Dr. Alok Verma</h3>
-                        <p class="text-xs text-purple font-semibold">Laser Aesthetic Surgeon</p>
-                        <p class="text-xs text-muted">MBBS, MD, FAM (Germany) • 11+ Years Exp.</p>
-                        <p class="text-xs text-muted leading-relaxed pt-2">Pioneer in painless Triple-Wavelength Diode lasers and non-invasive U-Lipo cavitation.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
-                        <span class="text-xs font-bold text-dark">₹500 / Consult</span>
-                        <a href="booking.html?doctor=dr-alok-verma" class="px-4 py-2 rounded-xl bg-purple text-white text-xs font-bold hover:bg-purple-dark">Book Slot</a>
-                    </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-secondary mb-4">Company</h4>
+                    <ul class="space-y-2 text-xs text-white/75 list-none p-0 m-0">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="experts.html" class="hover:text-white">Our Experts</a></li>
+                        <li><a href="offers.html" class="hover:text-white">Offers & Deals</a></li>
+                        <li><a href="blogs.html" class="hover:text-white">Beauty Journal</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    </ul>
                 </div>
 
-                <!-- 3 -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-border p-6 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-background shadow-md">
-                        <img src="https://images.unsplash.com/photo-1594824813689-0c6488d56b46?auto=format&fit=crop&w=400&q=85" alt="Dr. Natasha Kapur" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-center space-y-2">
-                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">✓ Verified MD</span>
-                        <h3 class="text-xl font-bold font-serif text-dark mt-2">Dr. Natasha Kapur</h3>
-                        <p class="text-xs text-secondary font-semibold">Cosmetic Dermatologist</p>
-                        <p class="text-xs text-muted">MD, FAM (Seoul, Korea) • 9+ Years Exp.</p>
-                        <p class="text-xs text-muted leading-relaxed pt-2">Specializes in medical chemical peeling, microneedling and anti-aging glass skin therapies.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
-                        <span class="text-xs font-bold text-dark">₹500 / Consult</span>
-                        <a href="booking.html?doctor=dr-natasha-kapur" class="px-4 py-2 rounded-xl bg-secondary text-white text-xs font-bold hover:bg-secondary-dark">Book Slot</a>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-secondary mb-4">Treatments</h4>
+                    <ul class="space-y-2 text-xs text-white/75 list-none p-0 m-0">
+                        <li><a href="treatments.html#laser-hair" class="hover:text-white">Laser Hair Reduction</a></li>
+                        <li><a href="treatments.html#u-lipo&body-contouring" class="hover:text-white">U-Lipo & Body
+                                Contouring</a></li>
+                        <li><a href="treatments.html#medi-facial" class="hover:text-white">Facial Treatments</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-secondary mb-4">Support & Care</h4>
+                    <ul class="space-y-2 text-xs text-white/75 list-none p-0 m-0 mb-4">
+                        <li><a href="contact.html" class="hover:text-white">Help Center</a></li>
+                        <!-- <li><a href="booking.html" class="hover:text-white">Booking Guidelines</a></li> -->
+                        <!-- <li><a href="dashboard.html" class="hover:text-white">Customer Portal</a></li> -->
+                        <!-- <li><a href="contact.html" class="hover:text-white">Privacy & Terms</a></li> -->
+                    </ul>
+                    <div class="text-xs text-white/60 space-y-1">
+                        <p class="flex items-center gap-2"><i data-lucide="phone"
+                                class="w-3.5 h-3.5 text-secondary"></i> +91 88506 66361</p>
+                        <p class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5 text-secondary"></i>
+                            care@smoothnshine.com</p>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white pt-14 pb-20 border-t border-white/10 text-center text-xs text-white/50">
-        © 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+                <p>© 2026 Smooth N Shine Aesthetics Pvt. Ltd. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="contact.html" class="hover:text-white">Doorstep Coverage</a>
+                    <a href="contact.html" class="hover:text-white">Safety Protocol</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-     <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+
+
+    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
     <nav id="mobileBottomNav"
         class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
 
@@ -170,7 +1541,8 @@
 
             <!-- BOOKING -->
             <a href="booking.html" id="mobileBookingButton"
-                class="group relative h-full flex items-center justify-center no-underline" style="background-color: transparent !important;">
+                class="group relative h-full flex items-center justify-center no-underline"
+                style="background-color: transparent !important;">
 
                 <div
                     class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
@@ -203,7 +1575,26 @@
         </div>
     </nav>
 
+
+
+    <!-- =========================================================
+         SCRIPTS
+    ========================================================== -->
+
     <script src="js/script.js"></script>
+
+
+    <!-- IMPORTANT: INITIALIZE LUCIDE -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            if (typeof lucide !== "undefined") {
+                lucide.createIcons();
+            }
+
+        });
+    </script>
+
 </body>
 
 </html>

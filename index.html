@@ -89,533 +89,667 @@
     </div>
 
     <!-- ================= STICKY HEADER ================= -->
-    <header
-        class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-[0_4px_20px_rgba(32,18,15,0.04)]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="h-20 flex items-center justify-between">
+     <header
+    class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-[0_4px_20px_rgba(32,18,15,0.04)]">
 
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center shrink-0 no-underline group py-1"
-                    title="Smooth N Shine Aesthetics">
-                    <img src="assets/images/logo.svg" alt="Smooth N Shine - Aesthetic Home Service"
-                        class="site-logo-img h-11 w-auto object-contain">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="h-20 flex items-center justify-between">
+
+            <!-- ================= LOGO ================= -->
+            <a href="index.html"
+                class="flex items-center shrink-0 no-underline group py-1"
+                title="Smooth N Shine Aesthetics">
+
+                <img src="assets/images/logo.svg"
+                    alt="Smooth N Shine - Aesthetic Home Service"
+                    class="site-logo-img h-11 w-auto object-contain">
+
+            </a>
+
+
+            <!-- ================= DESKTOP NAVIGATION ================= -->
+            <nav class="hidden lg:flex items-center gap-7 h-full">
+
+                <!-- About -->
+                <a href="about.html"
+                    class="text-sm font-medium text-text hover:text-primary transition-colors">
+                    About Us
                 </a>
 
-                <!-- Desktop Navigation Menu -->
-                <nav class="hidden lg:flex items-center gap-7 h-full">
 
-                    <a href="about.html"
-                        class="text-sm font-medium text-text hover:text-primary transition-colors">About Us</a>
+                <!-- =========================================================
+                     TREATMENTS
+                ========================================================== -->
+                <div class="relative h-full flex items-center has-mega-menu cursor-pointer">
 
-                    <!-- Treatments Mega Menu -->
-                    <div class="relative h-full flex items-center has-mega-menu cursor-pointer">
-                        <a href="treatments.html"
-                            class="text-sm font-medium text-text hover:text-primary flex items-center gap-1.5 transition-colors">
-                            Treatments <i data-lucide="chevron-down"
-                                class="w-3.5 h-3.5 text-muted transition-transform"></i>
-                        </a>
+                    <a href="treatments.html"
+                        class="text-sm font-medium text-text hover:text-primary
+                               flex items-center gap-1.5 transition-colors">
 
-                        <!-- ================= PREMIUM TREATMENTS MEGA MENU ================= -->
-                        <div class="mega-menu absolute left-1/2 top-full -translate-x-1/2 pt-1
-                                        w-[920px] opacity-0 invisible translate-y-3
-                                        pointer-events-none transition-all duration-300 z-[9999]">
+                        Treatments
 
-                            <div class="relative overflow-hidden bg-white/95 backdrop-blur-xl
-                                        border border-[#E9E2DE] rounded-[28px]
-                                        shadow-[0_25px_70px_rgba(32,18,15,0.16)]">
+                        <i data-lucide="chevron-down"
+                            class="w-3.5 h-3.5 text-muted transition-transform">
+                        </i>
 
-                                <!-- Decorative Background -->
-                                <div class="absolute -top-24 -right-24 w-56 h-56
-                                                    bg-[#FCE8EA] rounded-full blur-3xl opacity-70">
-                                </div>
-
-                                <div class="absolute -bottom-28 -left-20 w-52 h-52
-                                        bg-[#F4E8DE] rounded-full blur-3xl opacity-50">
-                                </div>
-
-                                <!-- Menu Content -->
-                                <div class="relative grid grid-cols-3 gap-0 p-5">
+                    </a>
 
 
-                                    <!-- ================= SKIN & LASER ================= -->
-                                    <div class="group px-4 py-3 border-r border-[#E9E2DE]">
+                    <!-- ================= COMPACT MEGA MENU ================= -->
+                    <div class="mega-menu absolute left-1/2 top-full -translate-x-1/2 pt-1
+                                w-[620px] max-w-[calc(100vw-24px)]
+                                opacity-0 invisible translate-y-2
+                                pointer-events-none
+                                transition-all duration-300 z-[9999]">
 
-                                        <!-- Category Header -->
-                                        <div class="flex items-center gap-3 mb-4">
+                        <div class="relative overflow-hidden
+                                    bg-white
+                                    border border-[#E9E2DE]
+                                    rounded-[18px]
+                                    shadow-[0_15px_45px_rgba(32,18,15,0.14)]">
 
-                                            <div class="flex items-center justify-center
-                                                        w-10 h-10 rounded-xl
-                                                        bg-[#FCE8EA]
-                                                        text-[#D92734]
-                                                        group-hover:bg-[#D92734]
-                                                        group-hover:text-white
-                                                        transition-all duration-300">
+                            <!-- Decorative Background -->
+                            <div class="absolute -top-16 -right-16
+                                        w-32 h-32 rounded-full
+                                        bg-[#FCE8EA] blur-3xl opacity-60">
+                            </div>
 
-                                                <svg class="w-5 h-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
 
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="1.7"
-                                                        d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" />
+                            <div class="relative grid grid-cols-3">
 
-                                                </svg>
 
-                                            </div>
+                                <!-- =================================================
+                                     SKIN & LASER
+                                ================================================== -->
+                                <div class="px-4 py-4 border-r border-[#E9E2DE]">
 
-                                            <div>
-                                                <h4 class="text-sm font-bold text-[#20120F]">
-                                                    Skin & Laser
-                                                </h4>
+                                    <!-- Heading -->
+                                    <div class="flex items-center gap-2 mb-2.5">
 
-                                                <p class="text-[10px] text-[#77706D]">
-                                                    Smooth • Clear • Radiant
-                                                </p>
-                                            </div>
+                                        <div class="flex items-center justify-center
+                                                    w-8 h-8 rounded-lg
+                                                    bg-[#FCE8EA] text-[#D92734]">
+
+                                            <svg class="w-4 h-4"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24">
+
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.7"
+                                                    d="M12 3v18M3 12h18
+                                                       M5.6 5.6l12.8 12.8
+                                                       M18.4 5.6L5.6 18.4" />
+
+                                            </svg>
 
                                         </div>
 
+                                        <div>
 
-                                        <!-- Links -->
-                                        <ul class="space-y-0.5 text-xs list-none p-0 m-0">
+                                            <h4 class="text-[11px] font-bold text-[#20120F]">
+                                                Skin & Laser
+                                            </h4>
 
-                                            <li>
-                                                <a href="treatments.html#face-laser" class="mega-link">
-                                                    Face Laser
-                                                </a>
-                                            </li>
+                                            <p class="text-[8px] text-[#77706D]">
+                                                Smooth • Clear • Radiant
+                                            </p>
 
-                                            <li>
-                                                <a href="treatments.html#upper-lip" class="mega-link">
-                                                    Upper Lip
-                                                </a>
-                                            </li>
+                                        </div>
 
-                                            <li>
-                                                <a href="treatments.html#underarms" class="mega-link">
-                                                    Underarms
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#legs" class="mega-link">
-                                                    Legs Laser
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#chin" class="mega-link">
-                                                    Chin
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#side-locks" class="mega-link">
-                                                    Side Locks
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#neck-lines" class="mega-link">
-                                                    Neck Lines
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#midriff" class="mega-link">
-                                                    Midriff
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#hands" class="mega-link">
-                                                    Hands
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#front" class="mega-link">
-                                                    Front
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#back" class="mega-link">
-                                                    Back
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#bikini" class="mega-link">
-                                                    Bikini
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#buttocks" class="mega-link">
-                                                    Buttocks
-                                                </a>
-                                            </li>
-
-                                        </ul>
                                     </div>
 
 
-                                    <!-- ================= FACIAL RITUALS ================= -->
-                                    <div class="group px-4 py-3 border-r border-[#E9E2DE]">
+                                    <!-- Skin Links -->
+                                    <div class="grid grid-cols-2 gap-x-1">
 
-                                        <!-- Category Header -->
-                                        <div class="flex items-center gap-3 mb-4">
-
-                                            <div class="flex items-center justify-center
-                                                    w-10 h-10 rounded-xl
-                                                    bg-[#F4E8DE]
-                                                    text-[#B8906B]
-                                                    group-hover:bg-[#B8906B]
-                                                    group-hover:text-white
-                                                    transition-all duration-300">
-
-                                                <svg class="w-5 h-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="1.7"
-                                                        d="M12 3c4.5 3.5 7 7.2 7 10.5A7 7 0 015 13.5C5 10.2 7.5 6.5 12 3z" />
-
-                                                </svg>
-
-                                            </div>
-
-                                            <div>
-                                                <h4 class="text-sm font-bold text-[#20120F]">
-                                                    Facial Rituals
-                                                </h4>
-
-                                                <p class="text-[10px] text-[#77706D]">
-                                                    Glow • Hydrate • Renew
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-
-                                        <!-- Popular Treatment -->
-                                        <a href="treatment-details.html" class="block mb-3 p-3 rounded-xl
-                                                bg-gradient-to-r from-[#FCE8EA] to-white
-                                                border border-[#FCE8EA]
-                                                hover:border-[#D92734]
-                                                hover:shadow-md
-                                                transition-all duration-300">
-
-                                            <div class="flex items-center justify-between">
-
-                                                <div>
-                                                    <div class="flex items-center gap-2">
-
-                                                        <span class="text-xs font-bold text-[#20120F]">
-                                                            Korean Glass Skin
-                                                        </span>
-
-                                                        <span class="px-1.5 py-0.5 rounded-full
-                                                                bg-[#D92734] text-white
-                                                                text-[8px] font-bold uppercase">
-                                                            Popular
-                                                        </span>
-
-                                                    </div>
-
-                                                    <p class="text-[10px] text-[#77706D] mt-1">
-                                                        Signature glass-skin facial
-                                                    </p>
-                                                </div>
-
-                                                <svg class="w-4 h-4 text-[#D92734]" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2" d="M9 5l7 7-7 7" />
-
-                                                </svg>
-
-                                            </div>
-
+                                        <a href="treatments.html#face-laser"
+                                            class="mega-link">
+                                            Face Laser
                                         </a>
 
+                                        <a href="treatments.html#upper-lip"
+                                            class="mega-link">
+                                            Upper Lip
+                                        </a>
 
-                                        <!-- Facial Links -->
-                                        <ul class="space-y-0.5 text-xs list-none p-0 m-0">
+                                        <a href="treatments.html#underarms"
+                                            class="mega-link">
+                                            Underarms
+                                        </a>
 
-                                            <li>
-                                                <a href="treatments.html#medi-facial" class="mega-link">
-                                                    Medi Facial
-                                                </a>
-                                            </li>
+                                        <a href="treatments.html#legs"
+                                            class="mega-link">
+                                            Legs
+                                        </a>
 
-                                            <li>
-                                                <a href="treatments.html#facial-polishing" class="mega-link">
-                                                    Polishing Combined with Facial
-                                                </a>
-                                            </li>
+                                        <a href="treatments.html#chin"
+                                            class="mega-link">
+                                            Chin
+                                        </a>
 
-                                            <li>
-                                                <a href="treatments.html#diamond-polish" class="mega-link">
-                                                    Body Diamond Polish
-                                                </a>
-                                            </li>
+                                        <a href="treatments.html#side-locks"
+                                            class="mega-link">
+                                            Side Locks
+                                        </a>
 
-                                            <li>
-                                                <a href="treatments.html#rf-anti-aging-facial" class="mega-link">
-                                                    RF Anti-Aging Facial
-                                                </a>
-                                            </li>
+                                        <a href="treatments.html#neck-lines"
+                                            class="mega-link">
+                                            Neck Lines
+                                        </a>
 
-                                        </ul>
+                                        <a href="treatments.html#midriff"
+                                            class="mega-link">
+                                            Midriff
+                                        </a>
 
-                                    </div>
+                                        <a href="treatments.html#hands"
+                                            class="mega-link">
+                                            Hands
+                                        </a>
 
+                                        <a href="treatments.html#front"
+                                            class="mega-link">
+                                            Front
+                                        </a>
 
-                                    <!-- ================= BODY CONTOURING ================= -->
-                                    <div class="group px-4 py-3">
+                                        <a href="treatments.html#back"
+                                            class="mega-link">
+                                            Back
+                                        </a>
 
-                                        <!-- Category Header -->
-                                        <div class="flex items-center gap-3 mb-4">
+                                        <a href="treatments.html#bikini"
+                                            class="mega-link">
+                                            Bikini
+                                        </a>
 
-                                            <div class="flex items-center justify-center
-                                                        w-10 h-10 rounded-xl
-                                                        bg-[#EBE6FD]
-                                                        text-[#6300ed]
-                                                        group-hover:bg-[#6300ed]
-                                                        group-hover:text-white
-                                                        transition-all duration-300">
-
-                                                <svg class="w-5 h-5" fill="none" stroke="currentColor"
-                                                    viewBox="0 0 24 24">
-
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="1.7"
-                                                        d="M12 3c-3 3-6 5.5-6 10a6 6 0 0012 0c0-4.5-3-7-6-10z" />
-
-                                                </svg>
-
-                                            </div>
-
-                                            <div>
-                                                <h4 class="text-sm font-bold text-[#20120F]">
-                                                    U-Lipo & Body Contouring
-                                                </h4>
-
-                                                <p class="text-[10px] text-[#77706D]">
-                                                    Tone • Shape • Define
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-
-                                        <ul class="space-y-1 text-xs list-none p-0 m-0">
-
-                                            <li>
-                                                <a href="treatments.html#u-lipo" class="mega-link">
-                                                    U-Lipo
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#stomach-countring" class="mega-link">
-                                                    Stomach Countring
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#thigh-countring" class="mega-link">
-                                                    Thigh Contouring
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="treatments.html#arm-countring" class="mega-link">
-                                                    Arm Countring
-                                                </a>
-                                            </li>
-
-                                        </ul>
-
-
-                                        <!-- Book CTA -->
-                                        <div class="mt-5 p-4 rounded-2xl
-                           bg-[#20120F] text-white
-                           relative overflow-hidden">
-
-                                            <div class="absolute -right-5 -top-5
-                               w-20 h-20 rounded-full
-                               bg-[#D92734]/30 blur-xl">
-                                            </div>
-
-                                            <div class="relative">
-
-                                                <p class="text-[10px] uppercase
-                                   tracking-wider text-white/60
-                                   font-semibold">
-                                                    Need Help?
-                                                </p>
-
-                                                <h5 class="text-sm font-bold mt-1">
-                                                    Find your perfect treatment
-                                                </h5>
-
-                                                <a href="#bookingModal" data-bs-toggle="modal" class="inline-flex items-center gap-2
-                                   mt-3 text-[10px] font-bold
-                                   text-white
-                                   hover:text-[#FCE8EA]
-                                   transition-colors">
-
-                                                    Book Consultation
-
-                                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor"
-                                                        viewBox="0 0 24 24">
-
-                                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                                            stroke-width="2" d="M5 12h14M13 6l6 6-6 6" />
-
-                                                    </svg>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
+                                        <a href="treatments.html#buttocks"
+                                            class="mega-link">
+                                            Buttocks
+                                        </a>
 
                                     </div>
 
                                 </div>
 
 
-                                <!-- ================= BOTTOM BAR ================= -->
-                                <div class="relative px-7 py-3.5
-                   bg-[#FAF8F7]
-                   border-t border-[#E9E2DE]
-                   flex items-center justify-between">
+                                <!-- =================================================
+                                     FACIAL RITUALS
+                                ================================================== -->
+                                <div class="px-4 py-4 border-r border-[#E9E2DE]">
 
-                                    <div class="flex items-center gap-2">
+                                    <!-- Heading -->
+                                    <div class="flex items-center gap-2 mb-2.5">
 
-                                        <svg class="w-4 h-4 text-[#D92734]" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
+                                        <div class="flex items-center justify-center
+                                                    w-8 h-8 rounded-lg
+                                                    bg-[#F4E8DE] text-[#B8906B]">
 
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                                d="M12 8v4l3 2" />
+                                            <svg class="w-4 h-4"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24">
 
-                                            <circle cx="12" cy="12" r="9" stroke-width="1.8" />
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.7"
+                                                    d="M12 3c4.5 3.5 7 7.2 7 10.5
+                                                       A7 7 0 015 13.5
+                                                       C5 10.2 7.5 6.5 12 3z" />
 
-                                        </svg>
+                                            </svg>
 
-                                        <span class="text-[10px] text-[#77706D]">
-                                            Professional aesthetic treatments at your doorstep
-                                        </span>
+                                        </div>
+
+                                        <div>
+
+                                            <h4 class="text-[11px] font-bold text-[#20120F]">
+                                                Facial Rituals
+                                            </h4>
+
+                                            <p class="text-[8px] text-[#77706D]">
+                                                Glow • Hydrate • Renew
+                                            </p>
+
+                                        </div>
 
                                     </div>
 
-                                    <a href="contact.html" class="text-[10px] font-bold text-[#D92734]
-                       hover:underline">
-                                        Talk to an Expert →
+
+                                    <!-- Featured Treatment -->
+                                    <a href="treatment-details.html"
+                                        class="group flex items-center justify-between
+                                               p-2.5 mb-2 rounded-lg
+                                               bg-[#FCF0F1]
+                                               border border-[#FCE8EA]
+                                               hover:border-[#D92734]
+                                               transition">
+
+                                        <div>
+
+                                            <div class="flex items-center gap-1">
+
+                                                <span class="text-[10px] font-bold">
+                                                    Korean Glass Skin
+                                                </span>
+
+                                                <span class="px-1 py-[1px]
+                                                             rounded-full
+                                                             bg-[#D92734]
+                                                             text-white
+                                                             text-[6px]
+                                                             font-bold">
+                                                    POPULAR
+                                                </span>
+
+                                            </div>
+
+                                            <p class="text-[8px] text-[#77706D]">
+                                                Signature facial
+                                            </p>
+
+                                        </div>
+
+                                        <span class="text-[#D92734] text-xs">
+                                            →
+                                        </span>
+
+                                    </a>
+
+
+                                    <!-- Facial Links -->
+                                    <div class="space-y-0.5">
+
+                                        <a href="treatments.html#medi-facial"
+                                            class="mega-link facial-link">
+                                            Medi Facial
+                                        </a>
+
+                                        <a href="treatments.html#facial-polishing"
+                                            class="mega-link facial-link">
+                                            Facial Polishing
+                                        </a>
+
+                                        <a href="treatments.html#diamond-polish"
+                                            class="mega-link facial-link">
+                                            Diamond Polish
+                                        </a>
+
+                                        <a href="treatments.html#rf-anti-aging-facial"
+                                            class="mega-link facial-link">
+                                            RF Anti-Aging
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- =================================================
+                                     BODY CONTOURING
+                                ================================================== -->
+                                <div class="px-4 py-4">
+
+                                    <!-- Heading -->
+                                    <div class="flex items-center gap-2 mb-2.5">
+
+                                        <div class="flex items-center justify-center
+                                                    w-8 h-8 rounded-lg
+                                                    bg-[#EBE6FD] text-[#6300ED]">
+
+                                            <svg class="w-4 h-4"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24">
+
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.7"
+                                                    d="M12 3c-3 3-6 5.5-6 10
+                                                       a6 6 0 0012 0
+                                                       c0-4.5-3-7-6-10z" />
+
+                                            </svg>
+
+                                        </div>
+
+                                        <div>
+
+                                            <h4 class="text-[11px] font-bold text-[#20120F]">
+                                                Body Contouring
+                                            </h4>
+
+                                            <p class="text-[8px] text-[#77706D]">
+                                                Tone • Shape • Define
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- Body Links -->
+                                    <div class="space-y-0.5">
+
+                                        <a href="treatments.html#u-lipo"
+                                            class="mega-link body-link">
+                                            U-Lipo
+                                        </a>
+
+                                        <a href="treatments.html#stomach-countring"
+                                            class="mega-link body-link">
+                                            Stomach Contouring
+                                        </a>
+
+                                        <a href="treatments.html#thigh-countring"
+                                            class="mega-link body-link">
+                                            Thigh Contouring
+                                        </a>
+
+                                        <a href="treatments.html#arm-countring"
+                                            class="mega-link body-link">
+                                            Arm Contouring
+                                        </a>
+
+                                    </div>
+
+
+                                    <!-- CTA -->
+                                    <a href="#bookingModal"
+                                        data-bs-toggle="modal"
+                                        class="mt-3 flex items-center justify-between
+                                               rounded-lg
+                                               bg-[#20120F]
+                                               px-2.5 py-2
+                                               text-white
+                                               hover:bg-[#D92734]
+                                               transition">
+
+                                        <span class="text-[8px] font-semibold">
+                                            Need help choosing?
+                                        </span>
+
+                                        <span class="text-[9px] font-bold">
+                                            Book →
+                                        </span>
+
                                     </a>
 
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Concerns Dropdown -->
-                    <div class="relative h-full flex items-center has-dropdown cursor-pointer">
-                        <span
-                            class="text-sm font-medium text-text hover:text-primary flex items-center gap-1.5 transition-colors">
-                            Concerns <i data-lucide="chevron-down"
-                                class="w-3.5 h-3.5 text-muted transition-transform"></i>
-                        </span>
 
-                        <div
-                            class="dropdown-menu absolute left-0 top-full pt-2 w-60 opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-300">
-                            <div
-                                class="bg-white border border-border rounded-2xl shadow-xl p-4 space-y-1 text-xs text-text">
-                                <a href="treatments.html?concern=acne"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Acne & Acne
-                                    Scars</a>
-                                <a href="treatments.html?concern=pigmentation"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Pigmentation &
-                                    Melasma</a>
-                                <a href="treatments.html?concern=aging"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Aging & Fine
-                                    Lines</a>
-                                <a href="treatments.html?concern=dull"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Dull & Uneven
-                                    Skin</a>
-                                <a href="treatments.html?concern=pores"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Open Pores &
-                                    Texture</a>
-                                <a href="treatments.html?concern=hair"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Unwanted Body
-                                    Hair</a>
-                                <a href="treatments.html?concern=weight"
-                                    class="block p-2 rounded-xl hover:bg-background hover:text-primary">Weight
-                                    Management</a>
+                            <!-- ================= MEGA MENU FOOTER ================= -->
+                            <div class="flex items-center justify-between
+                                        px-4 py-2
+                                        bg-[#FAF8F7]
+                                        border-t border-[#E9E2DE]">
+
+                                <span class="text-[8px] text-[#77706D]">
+                                    ✦ Professional treatments at your doorstep
+                                </span>
+
+                                <a href="contact.html"
+                                    class="text-[8px] font-bold text-[#D92734]
+                                           hover:underline">
+                                    Talk to Expert →
+                                </a>
+
                             </div>
+
                         </div>
+
                     </div>
 
-                    <a href="experts.html"
-                        class="text-sm font-medium text-text hover:text-primary transition-colors">Experts</a>
-                    <a href="offers.html"
-                        class="text-sm font-medium text-text hover:text-primary transition-colors">Offers</a>
-                    <a href="blogs.html"
-                        class="text-sm font-medium text-text hover:text-primary transition-colors">Blogs</a>
-                    <a href="contact.html"
-                        class="text-sm font-medium text-text hover:text-primary transition-colors">Contact</a>
-                </nav>
+                </div>
 
-                <!-- Right Action Buttons -->
-                <div class="hidden lg:flex items-center gap-3">
-                    <!-- Location Selector -->
-                    <div
-                        class="flex items-center gap-1.5 text-xs font-semibold bg-background px-3.5 py-2 rounded-full border border-border text-dark">
-                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary"></i>
-                        <span>Mumbai</span>
+
+                <!-- =========================================================
+                     CONCERNS DROPDOWN
+                ========================================================== -->
+                <div class="relative h-full flex items-center has-dropdown cursor-pointer">
+
+                    <a href="concerns.html"
+                        class="text-sm font-medium text-text hover:text-primary
+                               flex items-center gap-1.5 transition-colors">
+
+                        Concerns
+
+                        <i data-lucide="chevron-down"
+                            class="w-3.5 h-3.5 text-muted">
+                        </i>
+
+                    </a>
+
+
+                    <div class="dropdown-menu absolute left-0 top-full pt-2
+                                w-60 opacity-0 invisible translate-y-2
+                                pointer-events-none
+                                transition-all duration-300">
+
+                        <div class="bg-white border border-border
+                                    rounded-2xl shadow-xl p-4
+                                    space-y-1 text-xs text-text">
+
+                            <a href="concerns.html?concern=scars"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Acne & Acne Scars
+                            </a>
+
+                            <a href="concerns.html?concern=melasma"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Pigmentation & Melasma
+                            </a>
+
+                            <a href="concerns.html?concern=lines"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Aging & Fine Lines
+                            </a>
+
+                            <a href="concerns.html?concern=skin"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Dull & Uneven Skin
+                            </a>
+
+                            <a href="concerns.html?concern=texture"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Open Pores & Texture
+                            </a>
+
+                            <a href="concerns.html?concern=hair"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Unwanted Body Hair
+                            </a>
+
+                            <a href="concerns.html?concern=management"
+                                class="block p-2 rounded-xl
+                                       hover:bg-background
+                                       hover:text-primary">
+                                Weight Management
+                            </a>
+
+                        </div>
+
                     </div>
 
-                    <!-- Search Button -->
-                    <a href="treatments.html"
-                        class="w-10 h-10 rounded-full border border-border bg-white text-text flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                        <i data-lucide="search" class="w-4 h-4"></i>
-                    </a>
-
-                    <!-- Login -->
-                    <a href="login.html" class="text-xs font-bold text-text hover:text-primary px-3 py-2">
-                        Login
-                    </a>
-
-                    <!-- Book Appointment CTA -->
-                    <a href="booking.html"
-                        class="h-10 px-5 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center gap-2 text-xs font-bold transition-all shadow-[0_4px_15px_rgba(217,39,52,0.25)]">
-                        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
-                        <span>Book Appointment</span>
-                    </a>
                 </div>
 
-                <!-- Mobile Header Actions -->
-                <div class="flex lg:hidden items-center gap-2">
-                    <a href="treatments.html"
-                        class="w-9 h-9 rounded-full bg-background border border-border flex items-center justify-center text-text">
-                        <i data-lucide="search" class="w-4 h-4"></i>
-                    </a>
-                    <a href="login.html"
-                        class="w-9 h-9 rounded-full bg-background border border-border flex items-center justify-center text-text">
-                        <i data-lucide="user" class="w-4 h-4"></i>
-                    </a>
-                    <button id="mobileHamburgerBtn" type="button" aria-label="Toggle Menu"
-                        class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center">
-                        <i data-lucide="menu" class="w-5 h-5"></i>
-                    </button>
+
+                <!-- Other Navigation -->
+                <a href="experts.html"
+                    class="text-sm font-medium text-text hover:text-primary transition-colors">
+                    Experts
+                </a>
+
+                <a href="offers.html"
+                    class="text-sm font-medium text-text hover:text-primary transition-colors">
+                    Offers
+                </a>
+
+                <a href="blogs.html"
+                    class="text-sm font-medium text-text hover:text-primary transition-colors">
+                    Blogs
+                </a>
+
+                <a href="contact.html"
+                    class="text-sm font-medium text-text hover:text-primary transition-colors">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- =============================================================
+                 DESKTOP RIGHT ACTIONS
+            ============================================================== -->
+            <div class="hidden lg:flex items-center gap-3">
+
+                <!-- Location -->
+                <div class="flex items-center gap-1.5
+                            text-xs font-semibold
+                            bg-background
+                            px-3.5 py-2
+                            rounded-full
+                            border border-border
+                            text-dark">
+
+                    <i data-lucide="map-pin"
+                        class="w-3.5 h-3.5 text-primary">
+                    </i>
+
+                    <span>Mumbai</span>
+
                 </div>
+
+
+                <!-- Search -->
+                <a href="treatments.html"
+                    class="w-10 h-10
+                           rounded-full
+                           border border-border
+                           bg-white
+                           text-text
+                           flex items-center justify-center
+                           hover:bg-primary
+                           hover:text-white
+                           transition-colors">
+
+                    <i data-lucide="search"
+                        class="w-4 h-4">
+                    </i>
+
+                </a>
+
+
+                <!-- Login -->
+                <a href="login.html"
+                    class="text-xs font-bold text-text
+                           hover:text-primary
+                           px-3 py-2">
+
+                    Login
+
+                </a>
+
+
+                <!-- Book Appointment -->
+                <a href="booking.html"
+                    class="h-10 px-5
+                           rounded-full
+                           bg-primary
+                           hover:bg-primary-dark
+                           text-white
+                           flex items-center justify-center
+                           gap-2
+                           text-xs font-bold
+                           transition-all
+                           shadow-[0_4px_15px_rgba(217,39,52,0.25)]">
+
+                    <i data-lucide="calendar"
+                        class="w-3.5 h-3.5">
+                    </i>
+
+                    <span>Book Appointment</span>
+
+                </a>
 
             </div>
+
+
+            <!-- =============================================================
+                 MOBILE HEADER ACTIONS
+            ============================================================== -->
+            <div class="flex lg:hidden items-center gap-2">
+
+                <!-- Search -->
+                <a href="treatments.html"
+                    class="w-9 h-9
+                           rounded-full
+                           bg-background
+                           border border-border
+                           flex items-center justify-center
+                           text-text">
+
+                    <i data-lucide="search"
+                        class="w-4 h-4">
+                    </i>
+
+                </a>
+
+
+                <!-- Login -->
+                <a href="login.html"
+                    class="w-9 h-9
+                           rounded-full
+                           bg-background
+                           border border-border
+                           flex items-center justify-center
+                           text-text">
+
+                    <i data-lucide="user"
+                        class="w-4 h-4">
+                    </i>
+
+                </a>
+
+
+                <!-- Hamburger -->
+                <button id="mobileHamburgerBtn"
+                    type="button"
+                    aria-label="Toggle Menu"
+                    class="w-9 h-9
+                           rounded-full
+                           bg-primary
+                           text-white
+                           flex items-center justify-center">
+
+                    <i data-lucide="menu"
+                        class="w-5 h-5">
+                    </i>
+
+                </button>
+
+            </div>
+
         </div>
+
+    </div>
+
     </header>
 
     <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
@@ -1734,7 +1868,7 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
                         <span
-                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">FIRST500</span>
+                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">FIRST50</span>
                         <button data-code="FIRST500"
                             class="copy-coupon-btn text-xs font-bold px-3 py-1.5 rounded-lg border-2 border-dashed text-primary flex items-center gap-1">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
@@ -1767,7 +1901,7 @@
                         <span class="px-3 py-1 rounded-full bg-green-100 text-success text-[10px] font-bold">Body
                             Care</span>
                         <h3 class="text-xl font-bold text-dark font-serif mt-3">Flat 30% OFF</h3>
-                        <p class="text-xs text-muted mt-1">On 4+ sessions of U-Lipo ultrasonic body contouring.</p>
+                        <p class="text-xs text-muted mt-1">On 10+ sessions of U-Lipo ultrasonic body contouring.</p>
                     </div>
                     <div class="mt-6 pt-4 border-t border-border flex items-center justify-between">
                         <span
