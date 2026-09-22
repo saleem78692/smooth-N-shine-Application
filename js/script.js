@@ -627,3 +627,52 @@ function resetReviewForm() {
     star.classList.add("text-gray-300");
   });
 }
+
+// video slider
+
+/* ================= VIDEO SLIDER ================= */
+
+const videoSwiper = new Swiper(".treatmentVideoSlider", {
+  slidesPerView: 1.15,
+
+  spaceBetween: 16,
+
+  loop: true,
+
+  navigation: {
+    nextEl: ".video-next",
+    prevEl: ".video-prev",
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+
+    1280: {
+      slidesPerView: 3.5,
+      spaceBetween: 24,
+    },
+  },
+});
+
+/* ================= VIDEO HOVER PLAY ================= */
+
+document.querySelectorAll(".treatmentVideoSlider video").forEach((video) => {
+  const card = video.closest(".group");
+
+  card.addEventListener("mouseenter", () => {
+    video.play().catch(() => {});
+  });
+
+  card.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});

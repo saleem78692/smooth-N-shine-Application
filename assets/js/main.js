@@ -725,9 +725,9 @@ const treatments = [
   {
     name: "U-Lipo",
     category: "body",
-    label: "Body Slimming",
+    label: "Body Toning",
     price: "₹2,500",
-    image: "assets/images/u-lipo.png",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRteyzFahitY4-WBTVSWP2T6v5CFgTefOI8yjU58Ti3Ww&s=10",
   },
 
   {
@@ -735,7 +735,7 @@ const treatments = [
     category: "body",
     label: "Body Contouring",
     price: "₹2,500",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-65F2-8NOlU9VA8A-jAwRFWhMkASRcmEeSYVTApwTLqLDR-PWII7-jg&s=10"
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDrsejniEOGrQkg_tvE_Lti7bmOoXWZzbpw1_aHXung&s=10"
   },
 
   {
@@ -743,7 +743,7 @@ const treatments = [
     category: "body",
     label: "Body Contouring",
     price: "₹2,500",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVmU5UJsfCcLJhqdkmjCzmyPwuwWdThpDkDATfPBNUg&s=10"
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR76H_hBpK-RzDBNePZaWxdnxo727JiS5wkxcijAvFIw&s=10"
   },
 
   {
@@ -751,7 +751,7 @@ const treatments = [
     category: "body",
     label: "Body Contouring",
     price: "₹2,500",
-    image:"https://ayubplasticsurgery.com/img/Plastic-surgery-armliftslider1.jpg"
+    image:"https://www.jacobsonplasticsurgery.com//files/2024/08/Arm-fat-reduction-1024x683.jpeg"
   },
 
   /* ================= FACIAL ================= */
@@ -762,7 +762,7 @@ const treatments = [
     label: "Facial",
     price: "₹3,599",
     image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Qr1L-1XkrpGPPdJ8KKz2rVUkQakr9seGWwhranyCqQ&s=10",
   },
 
   {
@@ -771,7 +771,7 @@ const treatments = [
     label: "Facial",
     price: "₹3,599",
     image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOj6YTSkBeNnQ7s5Mly6FlgUwIOpNDNe-teufPJbjjQ&s=10",
   },
 
   {
@@ -789,7 +789,7 @@ const treatments = [
     label: "Body Polish",
     price: "₹2,399",
     image:
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeX29PmHze3u0EewXjmA0XMKpOBTCV4w5iqU41WSz8aA&s=10",
   },
 
   {
