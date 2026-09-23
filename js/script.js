@@ -346,23 +346,36 @@ function initBookingModal() {
   const modal = document.getElementById("bookingModal");
   if (!modal) return;
 
-  const modalTriggers = document.querySelectorAll(
-    '[data-open-modal="booking"], .open-booking-btn, a[href="#bookingModal"]',
-  );
-  const closeTriggers = modal.querySelectorAll(
-    '[data-close-modal="booking"], .modal-close-btn',
-  );
-
-  modalTriggers.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
+  // Delegated click listener for all booking modal triggers
+  document.addEventListener("click", (e) => {
+    const trigger = e.target.closest(
+      '[data-open-modal="booking"], [data-open-modal="bookingModal"], .open-booking-btn, a[href="#bookingModal"]'
+    );
+    if (trigger) {
       e.preventDefault();
-      const treatmentName = btn.getAttribute("data-treatment") || "";
-      openBookingModal(treatmentName);
-    });
-  });
+      // If trigger is inside mobile drawer, close drawer first
+      const mobileDrawer = document.getElementById("mobileNavDrawer");
+      const drawerBackdrop = document.getElementById("drawerBackdrop");
+      if (mobileDrawer && !mobileDrawer.classList.contains("translate-x-full")) {
+        mobileDrawer.classList.add("translate-x-full");
+        if (drawerBackdrop) {
+          drawerBackdrop.classList.add("opacity-0");
+          setTimeout(() => drawerBackdrop.classList.add("hidden"), 300);
+        }
+      }
 
-  closeTriggers.forEach((btn) => {
-    btn.addEventListener("click", () => closeBookingModal());
+      const treatmentName = trigger.getAttribute("data-treatment") || "";
+      openBookingModal(treatmentName);
+      return;
+    }
+
+    // Close button triggers
+    const closeBtn = e.target.closest('[data-close-modal="booking"], .modal-close-btn');
+    if (closeBtn && modal.contains(closeBtn)) {
+      e.preventDefault();
+      closeBookingModal();
+      return;
+    }
   });
 
   modal.addEventListener("click", (e) => {
@@ -429,7 +442,9 @@ window.openBookingModal = function (treatment = "") {
   initLucideIcons();
 };
 
-//13. close booking modal
+window.openBooking = window.openBookingModal;
+
+// 13. Close booking modal
 window.closeBookingModal = function () {
   const modal = document.getElementById("bookingModal");
   if (!modal) return;
@@ -437,6 +452,8 @@ window.closeBookingModal = function () {
   modal.classList.remove("flex");
   document.body.style.overflow = "";
 };
+
+window.closeBooking = window.closeBookingModal;
 
 // 14. Multi-Step Booking Page (booking.html)
 function initBookingMultiStep() {
@@ -572,9 +589,7 @@ function closeReviewModal() {
   resetReviewForm();
 }
 
-document
-  .getElementById("reviewModal")
-  .addEventListener("click", function (event) {
+document.getElementById("reviewModal").addEventListener("click", function (event) {
     if (event.target === this) {
       closeReviewModal();
     }

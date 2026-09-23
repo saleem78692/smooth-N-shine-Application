@@ -264,7 +264,7 @@
 
 
                                         <!-- Featured Treatment -->
-                                        <a href="treatment-details.html" class="group flex items-center justify-between
+                                        <a href="korean-facial-benefits.html" class="group flex items-center justify-between
                                                p-2.5 mb-2 rounded-lg
                                                bg-[#FCF0F1]
                                                border border-[#FCE8EA]
@@ -390,7 +390,7 @@
 
 
                                         <!-- CTA -->
-                                        <a href="#bookingModal" data-bs-toggle="modal" class="mt-3 flex items-center justify-between
+                                        <a href="#bookingModal" data-open-modal="booking" class="mt-3 flex items-center justify-between
                                                rounded-lg
                                                bg-[#20120F]
                                                px-2.5 py-2
@@ -553,8 +553,8 @@
                     </div>
 
 
-                    <!-- Search -->
-                    <a href="comparison-slider.html" class="w-10 h-10
+                    <!-- cart -->
+                    <a href="cart.html" class="w-10 h-10
                            rounded-full
                            border border-border
                            bg-white
@@ -562,11 +562,12 @@
                            flex items-center justify-center
                            hover:bg-primary
                            hover:text-white
-                           transition-colors">
+                           transition-colors relative">
 
-                        <i data-lucide="camera" class="w-4 h-4">
+                        <i data-lucide="shopping-cart" class="w-4 h-4">
                         </i>
-
+                        <span
+                            class="absolute -top-2 right-0 bg-primary rounded-full h-5 w-5 text-sm flex justify-center items-center">0</span>
                     </a>
 
 
@@ -581,7 +582,7 @@
 
 
                     <!-- Book Appointment -->
-                    <a href="booking.html" class="h-10 px-5
+                    <a href="#bookingModal" data-open-modal="booking" class="h-10 px-5
                            rounded-full
                            bg-primary
                            hover:bg-primary-dark
@@ -687,7 +688,7 @@
         </div>
 
         <div class="p-6 bg-background border-t border-border space-y-3">
-            <a href="booking.html"
+            <a href="#bookingModal" data-open-modal="booking"
                 class="w-full py-3 rounded-xl bg-primary text-white text-center font-bold text-xs flex items-center justify-center gap-2">
                 <i data-lucide="calendar" class="w-4 h-4"></i> Book Appointment
             </a>
@@ -700,7 +701,7 @@
         </div>
     </div>
 
-    <!-- HEADER HERO BANNER -->
+    <!--  HERO BANNER -->
     <section class="relative overflow-hidden bg-primary-light py-5 sm:py-10">
 
         <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary/10">
@@ -744,12 +745,12 @@
 
                 <div class="flex flex-wrap gap-4 mt-8">
 
-                    <a href="booking.html"
+                   <!-- <button onclick="openBooking('')"
                         class="bg-primary hover:bg-primary-dark text-white px-3 sm:px-7 py-2 sm:py-4 rounded-full font-bold transition shadow-lg">
 
                         Book Appointment
 
-                    </a>
+                    </button> -->
 
                     <a href="treatments.html"
                         class="border border-primary text-primary hover:bg-primary hover:text-white px-3 sm:px-7 py-2 sm:py-4 rounded-full font-bold transition">
@@ -1029,6 +1030,115 @@
 
         </div>
     </nav>
+
+    <!-- ================= UNIVERSAL BOOKING MODAL ================= -->
+    <div id="bookingModal"
+        class="fixed inset-0 z-[99999] hidden items-center justify-center bg-dark/60 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden my-8">
+            <div class="bg-dark px-6 py-5 text-white flex items-center justify-between">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                        <i data-lucide="calendar" class="w-4 h-4 text-primary"></i> Book Your Appointment
+                    </h3>
+                    <p class="text-[11px] text-white/70">Certified Dermatologist Service At Your Doorstep</p>
+                </div>
+                <button type="button" data-close-modal="booking"
+                    class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+
+            <!-- Success Box -->
+            <div id="modalSuccessBox" class="hidden p-8 text-center">
+                <div
+                    class="w-16 h-16 bg-green-100 text-success rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i data-lucide="check" class="w-8 h-8"></i>
+                </div>
+                <h4 class="text-xl font-bold text-dark font-serif mb-2">Appointment Request Submitted!</h4>
+                <p class="text-xs text-muted max-w-xs mx-auto">
+                    Thank you! Our clinical coordinator will contact you in a few minutes to confirm your doorstep slot.
+                </p>
+            </div>
+
+            <form id="universalBookingForm" class="p-6 space-y-3.5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase text-text mb-1">Full Name</label>
+                        <input type="text" name="name" required placeholder="Priya Sharma"
+                            class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase text-text mb-1">Mobile Number</label>
+                        <input type="tel" name="phone" required placeholder="+91 98765 43210"
+                            class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase text-text mb-1">City</label>
+                        <select name="city"
+                            class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                            <option value="mumbai">Mumbai</option>
+                            <option value="navi-mumbai">Navi Mumbai</option>
+                            <option value="thane">Thane</option>
+                            <option value="pune">Pune</option>
+                            <option value="delhi">Delhi NCR</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase text-text mb-1">Treatment</label>
+                        <select name="treatment" required
+                            class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                            <option value="Korean Glass Skin Facial">Korean Glass Skin Facial</option>
+                            <option value="Microdermabrasion">Diamond Microdermabrasion</option>
+                            <option value="Laser Hair Reduction">Laser Hair Reduction (LHR)</option>
+                            <option value="Body Slimming">Body Slimming & Contouring</option>
+                            <option value="Carbon Laser Facial">Carbon Laser & Diode Toning</option>
+                            <option value="Medical Medi-Facial">Medical Medi-Facial</option>
+                            <option value="Chemical Peels">Chemical Peels</option>
+                            <option value="Doctor Consultation">General Doctor Consultation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase text-text mb-1">Preferred Date</label>
+                        <input type="date" name="date" required
+                            class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase text-text mb-1">Preferred Time</label>
+                        <select name="time"
+                            class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                            <option value="Morning">Morning (10:00 AM - 01:00 PM)</option>
+                            <option value="Afternoon">Afternoon (01:00 PM - 04:00 PM)</option>
+                            <option value="Evening">Evening (04:00 PM - 08:00 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase text-text mb-1">Full Address for Doorstep
+                        Service</label>
+                    <input type="text" name="address" required placeholder="Flat / Building, Street, Landmark"
+                        class="w-full h-10 px-3 rounded-xl border border-border text-xs bg-background outline-none focus:border-primary">
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <button type="button" data-close-modal="booking"
+                        class="w-1/3 h-11 rounded-xl border border-border text-xs font-semibold text-text hover:bg-background">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="w-2/3 h-11 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs font-bold shadow-md transition-colors">
+                        Confirm Booking
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

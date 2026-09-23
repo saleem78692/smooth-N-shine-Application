@@ -6,61 +6,72 @@ const servicesData = {
   /* ================= SALON ================= */
   salon: [
     {
-      id: "wax-1",
+      id: "salon-1",
       title: "Upper Lip",
       price: 1079,
-      duration: "1 hr 15 mins",
+      duration: "30 mins",
       badge: null,
       subtitle: null,
-      image: "assets/images/upper-lip.png",
+      image: "assets/images/Upper-Lip-and-Chin-Laser-Hair-Reduction-03jan26.webp",
       initialQty: 0,
     },
 
     {
-      id: "hand-1",
+      id: "salon-2",
       title: "Hands",
       price: 3599,
-      duration: "1 hr 30 mins",
+      duration: "1 hr",
       badge: "Most Booked",
       subtitle: null,
-      image: "assets/images/full-hand.webp",
+      image: "assets/images/Full-Arms-Laser-Hair-Reduction-05jan26.webp",
       initialQty: 0,
     },
 
     {
-      id: "legs-1",
+      id: "salon-3",
       title: "Legs",
       price: 4799,
-      duration: "1 hr 30 mins",
+      duration: "45 mins",
       badge: "Most Booked",
       subtitle: null,
-      image: "assets/images/legs1.jpeg",
+      image: "assets/images/legs2.webp",
       initialQty: 0,
     },
 
+     {
+      id: "salon-4",
+      title: "Front",
+      price: 3599,
+      duration: "45 mins",
+      badge: "Most Booked",
+      subtitle: null,
+      image: "assets/images/front1.webp",
+      initialQty: 0,
+    },
+
+
     {
-      id: "back-1",
+      id: "salon-5",
       title: "Back",
       price: 3599,
-      duration: "1 hr 30 mins",
+      duration: "50 mins",
       badge: "Most Booked",
       subtitle: null,
-      image: "https://barewaxingandlaser.com/wp-content/uploads/2026/03/Bare-Waxing-And-Laser-Waxa-nd-Skincare-Huntington-Beach-Laser-Hair-Removal-for-Womens-Lower-Backs.jpg",
+      image:
+        "https://barewaxingandlaser.com/wp-content/uploads/2026/03/Bare-Waxing-And-Laser-Waxa-nd-Skincare-Huntington-Beach-Laser-Hair-Removal-for-Womens-Lower-Backs.jpg",
       initialQty: 0,
     },
 
     {
-      id: "stomach-1",
+      id: "salon-6",
       title: "Under Arms",
       price: 1079,
-      duration: "1 hr 30 mins",
+      duration: "30 mins",
       badge: "Most Booked",
       subtitle: null,
-      image: "assets/images/underarms.png",
+      image: "assets/images/Underarms-Reduction-03jan26.webp",
       initialQty: 0,
     },
-
-   
   ],
 
   /* ================= HYDRAGLO / FACIAL ================= */
@@ -81,11 +92,11 @@ const servicesData = {
       id: "facial-2",
       title: "Body diamond polish (per part)",
       price: 2399,
-      duration: "1 hr 00 mins",
+      duration: "3 hr",
       badge: "Trending",
       subtitle: "Instant Hydration & Radiance",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DkwGkvW8OQlKuZLV06RfFhuI9dPh0qUBrzwyT9DqlQ&s=10",
+        "assets/images/body.webp",
       initialQty: 0,
     },
 
@@ -93,7 +104,7 @@ const servicesData = {
       id: "facial-3",
       title: "Medi Facial",
       price: 3599,
-      duration: "1 hr 15 mins",
+      duration: "1 hr 30 mins",
       badge: "Popular",
       subtitle: "Advanced Skin Rejuvenation",
       image:
@@ -114,22 +125,10 @@ const servicesData = {
     },
 
     {
-      id: "facial-5",
-      title: "Korean Premium Facial",
-      price: 4599,
-      duration: "1 hr 30 mins",
-      badge: "Premium",
-      subtitle: "Deep Cleanse + Brightening",
-      image:
-        "https://images.unsplash.com/photo-1647004692483-c5d942fe1137?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW50aSUyMGFnaW5nfGVufDB8fDB8fHww",
-      initialQty: 0,
-    },
-
-    {
       id: "facial-6",
       title: "Buttocks",
       price: 3599,
-      duration: "1 hr 10 mins",
+      duration: "1 hr",
       badge: "Skin Care",
       subtitle: "Helps Improve Uneven Skin Tone",
       image: "assets/images/buttocks1.jpeg",
@@ -149,12 +148,12 @@ const servicesData = {
 
     {
       id: "facial-8",
-      title: "Full Body (7 Part)",
+      title: "Full Body",
       price: 14000,
-      duration: "2 hr 00 mins",
+      duration: "1",
       badge: "Combo",
       subtitle: "Complete Glow & Polish",
-      image: "assets/images/full-body(7parts).png",
+      image: "assets/images/body.webp",
       initialQty: 0,
     },
   ],
@@ -165,10 +164,11 @@ const servicesData = {
       id: "laser-1",
       title: "Face",
       price: 3599,
-      duration: "2 hr 30 mins",
+      duration: "1 hr 15 mins",
       badge: "Best Value",
       subtitle: "Painless Cooling Technology",
-      image: "https://www.informclinic.com/backend/service/section/facialhair1.jpg",
+      image:
+        "assets/images/ssi-FullFace-LHR-03jan26.webp",
       initialQty: 0,
     },
   ],
@@ -275,7 +275,7 @@ function renderCards() {
                       <button
                         type="button"
                         onclick="updateQuantity('${item.id}', -1)"
-                        class="hover:bg-primary-light rounded w-6 h-6 flex items-center justify-center transition-colors text-base font-bold leading-none select-none"
+                        class="hover:bg-primary-light rounded-full m-1 w-6 h-6 flex items-center justify-center transition-colors text-base font-bold leading-none select-none"
                        >
                         −
                       </button>
@@ -295,7 +295,7 @@ function renderCards() {
                       <button
                         type="button"
                         onclick="updateQuantity('${item.id}', 1)"
-                        class="hover:bg-primary-light rounded w-6 h-6 flex items-center justify-center transition-colors text-base font-bold leading-none select-none"
+                        class="hover:bg-primary-light rounded-full m-1 w-6 h-6 flex items-center justify-center transition-colors text-base font-bold leading-none select-none"
                       >
                         +
                       </button>
@@ -601,39 +601,44 @@ const treatments = [
 
   {
     name: "Upper Lip",
+    time:"30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
-    image: "assets/images/upper-lip.png",
+    image: "assets/images/Upper-Lip-and-Chin-Laser-Hair-Reduction-03jan26.webp",
   },
 
   {
     name: "Chin",
+    time:"50 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
     image:
-      "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCz-spjoi9dzFJb1caSyDce0qtBvijQeTTAbq21utiMQ&s=10",
   },
 
   {
     name: "Side Locks",
+    time:"30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
-    image: "assets/images/side-lockes.png",
+    image: "assets/images/Sidelocks-Laser-Hair-Reduction-05jan26.webp",
   },
 
   {
     name: "Underarms",
+    time:"30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
-    image: "assets/images/underarms.png",
+    image: "assets/images/Underarms-Reduction-03jan26.webp",
   },
 
   {
     name: "Neck Line",
+    time:"30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,179",
@@ -642,46 +647,56 @@ const treatments = [
 
   {
     name: "Midriff",
+    time:"50 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,439",
-    image: "https://www.eveclinics.co.uk/wp-content/uploads/2019/05/tummy-tuck-600x400.png",
+    image:
+      "assets/images/front1.webp",
   },
 
   {
     name: "Face",
+    time:"1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
-    image: "https://www.informclinic.com/backend/service/section/facialhair1.jpg",
+    image:
+      "assets/images/Full-Face-Laser-Hair-Reduction-05jan26.webp",
   },
 
   {
     name: "Hands",
+    time:"1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
-    image: "assets/images/full-hand.webp",
+    image: "assets/images/Full-Arms-Laser-Hair-Reduction-05jan26.webp",
   },
 
   {
     name: "Front",
+    time:"45 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
-    image: "https://soleabeautylounge.com/wp-content/uploads/2022/11/laser-treatment-on-the-chest.jpg",
+    image:
+      "https://soleabeautylounge.com/wp-content/uploads/2022/11/laser-treatment-on-the-chest.jpg",
   },
 
   {
     name: "Back",
+    time:"50 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
-    image: "https://barewaxingandlaser.com/wp-content/uploads/2026/03/Bare-Waxing-And-Laser-Waxa-nd-Skincare-Huntington-Beach-Laser-Hair-Removal-for-Womens-Lower-Backs.jpg",
+    image:
+      "https://barewaxingandlaser.com/wp-content/uploads/2026/03/Bare-Waxing-And-Laser-Waxa-nd-Skincare-Huntington-Beach-Laser-Hair-Removal-for-Womens-Lower-Backs.jpg",
   },
 
   {
     name: "Bikini",
+    time:"45 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
@@ -690,6 +705,7 @@ const treatments = [
 
   {
     name: "Buttocks",
+    time:"45 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
@@ -698,14 +714,16 @@ const treatments = [
 
   {
     name: "Legs",
+    time:"1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹4,799",
-    image: "assets/images/legs1.jpeg",
+    image: "assets/images/legs2.webp",
   },
 
   {
     name: "Full Body (5 Part)",
+    time:"3 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹12,000",
@@ -714,6 +732,7 @@ const treatments = [
 
   {
     name: "Full Body (7 Part)",
+    time:"3 hr 20 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹14,000",
@@ -724,40 +743,49 @@ const treatments = [
 
   {
     name: "U-Lipo",
+    time:"",
     category: "body",
     label: "Body Toning",
     price: "₹2,500",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRteyzFahitY4-WBTVSWP2T6v5CFgTefOI8yjU58Ti3Ww&s=10",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRteyzFahitY4-WBTVSWP2T6v5CFgTefOI8yjU58Ti3Ww&s=10",
   },
 
   {
     name: "Stomach Contouring",
+    time:"",
     category: "body",
     label: "Body Contouring",
     price: "₹2,500",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDrsejniEOGrQkg_tvE_Lti7bmOoXWZzbpw1_aHXung&s=10"
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDrsejniEOGrQkg_tvE_Lti7bmOoXWZzbpw1_aHXung&s=10",
   },
 
   {
     name: "Thigh Contouring",
+    time:"",
     category: "body",
     label: "Body Contouring",
     price: "₹2,500",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR76H_hBpK-RzDBNePZaWxdnxo727JiS5wkxcijAvFIw&s=10"
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR76H_hBpK-RzDBNePZaWxdnxo727JiS5wkxcijAvFIw&s=10",
   },
 
   {
     name: "Arm Contouring",
+    time:"",
     category: "body",
     label: "Body Contouring",
     price: "₹2,500",
-    image:"https://www.jacobsonplasticsurgery.com//files/2024/08/Arm-fat-reduction-1024x683.jpeg"
+    image:
+      "https://www.jacobsonplasticsurgery.com//files/2024/08/Arm-fat-reduction-1024x683.jpeg",
   },
 
   /* ================= FACIAL ================= */
 
   {
     name: "Korean Facial",
+    time:"",
     category: "facial",
     label: "Facial",
     price: "₹3,599",
@@ -767,6 +795,7 @@ const treatments = [
 
   {
     name: "Medi Facial",
+    time:"",
     category: "facial",
     label: "Facial",
     price: "₹3,599",
@@ -776,6 +805,7 @@ const treatments = [
 
   {
     name: "Polishing Combined with Facial",
+    time:"",
     category: "facial",
     label: "Facial",
     price: "₹2,999",
@@ -785,16 +815,19 @@ const treatments = [
 
   {
     name: "Body Diamond Polish",
+    time:"",
     category: "facial",
     label: "Body Polish",
     price: "₹2,399",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeX29PmHze3u0EewXjmA0XMKpOBTCV4w5iqU41WSz8aA&s=10",
+      "assets/images/body.webp",
   },
 
   {
     name: "RF with Anti-Aging Facial",
+    time:"",
     category: "facial",
+    time: "20 min",
     label: "Anti-Aging Facial",
     price: "₹2,399",
     image:
@@ -808,7 +841,6 @@ const treatments = [
 
 function renderTreatments(filter = "all", search = "") {
   const grid = document.getElementById("treatmentGrid");
-
   const noResults = document.getElementById("noResults");
 
   const searchText = search.toLowerCase().trim();
@@ -827,13 +859,12 @@ function renderTreatments(filter = "all", search = "") {
 
   if (filtered.length === 0) {
     noResults.classList.remove("hidden");
-
     return;
   }
 
   noResults.classList.add("hidden");
 
-  filtered.forEach((item) => {
+  filtered.forEach((item, index) => {
     const detailsUrl = `treatment-details.html?treatment=${encodeURIComponent(item.name)}`;
 
     const card = document.createElement("div");
@@ -843,141 +874,252 @@ function renderTreatments(filter = "all", search = "") {
 
     card.innerHTML = `
 
-                    <!-- IMAGE -->
+            <!-- IMAGE -->
+            <a
+                href="${detailsUrl}"
+                class="block relative h-56 overflow-hidden group"
+                aria-label="View ${item.name} details">
+
+                <img
+                    src="${item.image}"
+                    alt="${item.name}"
+                    class="treatment-image w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80'"
+                >
+
+                <div class="image-overlay absolute inset-0"></div>
+
+                <!-- Category -->
+                <div class="absolute top-4 left-4">
+                    <span
+                        class="bg-white/95 backdrop-blur-sm text-primary text-[11px] font-bold px-3 py-1.5 rounded-full">
+                        ${item.label}
+                    </span>
+                </div>
+
+                <!-- Price -->
+                <div class="absolute bottom-4 left-4 text-white">
+                    <div class="text-xs opacity-80">
+                        Starting from
+                    </div>
+
+                    <div class="text-xl font-bold">
+                        ${item.price}
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <div
+                    class="absolute right-4 bottom-4 w-10 h-10 rounded-full
+                    bg-white text-primary flex items-center justify-center
+                    opacity-0 group-hover:opacity-100 transition-all duration-300
+                    translate-y-2 group-hover:translate-y-0">
+
+                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- CONTENT -->
+            <div class="p-5">
+
+                <div
+                    class="text-xs uppercase tracking-widest
+                    text-primary font-bold mb-2">
+
+                    ${item.category}
+
+                      <span class="float-end flex items-center gap-1">
+                        <i data-lucide="clock-3" class="w-4 h-4"></i>
+                         ${item.time}
+                      </span>
+
+                </div>
+
+
+                <!-- TITLE -->
+                <a
+                    href="${detailsUrl}"
+                    class="group inline-block">
+
+                    <h3
+                        class="text-xl font-bold text-dark
+                        group-hover:text-primary transition">
+
+                        ${item.name}
+
+                    </h3>
+
+                </a>
+
+
+                <p class="text-sm text-muted mt-2">
+                    Single session • Professional treatment
+                </p>
+
+
+                <div
+                    class="flex items-center justify-between gap-3 mt-5">
+
+                    <!-- VIEW DETAILS -->
                     <a
                         href="${detailsUrl}"
-                        class="block relative h-56 overflow-hidden group"
-                        aria-label="View ${item.name} details">
+                        class="text-sm font-bold text-primary hover:underline">
 
-                        <img
-                            src="${item.image}"
-                            alt="${item.name}"
-                            class="treatment-image w-full h-full object-cover"
-                            loading="lazy"
-                            onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80'">
-
-                        <div
-                            class="image-overlay absolute inset-0">
-                        </div>
-
-
-                        <!-- Category -->
-                        <div
-                            class="absolute top-4 left-4">
-
-                            <span
-                                class="bg-white/95 backdrop-blur-sm text-primary text-[11px] font-bold px-3 py-1.5 rounded-full">
-
-                                ${item.label}
-
-                            </span>
-
-                        </div>
-
-
-                        <!-- Price -->
-                        <div
-                            class="absolute bottom-4 left-4 text-white">
-
-                            <div class="text-xs opacity-80">
-                                Starting from
-                            </div>
-
-                            <div class="text-xl font-bold">
-                                ${item.price}
-                            </div>
-
-                        </div>
-
-
-                        <!-- Arrow -->
-                        <div
-                            class="absolute right-4 bottom-4 w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-
-                            <i data-lucide="arrow-up-right"
-                                class="w-5 h-5">
-                            </i>
-
-                        </div>
+                        View Details
 
                     </a>
 
 
-                    <!-- CONTENT -->
-                    <div class="p-5">
+                    <!-- CART ACTION -->
+                    <div
+                        class="cart-action"
+                        data-index="${index}">
 
-                        <div
-                            class="text-xs uppercase tracking-widest text-primary font-bold mb-2">
+                        <!-- ADD NOW -->
+                        <button
+                            type="button"
+                            onclick="showQuantity(this)"
+                            class="bg-primary hover:bg-primary-dark
+                            text-white px-4 py-2.5 rounded-full
+                            text-sm font-bold transition">
 
-                            ${item.category}
+                            ADD NOW
 
-                        </div>
-
-
-                        <!-- TITLE CLICKABLE -->
-                        <a
-                            href="${detailsUrl}"
-                            class="group inline-block">
-
-                            <h3
-                                class="text-xl font-bold text-dark group-hover:text-primary transition">
-
-                                ${item.name}
-
-                            </h3>
-
-                        </a>
-
-
-                        <p
-                            class="text-sm text-muted mt-2">
-
-                            Single session • Professional treatment
-
-                        </p>
-
-
-                        <div
-                            class="flex items-center justify-between gap-3 mt-5">
-
-                            <a
-                                href="${detailsUrl}"
-                                class="text-sm font-bold text-primary hover:underline">
-
-                                View Details
-
-                            </a>
-
-
-                            <!-- IMPORTANT:
-                                 Book button is NOT inside <a>
-                                 so it will open modal properly -->
-
-                            <button
-                                type="button"
-                                onclick='openBooking(${JSON.stringify(item.name)})'
-                                class="bg-primary hover:bg-primary-dark text-white px-4 py-2.5 rounded-full text-sm font-bold transition">
-
-                                Book Now
-
-                            </button>
-
-                        </div>
+                        </button>
 
                     </div>
 
-                `;
+                </div>
+
+            </div>
+        `;
 
     grid.appendChild(card);
   });
 
-  /*
-   * Lucide icons are dynamically added
-   * after innerHTML.
-   */
+  // Create Lucide icons
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+/* =========================================
+   SHOW QUANTITY
+========================================= */
+
+function showQuantity(button) {
+  const cartAction = button.closest(".cart-action");
+
+  // Store quantity inside this particular card
+  cartAction.dataset.quantity = "1";
+
+  cartAction.innerHTML = `
+
+        <div
+            class="inline-flex items-center
+            bg-primary-light border border-primary/20
+            rounded-full p-1">
+
+            <!-- MINUS -->
+            <button
+                type="button"
+                onclick="decreaseQty(this)"
+                class="w-7 h-7 flex items-center justify-center
+                rounded-full bg-white text-primary
+                hover:bg-primary hover:text-white transition">
+
+                <i data-lucide="minus" class="w-4 h-4"></i>
+
+            </button>
+
+
+            <!-- QUANTITY -->
+            <span
+                class="quantity-value w-8 text-center
+                text-sm font-bold text-dark">
+
+                1
+
+            </span>
+
+
+            <!-- PLUS -->
+            <button
+                type="button"
+                onclick="increaseQty(this)"
+                class="w-7 h-7 flex items-center justify-center
+                rounded-full bg-primary text-white
+                hover:bg-primary-dark transition">
+
+                <i data-lucide="plus" class="w-4 h-4"></i>
+
+            </button>
+
+        </div>
+    `;
 
   if (window.lucide) {
     lucide.createIcons();
+  }
+}
+
+/* =========================================
+   INCREASE QUANTITY
+========================================= */
+
+function increaseQty(button) {
+  const cartAction = button.closest(".cart-action");
+
+  let quantity = parseInt(cartAction.dataset.quantity || "1");
+
+  quantity++;
+
+  cartAction.dataset.quantity = quantity;
+
+  const quantityElement = cartAction.querySelector(".quantity-value");
+
+  quantityElement.textContent = quantity;
+}
+
+/* =========================================
+   DECREASE QUANTITY
+========================================= */
+
+function decreaseQty(button) {
+  const cartAction = button.closest(".cart-action");
+
+  let quantity = parseInt(cartAction.dataset.quantity || "1");
+
+  if (quantity > 1) {
+    quantity--;
+
+    cartAction.dataset.quantity = quantity;
+
+    const quantityElement = cartAction.querySelector(".quantity-value");
+
+    quantityElement.textContent = quantity;
+  } else {
+    // Back to ADD NOW
+    cartAction.dataset.quantity = "0";
+
+    cartAction.innerHTML = `
+
+            <button
+                type="button"
+                onclick="showQuantity(this)"
+                class="bg-primary hover:bg-primary-dark
+                text-white px-4 py-2.5 rounded-full
+                text-sm font-bold transition">
+
+                ADD NOW
+
+            </button>
+
+        `;
   }
 }
 
@@ -1018,58 +1160,26 @@ document
         ========================================================= */
 
 function openBooking(treatment = "") {
-  const modal = document.getElementById("bookingModal");
-
-  const selectedTreatment = document.getElementById("selectedTreatment");
-
-  const treatmentSelect = document.getElementById("treatmentSelect");
-
-  selectedTreatment.value = treatment;
-
-  /*
-   * Try to select matching treatment
-   */
-
-  if (treatment) {
-    let found = false;
-
-    for (const option of treatmentSelect.options) {
-      if (option.value.toLowerCase() === treatment.toLowerCase()) {
-        treatmentSelect.value = option.value;
-
-        found = true;
-
-        break;
-      }
-    }
-
-    /*
-     * If exact option isn't available,
-     * add it temporarily.
-     */
-
-    if (!found) {
-      const option = document.createElement("option");
-
-      option.value = treatment;
-      option.textContent = treatment;
-
-      treatmentSelect.appendChild(option);
-
-      treatmentSelect.value = treatment;
-    }
+  if (typeof window.openBookingModal === "function") {
+    window.openBookingModal(treatment);
+    return;
   }
-
-  modal.classList.add("show");
-
+  const modal = document.getElementById("bookingModal");
+  if (!modal) return;
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
   document.body.style.overflow = "hidden";
 }
 
 function closeBooking() {
+  if (typeof window.closeBookingModal === "function") {
+    window.closeBookingModal();
+    return;
+  }
   const modal = document.getElementById("bookingModal");
-
-  modal.classList.remove("show");
-
+  if (!modal) return;
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
   document.body.style.overflow = "";
 }
 
@@ -1099,13 +1209,14 @@ function submitBooking(event) {
            MODAL OUTSIDE CLICK
         ========================================================= */
 
-document
-  .getElementById("bookingModal")
-  .addEventListener("click", function (event) {
+const bookingModalEl = document.getElementById("bookingModal");
+if (bookingModalEl) {
+  bookingModalEl.addEventListener("click", function (event) {
     if (event.target === this) {
       closeBooking();
     }
   });
+}
 
 /* =========================================================
            ESCAPE KEY

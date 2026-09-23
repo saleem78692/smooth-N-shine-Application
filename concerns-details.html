@@ -1,50 +1,107 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Offers & Deals | Smooth N Shine Aesthetics</title>
-    <meta name="description"
-        content="Exclusive promo codes, combo deals, and festive discounts on certified home aesthetic treatments." />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Acne Cleanup Facial | Smooth N Shine</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#A66373', dark: '#7E4150', light: '#FAF2EF' },
-                        purple: { DEFAULT: '#A66373', light: '#DFC2C9' },
-                        secondary: { DEFAULT: '#C57668', dark: '#A85B4E', light: '#EAA597' },
-                        coral: { DEFAULT: '#C57668', light: '#EAA597' },
-                        lavender: { DEFAULT: '#DFC2C9', light: '#FAF4F0' },
-                        dark: '#2B1A20',
-                        text: '#2B1A20',
-                        muted: '#78636B',
-                        background: '#FAF4F0',
-                        border: '#ECDAD5',
-                        success: '#238B65',
-                        warning: '#C57668'
+                        primary: "#A66373",
+                        "primary-dark": "#7E4150",
+                        "primary-light": "#FAF2EF",
+
+                        secondary: "#C57668",
+                        "secondary-dark": "#A85B4E",
+                        "secondary-light": "#EAA597",
+
+                        lavender: "#DFC2C9",
+
+                        dark: "#2B1A20",
+                        muted: "#78636B",
+
+                        background: "#FAF4F0",
+                        border: "#ECDAD5",
+
+                        success: "#238B65",
                     },
+
                     fontFamily: {
-                        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
-                        sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+                        sans: ["DM Sans", "sans-serif"],
+                        serif: ["DM Serif Display", "serif"]
+                    },
+
+                    boxShadow: {
+                        soft: "0 15px 45px rgba(43,26,32,0.08)",
+                        card: "0 10px 35px rgba(43,26,32,0.06)"
                     }
                 }
             }
         }
     </script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
-        rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #FAF4F0;
+            color: #2B1A20;
+        }
+
+        .serif {
+            font-family: "DM Serif Display", serif;
+        }
+
+        .hero-image {
+            transition: transform .7s ease;
+        }
+
+        .hero-card:hover .hero-image {
+            transform: scale(1.04);
+        }
+
+        .step-line::after {
+            content: "";
+            position: absolute;
+            top: 28px;
+            left: 56px;
+            right: -20px;
+            height: 1px;
+            background: #ECDAD5;
+        }
+
+        @media(max-width: 767px) {
+            .step-line::after {
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 
-<body class="bg-background text-text font-sans antialiased">
-
+<body>
     <!-- ================= TOP OFFER BAR ================= -->
     <div class="bg-[#2B1A20] text-xs sm:text-sm py-2.5 px-4 text-white">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -60,7 +117,7 @@
     </div>
 
     <!-- ================= STICKY HEADER ================= -->
-     <header
+    <header
         class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-[0_4px_20px_rgba(32,18,15,0.04)]">
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +145,7 @@
 
                     <!-- =========================================================
                      TREATMENTS
-                ========================================================== -->
+                    ========================================================== -->
                     <div class="relative h-full flex items-center has-mega-menu cursor-pointer">
 
                         <a href="treatments.html" class="text-sm font-medium text-text hover:text-primary
@@ -264,7 +321,7 @@
 
 
                                         <!-- Featured Treatment -->
-                                        <a href="korean-facial-benefits.html" class="group flex items-center justify-between
+                                        <a href="treatment-details.html" class="group flex items-center justify-between
                                                p-2.5 mb-2 rounded-lg
                                                bg-[#FCF0F1]
                                                border border-[#FCE8EA]
@@ -390,7 +447,7 @@
 
 
                                         <!-- CTA -->
-                                        <a href="#bookingModal" data-open-modal="booking" class="mt-3 flex items-center justify-between
+                                        <a href="#bookingModal" data-bs-toggle="modal" class="mt-3 flex items-center justify-between
                                                rounded-lg
                                                bg-[#20120F]
                                                px-2.5 py-2
@@ -439,7 +496,7 @@
 
                     <!-- =========================================================
                      CONCERNS DROPDOWN
-                ========================================================== -->
+                     ========================================================== -->
                     <div class="relative h-full flex items-center has-dropdown cursor-pointer">
 
                         <a href="concerns.html" class="text-sm font-medium text-text hover:text-primary
@@ -567,7 +624,7 @@
                         <i data-lucide="shopping-cart" class="w-4 h-4">
                         </i>
                         <span
-                            class="absolute -top-2 right-0 bg-primary rounded-full h-5 w-5 text-sm flex justify-center items-center">0</span>
+                            class="absolute -top-2 right-0 bg-primary rounded-full h-5 w-5 text-sm flex justify-center items-center text-white">0</span>
                     </a>
 
 
@@ -701,142 +758,639 @@
         </div>
     </div>
 
-    <!--  HERO BANNER -->
-    <section class="relative overflow-hidden bg-primary-light py-5 sm:py-10">
 
-        <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary/10">
-        </div>
+    <!-- ================= MAIN ================= -->
+    <main>
 
-        <div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-secondary/10">
-        </div>
+        <!-- ================= BREADCRUMB ================= -->
+        <section class="pt-8 pb-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+                <div class="flex items-center gap-2 text-sm text-muted">
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-
-            <div class="max-w-3xl">
-
-                <div
-                    class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-sm mb-6">
-
-                    <span class="w-2 h-2 rounded-full bg-primary"></span>
-
-                    Save More on Beauty
-
-                </div>
-
-
-                <h1 class="font-serif text-2xl sm:text-6xl lg:text-7xl leading-tight text-dark">
-
-                    Exclusive Offers
-                    <span class="text-primary">
-                        & Packages
-                    </span>
-
-                </h1>
-
-
-                <p class="mt-3 text-muted text-[15px] sm:text-lg leading-8 max-w-2xl">
-
-                    Discover personalised aesthetic treatments delivered
-                    by trained professionals at the comfort of your home.
-
-                </p>
-
-
-                <div class="flex flex-wrap gap-4 mt-8">
-
-                  
-
-                    <a href="treatments.html"
-                        class="border border-primary text-primary hover:bg-primary hover:text-white px-3 sm:px-7 py-2 sm:py-4 rounded-full font-bold transition">
-
-                        Explore Treatments
-
+                    <a href="index.html" class="hover:text-primary transition">
+                        Home
                     </a>
 
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+
+                    <a href="concerns.html" class="hover:text-primary transition">
+                        Concerns
+                    </a>
+
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+
+                    <span id="breadcrumbTitle" class="text-dark font-semibold">
+                        Acne
+                    </span>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= HERO ================= -->
+        <section class="pb-12 lg:pb-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="hero-card bg-white rounded-[2rem] overflow-hidden shadow-soft border border-border">
+
+                    <div class="grid lg:grid-cols-2">
+
+                        <!-- IMAGE -->
+                        <div class="relative min-h-[420px] lg:min-h-[580px] overflow-hidden">
+
+                            <img id="heroImage" src="" alt=""
+                                class="hero-image absolute inset-0 w-full h-full object-cover">
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                            </div>
+
+                            <!-- Category -->
+                            <div class="absolute top-6 left-6">
+
+                                <span id="categoryBadge"
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur text-primary text-sm font-bold shadow">
+
+                                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+
+                                    Acne
+
+                                </span>
+
+                            </div>
+
+                            <!-- Bottom info -->
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+
+                                <div class="flex flex-wrap gap-3">
+
+                                    <span
+                                        class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-black/30 backdrop-blur text-xs font-semibold">
+
+                                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+
+                                        Professional Care
+
+                                    </span>
+
+                                    <span
+                                        class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-black/30 backdrop-blur text-xs font-semibold">
+
+                                        <i data-lucide="home" class="w-4 h-4"></i>
+
+                                        Doorstep Service
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONTENT -->
+                        <div class="p-7 sm:p-10 lg:p-14 flex flex-col justify-center">
+
+                            <p id="eyebrow"
+                                class="text-primary text-xs sm:text-sm font-extrabold tracking-[0.2em] uppercase mb-4">
+                                Skin Concern
+                            </p>
+
+                            <h1 id="pageTitle" class="serif text-4xl sm:text-5xl lg:text-6xl leading-tight text-dark">
+                                Acne Cleanup Facial
+                            </h1>
+
+                            <p id="shortDescription" class="text-muted text-base sm:text-lg leading-relaxed mt-6">
+                                Deep cleansing facial care for acne-prone and congested-looking skin.
+                            </p>
+
+
+                            <!-- Quick Info -->
+                            <div class="grid grid-cols-2 gap-3 mt-8">
+
+                                <div class="bg-background rounded-2xl p-4 border border-border">
+
+                                    <div class="flex items-center gap-2 text-primary mb-2">
+
+                                        <i data-lucide="clock" class="w-5 h-5"></i>
+
+                                        <span class="text-xs font-bold uppercase tracking-wide">
+                                            Duration
+                                        </span>
+
+                                    </div>
+
+                                    <p id="duration" class="font-bold text-dark">
+                                        60 Minutes
+                                    </p>
+
+                                </div>
+
+
+                                <div class="bg-background rounded-2xl p-4 border border-border">
+
+                                    <div class="flex items-center gap-2 text-primary mb-2">
+
+                                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+
+                                        <span class="text-xs font-bold uppercase tracking-wide">
+                                            Service
+                                        </span>
+
+                                    </div>
+
+                                    <p class="font-bold text-dark">
+                                        At Your Doorstep
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- CTA -->
+                            <div class="flex flex-col sm:flex-row gap-3 mt-8">
+
+                                <a id="bookingButton" href="booking.html?service=acne-cleanup"
+                                    class="flex-1 inline-flex justify-center items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-4 rounded-full font-bold transition shadow-lg shadow-primary/20">
+
+                                    Book Appointment
+
+                                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+
+                                </a>
+
+                                <a href="https://wa.me/918850666361" target="_blank"
+                                    class="inline-flex justify-center items-center gap-2 px-6 py-4 rounded-full border border-border bg-white hover:bg-primary-light text-dark font-bold transition">
+
+                                    <i data-lucide="message-circle" class="w-5 h-5 text-primary"></i>
+
+                                    WhatsApp
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- OFFERS GRID -->
-    <section class="py-14">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- ================= ABOUT CONCERN ================= -->
+        <section class="py-14 lg:py-20 bg-white">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <!-- 1 -->
-                <div class="bg-white rounded-3xl p-7 border border-border shadow-sm flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <span class="px-3 py-1 rounded-full bg-red-100 text-primary text-xs font-bold">New User
-                            Deal</span>
-                        <h3 class="text-2xl font-bold font-serif text-dark">Flat ₹50 OFF</h3>
-                        <p class="text-xs text-muted leading-relaxed">Applicable on your first booking of any Korean
-                            Facial or Laser Hair Reduction session.</p>
-                        <div class="text-[11px] text-muted">Validity: Ongoing • Min Order: ₹1,499</div>
-                    </div>
-                    <div class="mt-6 pt-5 border-t border-border flex items-center justify-between">
+                <div class="grid lg:grid-cols-3 gap-10 lg:gap-16">
+
+                    <!-- LEFT -->
+                    <div class="lg:col-span-2">
+
                         <span
-                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">FIRST50</span>
-                        <div class="flex gap-2">
-                            <button data-code="FIRST500"
-                                class="copy-coupon-btn px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-bold text-primary hover:bg-primary-light">Copy</button>
-                            <a href="booking.html?coupon=FIRST500"
-                                class="px-4 py-1.5 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary-dark">Book</a>
-                        </div>
-                    </div>
-                </div>
+                            class="inline-flex px-4 py-2 bg-primary-light rounded-full text-primary text-xs font-bold uppercase tracking-wider">
+                            About The Concern
+                        </span>
 
-                <!-- 2 -->
-                <div class="bg-white rounded-3xl p-7 border border-border shadow-sm flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple text-xs font-bold">
-                            Package</span>
-                        <h3 class="text-2xl font-bold font-serif text-dark">Flat 20% OFF</h3>
-                        <p class="text-xs text-muted leading-relaxed">On 5 sessions + complimentary service according to your session.</p>
-                        <div class="text-[11px] text-muted">Validity: Limited time • Min Order: ₹2,199</div>
-                    </div>
-                    <div class="mt-6 pt-5 border-t border-border flex items-center justify-between">
-                        <span
-                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">GLOWFREE</span>
-                        <div class="flex gap-2">
-                            <button data-code="GLOWFREE"
-                                class="copy-coupon-btn px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-bold text-purple hover:bg-purple-100">Copy</button>
-                            <a href="booking.html?coupon=GLOWFREE"
-                                class="px-4 py-1.5 rounded-lg bg-purple text-white text-xs font-bold hover:bg-purple-dark">Book</a>
-                        </div>
-                    </div>
-                </div>
+                        <h2 class="serif text-3xl sm:text-4xl lg:text-5xl mt-5 text-dark">
+                            Understanding
+                            <span id="aboutConcernTitle">Acne</span>
+                        </h2>
 
-                <!-- 3 -->
-                <div class="bg-white rounded-3xl p-7 border border-border shadow-sm flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <span class="px-3 py-1 rounded-full bg-green-100 text-success text-xs font-bold">Body
-                            Sculpting</span>
-                        <h3 class="text-2xl font-bold font-serif text-dark">Flat 30% OFF</h3>
-                        <p class="text-xs text-muted leading-relaxed">On 10+ sessions of U-Lipo ultrasonic body contouring..</p>
-                        <div class="text-[11px] text-muted">Validity: This month • Min Order: ₹4,000</div>
-                    </div>
-                    <div class="mt-6 pt-5 border-t border-border flex items-center justify-between">
-                        <span
-                            class="text-xs font-mono font-bold bg-background px-3 py-1.5 rounded-lg border border-border">BODY30</span>
-                        <div class="flex gap-2">
-                            <button data-code="BODY30"
-                                class="copy-coupon-btn px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-bold text-success hover:bg-green-100">Copy</button>
-                            <a href="booking.html?coupon=BODY30"
-                                class="px-4 py-1.5 rounded-lg bg-success text-white text-xs font-bold hover:bg-green-700">Book</a>
+                        <div id="aboutContent" class="mt-6 space-y-5 text-muted leading-8 text-base">
+
+                            <p>
+                                Acne-prone skin can often appear congested, uneven and
+                                uncomfortable due to excess oil, buildup and clogged pores.
+                                A consistent skincare routine combined with professional
+                                cleansing can help keep the skin feeling cleaner and fresher.
+                            </p>
+
+                            <p>
+                                The Acne Cleanup Facial is designed around gentle cleansing,
+                                exfoliation and skin-purifying care to refresh the appearance
+                                of acne-prone skin.
+                            </p>
+
+                            <p>
+                                Treatment intensity and suitability may vary depending on
+                                individual skin condition. Our professionals assess your skin
+                                before proceeding with the treatment.
+                            </p>
+
                         </div>
+
                     </div>
+
+
+                    <!-- RIGHT -->
+                    <div>
+
+                        <div class="bg-background rounded-3xl border border-border p-6 sticky top-8">
+
+                            <h3 class="font-bold text-xl">
+                                Concern Overview
+                            </h3>
+
+                            <div class="mt-6 space-y-4">
+
+                                <div class="flex items-center justify-between py-3 border-b border-border">
+
+                                    <span class="text-muted">
+                                        Concern
+                                    </span>
+
+                                    <span id="overviewConcern" class="font-bold">
+                                        Acne
+                                    </span>
+
+                                </div>
+
+                                <div class="flex items-center justify-between py-3 border-b border-border">
+
+                                    <span class="text-muted">
+                                        Treatment
+                                    </span>
+
+                                    <span id="overviewTreatment" class="font-bold text-right">
+                                        Cleanup Facial
+                                    </span>
+
+                                </div>
+
+                                <div class="flex items-center justify-between py-3 border-b border-border">
+
+                                    <span class="text-muted">
+                                        Duration
+                                    </span>
+
+                                    <span id="overviewDuration" class="font-bold">
+                                        60 Minutes
+                                    </span>
+
+                                </div>
+
+                                <div class="flex items-center justify-between py-3">
+
+                                    <span class="text-muted">
+                                        Location
+                                    </span>
+
+                                    <span class="font-bold">
+                                        Doorstep
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-    </section>
+        </section>
+
+
+        <!-- ================= BENEFITS ================= -->
+        <section class="py-14 lg:py-20 bg-background">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="max-w-2xl">
+
+                    <span
+                        class="inline-flex px-4 py-2 bg-white rounded-full text-primary text-xs font-bold uppercase tracking-wider border border-border">
+                        Treatment Benefits
+                    </span>
+
+                    <h2 class="serif text-3xl sm:text-4xl lg:text-5xl mt-5">
+                        What this treatment
+                        <span class="text-primary">helps with</span>
+                    </h2>
+
+                </div>
+
+
+                <div id="benefitsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+
+                    <!-- JS -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TREATMENT PROCESS ================= -->
+        <section class="py-14 lg:py-20 bg-white">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center max-w-2xl mx-auto">
+
+                    <span
+                        class="inline-flex px-4 py-2 bg-primary-light rounded-full text-primary text-xs font-bold uppercase tracking-wider">
+                        Treatment Process
+                    </span>
+
+                    <h2 class="serif text-3xl sm:text-4xl lg:text-5xl mt-5">
+                        Your treatment,
+                        <span class="text-primary">step by step</span>
+                    </h2>
+
+                    <p class="text-muted mt-4 leading-relaxed">
+                        Every session follows a structured process designed to provide
+                        a comfortable and refreshing skincare experience.
+                    </p>
+
+                </div>
+
+
+                <div id="stepsGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+
+                    <!-- JS -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHO IS IT FOR ================= -->
+        <section class="py-14 lg:py-20 bg-primary-light">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+                    <div>
+
+                        <span
+                            class="inline-flex px-4 py-2 bg-white rounded-full text-primary text-xs font-bold uppercase tracking-wider">
+                            Is This For You?
+                        </span>
+
+                        <h2 class="serif text-3xl sm:text-4xl lg:text-5xl mt-5">
+                            Designed for
+                            <span class="text-primary">acne-prone skin</span>
+                        </h2>
+
+                        <p class="text-muted leading-8 mt-5">
+                            This treatment can be considered by people looking for
+                            professional cleansing and refreshing care for skin that
+                            appears oily, congested or prone to occasional breakouts.
+                        </p>
+
+                    </div>
+
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+
+                        <div class="bg-white rounded-2xl p-5 border border-border">
+
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-success"></i>
+
+                            <h3 class="font-bold mt-4">
+                                Congested Skin
+                            </h3>
+
+                            <p class="text-sm text-muted mt-2 leading-relaxed">
+                                For skin that appears clogged or congested.
+                            </p>
+
+                        </div>
+
+
+                        <div class="bg-white rounded-2xl p-5 border border-border">
+
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-success"></i>
+
+                            <h3 class="font-bold mt-4">
+                                Excess Oil
+                            </h3>
+
+                            <p class="text-sm text-muted mt-2 leading-relaxed">
+                                Helps refresh the appearance of oily-looking skin.
+                            </p>
+
+                        </div>
+
+
+                        <div class="bg-white rounded-2xl p-5 border border-border">
+
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-success"></i>
+
+                            <h3 class="font-bold mt-4">
+                                Dull Appearance
+                            </h3>
+
+                            <p class="text-sm text-muted mt-2 leading-relaxed">
+                                Refreshes skin that looks tired and dull.
+                            </p>
+
+                        </div>
+
+
+                        <div class="bg-white rounded-2xl p-5 border border-border">
+
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-success"></i>
+
+                            <h3 class="font-bold mt-4">
+                                Regular Care
+                            </h3>
+
+                            <p class="text-sm text-muted mt-2 leading-relaxed">
+                                Suitable as part of a professional skincare routine.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+        <section class="py-14 lg:py-20 bg-white">
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center">
+
+                    <span
+                        class="inline-flex px-4 py-2 bg-primary-light rounded-full text-primary text-xs font-bold uppercase tracking-wider">
+                        FAQ
+                    </span>
+
+                    <h2 class="serif text-3xl sm:text-4xl lg:text-5xl mt-5">
+                        Frequently asked
+                        <span class="text-primary">questions</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="mt-10 space-y-3">
+
+                    <details class="group bg-background rounded-2xl border border-border p-5">
+
+                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold">
+
+                            What is an Acne Cleanup Facial?
+
+                            <i data-lucide="plus" class="w-5 h-5 transition group-open:rotate-45"></i>
+
+                        </summary>
+
+                        <p class="text-muted leading-relaxed mt-4">
+                            It is a professional cleansing-focused facial designed to
+                            refresh acne-prone and congested-looking skin through
+                            cleansing, exfoliation and skin-purifying care.
+                        </p>
+
+                    </details>
+
+
+                    <details class="group bg-background rounded-2xl border border-border p-5">
+
+                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold">
+
+                            How long does the treatment take?
+
+                            <i data-lucide="plus" class="w-5 h-5 transition group-open:rotate-45"></i>
+
+                        </summary>
+
+                        <p class="text-muted leading-relaxed mt-4">
+                            The typical session duration is around 60 minutes, although
+                            the exact time may vary depending on the treatment plan.
+                        </p>
+
+                    </details>
+
+
+                    <details class="group bg-background rounded-2xl border border-border p-5">
+
+                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold">
+
+                            Can this treatment be done at home?
+
+                            <i data-lucide="plus" class="w-5 h-5 transition group-open:rotate-45"></i>
+
+                        </summary>
+
+                        <p class="text-muted leading-relaxed mt-4">
+                            Yes. Smooth N Shine provides doorstep aesthetic treatments,
+                            subject to service availability in your location.
+                        </p>
+
+                    </details>
+
+
+                    <details class="group bg-background rounded-2xl border border-border p-5">
+
+                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold">
+
+                            Is this treatment suitable for everyone?
+
+                            <i data-lucide="plus" class="w-5 h-5 transition group-open:rotate-45"></i>
+
+                        </summary>
+
+                        <p class="text-muted leading-relaxed mt-4">
+                            Suitability depends on your individual skin condition.
+                            A professional assessment should be done before treatment,
+                            especially if you have active or severe skin concerns.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL CTA ================= -->
+        <section class="py-14 lg:py-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div
+                    class="relative overflow-hidden rounded-[2rem] bg-primary px-7 py-12 sm:px-12 lg:px-16 lg:py-16 text-white">
+
+                    <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-white/10"></div>
+
+                    <div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-black/10"></div>
+
+                    <div class="relative max-w-3xl">
+
+                        <p class="text-white/75 text-xs font-bold uppercase tracking-[0.2em]">
+                            Smooth N Shine
+                        </p>
+
+                        <h2 class="serif text-3xl sm:text-4xl lg:text-5xl mt-4">
+                            Ready to give your skin
+                            the care it deserves?
+                        </h2>
+
+                        <p class="text-white/80 mt-5 max-w-2xl leading-relaxed">
+                            Book your doorstep appointment and let our professional
+                            team create a treatment experience tailored to your skin.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-3 mt-8">
+
+                            <a id="bottomBookingButton" href="booking.html?service=acne-cleanup"
+                                class="inline-flex justify-center items-center gap-2 bg-white text-primary hover:bg-primary-light px-7 py-4 rounded-full font-bold transition">
+
+                                Book Appointment
+
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+
+                            </a>
+
+                            <a href="https://wa.me/918850666361" target="_blank"
+                                class="inline-flex justify-center items-center gap-2 border border-white/30 hover:bg-white/10 px-7 py-4 rounded-full font-bold transition">
+
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+
+                                Talk on WhatsApp
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <!-- ================= FOOTER ================= -->
     <footer class="bg-dark text-white pt-16 pb-24 md:pb-12 border-t border-[#381B15]">
@@ -920,61 +1474,385 @@
             </div>
         </div>
     </footer>
-    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
-    <nav id="mobileBottomNav"
-        class="fixed bottom-0 left-0 right-0 z-[9990] h-[68px] bg-white/95 border-t border-border shadow-[0_-5px_25px_rgba(32,18,15,0.08)] backdrop-blur-md md:hidden">
 
-        <div class="relative h-full grid grid-cols-5 items-center px-1">
+    <!-- ================= DATA + JAVASCRIPT ================= -->
+    <script>
 
-            <!-- HOME -->
-            <a href="index.html"
-                class="group h-full flex flex-col items-center justify-center gap-1 text-primary no-underline">
-                <i data-lucide="home" class="w-5 h-5"></i>
-                <span class="text-[10px] font-bold">Home</span>
-            </a>
+        /*
+        ============================================================
+        CONCERN DATA
+        ============================================================
+        Aap future me isi object me aur concerns add kar sakte hain.
+        URL:
+        concern-details.html?treatment=acne-cleanup
+        */
 
-            <!-- SERVICES -->
-            <a href="treatments.html"
-                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
-                <i data-lucide="sparkles" class="w-5 h-5"></i>
-                <span class="text-[10px] font-bold">Services</span>
-            </a>
+        const concernData = {
 
-            <!-- BOOKING -->
-            <a href="booking.html" id="mobileBookingButton"
-                class="group relative h-full flex items-center justify-center no-underline"
-                style="background-color: transparent !important;">
+            "acne-cleanup": {
 
-                <div
-                    class="absolute -top-[20px] w-14 h-14 rounded-full bg-primary text-white shadow-lg flex items-center justify-center">
+                category: "Acne",
 
-                    <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+                title: "Acne Cleanup Facial",
 
-                    <!-- BOOKING NOTIFICATION -->
-                    <span id="mobileBookingBadge"
-                        class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[11px] font-bold w-6 h-6 rounded-full border-2 border-white flex items-center justify-center shadow-lg badge-pop">
-                        0
-                    </span>
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzf2h6c_BCSCGzwTWnOh4hixWiXV5i-5UyhJyMf0ZPlQ&s=10",
+
+                shortDescription:
+                    "Deep cleansing facial care for acne-prone and congested-looking skin.",
+
+                duration: "60 Minutes",
+
+                treatmentName: "Cleanup Facial",
+
+                aboutTitle: "Acne",
+
+                about: [
+                    "Acne-prone skin can often appear congested, uneven and uncomfortable due to excess oil, buildup and clogged pores. A consistent skincare routine combined with professional cleansing can help keep the skin feeling cleaner and fresher.",
+
+                    "The Acne Cleanup Facial is designed around gentle cleansing, exfoliation and skin-purifying care to refresh the appearance of acne-prone skin.",
+
+                    "Treatment intensity and suitability may vary depending on individual skin condition. Our professionals assess your skin before proceeding with the treatment."
+                ],
+
+                benefits: [
+
+                    {
+                        icon: "sparkles",
+                        title: "Deep Cleansing",
+                        text: "Helps remove surface impurities, excess oil and everyday buildup."
+                    },
+
+                    {
+                        icon: "droplets",
+                        title: "Oil Balance",
+                        text: "Designed to refresh skin that appears oily and congested."
+                    },
+
+                    {
+                        icon: "scan-face",
+                        title: "Cleaner-Looking Skin",
+                        text: "Leaves the skin feeling fresh, clean and rejuvenated."
+                    },
+
+                    {
+                        icon: "circle-dot",
+                        title: "Pore Care",
+                        text: "Professional cleansing helps address the appearance of clogged pores."
+                    },
+
+                    {
+                        icon: "sun",
+                        title: "Fresh Appearance",
+                        text: "Helps improve the overall fresh and healthy-looking appearance of the skin."
+                    },
+
+                    {
+                        icon: "heart",
+                        title: "Relaxing Experience",
+                        text: "A comfortable facial experience performed at your doorstep."
+                    }
+
+                ],
+
+                steps: [
+
+                    {
+                        number: "01",
+                        icon: "sparkles",
+                        title: "Skin Assessment",
+                        text: "Your skin is assessed to understand its current condition and treatment needs."
+                    },
+
+                    {
+                        number: "02",
+                        icon: "droplets",
+                        title: "Deep Cleansing",
+                        text: "The skin is gently cleansed to remove surface impurities and buildup."
+                    },
+
+                    {
+                        number: "03",
+                        icon: "wand-sparkles",
+                        title: "Exfoliation",
+                        text: "A suitable exfoliation step helps refresh the appearance of congested skin."
+                    },
+
+                    {
+                        number: "04",
+                        icon: "heart",
+                        title: "Soothing Care",
+                        text: "The session finishes with soothing skincare designed to leave the skin feeling refreshed."
+                    }
+
+                ]
+
+            }
+
+        };
+
+
+        /*
+        ============================================================
+        GET TREATMENT FROM URL
+        ============================================================
+        */
+
+        const params = new URLSearchParams(window.location.search);
+
+        const treatmentSlug =
+            params.get("treatment") || "acne-cleanup";
+
+
+        /*
+        ============================================================
+        GET CURRENT CONCERN
+        ============================================================
+        */
+
+        const concern = concernData[treatmentSlug];
+
+
+        /*
+        ============================================================
+        FALLBACK
+        ============================================================
+        */
+
+        if (!concern) {
+
+            document.body.innerHTML = `
+
+                <div class="min-h-screen flex items-center justify-center px-5">
+
+                    <div class="text-center">
+
+                        <div class="w-16 h-16 mx-auto rounded-full bg-primary-light
+                            flex items-center justify-center text-primary">
+
+                            <i data-lucide="search-x"
+                                class="w-8 h-8"></i>
+
+                        </div>
+
+                        <h1 class="text-3xl font-bold mt-5">
+                            Concern Not Found
+                        </h1>
+
+                        <p class="text-muted mt-3">
+                            The requested concern could not be found.
+                        </p>
+
+                        <a href="concerns.html"
+                            class="inline-flex mt-6 bg-primary text-white
+                            px-6 py-3 rounded-full font-bold">
+
+                            Back to Concerns
+
+                        </a>
+
+                    </div>
 
                 </div>
-            </a>
 
-            <!-- OFFERS -->
-            <a href="offers.html"
-                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
-                <i data-lucide="tag" class="w-5 h-5"></i>
-                <span class="text-[10px] font-bold">Offers</span>
-            </a>
+            `;
 
-            <!-- ACCOUNT -->
-            <a href="dashboard.html"
-                class="group h-full flex flex-col items-center justify-center gap-1 text-text no-underline">
-                <i data-lucide="user" class="w-5 h-5"></i>
-                <span class="text-[10px] font-bold">Account</span>
-            </a>
+            lucide.createIcons();
 
-        </div>
-    </nav>
+        }
+
+
+        /*
+        ============================================================
+        POPULATE BASIC DETAILS
+        ============================================================
+        */
+
+        if (concern) {
+
+            document.title =
+                `${concern.title} | Smooth N Shine`;
+
+
+            document.getElementById("heroImage").src =
+                concern.image;
+
+            document.getElementById("heroImage").alt =
+                concern.title;
+
+
+            document.getElementById("categoryBadge").innerHTML = `
+
+                <span class="w-2 h-2 rounded-full bg-primary"></span>
+
+                ${concern.category}
+
+            `;
+
+
+            document.getElementById("breadcrumbTitle").textContent =
+                concern.category;
+
+
+            document.getElementById("pageTitle").textContent =
+                concern.title;
+
+
+            document.getElementById("shortDescription").textContent =
+                concern.shortDescription;
+
+
+            document.getElementById("duration").textContent =
+                concern.duration;
+
+
+            document.getElementById("aboutConcernTitle").textContent =
+                concern.aboutTitle;
+
+
+            document.getElementById("overviewConcern").textContent =
+                concern.category;
+
+
+            document.getElementById("overviewTreatment").textContent =
+                concern.treatmentName;
+
+
+            document.getElementById("overviewDuration").textContent =
+                concern.duration;
+
+
+            /*
+            Booking URL automatically changes
+            */
+
+            const bookingURL =
+                `booking.html?service=${treatmentSlug}`;
+
+
+            document.getElementById("bookingButton").href =
+                bookingURL;
+
+            document.getElementById("bottomBookingButton").href =
+                bookingURL;
+
+
+            /*
+            About Content
+            */
+
+            const aboutContent =
+                document.getElementById("aboutContent");
+
+            aboutContent.innerHTML =
+                concern.about
+                    .map(paragraph => `<p>${paragraph}</p>`)
+                    .join("");
+
+
+            /*
+            ========================================================
+            BENEFITS
+            ========================================================
+            */
+
+            const benefitsGrid =
+                document.getElementById("benefitsGrid");
+
+
+            benefitsGrid.innerHTML =
+                concern.benefits.map((benefit, index) => `
+
+                    <div
+                        class="bg-white rounded-3xl border border-border p-6
+                        hover:-translate-y-1 hover:shadow-card transition duration-300">
+
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-primary-light
+                            flex items-center justify-center text-primary">
+
+                            <i data-lucide="${benefit.icon}"
+                                class="w-6 h-6"></i>
+
+                        </div>
+
+                        <h3 class="text-lg font-bold mt-5">
+                            ${benefit.title}
+                        </h3>
+
+                        <p class="text-sm text-muted leading-relaxed mt-2">
+                            ${benefit.text}
+                        </p>
+
+                    </div>
+
+                `).join("");
+
+
+            /*
+            ========================================================
+            STEPS
+            ========================================================
+            */
+
+            const stepsGrid =
+                document.getElementById("stepsGrid");
+
+
+            stepsGrid.innerHTML =
+                concern.steps.map((step, index) => `
+
+                    <div
+                        class="relative step-line last:after:hidden">
+
+                        <div class="bg-background rounded-3xl
+                            border border-border p-6 h-full">
+
+                            <div class="flex items-center justify-between">
+
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-primary
+                                    text-white flex items-center justify-center">
+
+                                    <i data-lucide="${step.icon}"
+                                        class="w-6 h-6"></i>
+
+                                </div>
+
+                                <span
+                                    class="text-4xl font-bold text-primary/15">
+
+                                    ${step.number}
+
+                                </span>
+
+                            </div>
+
+                            <h3 class="font-bold text-lg mt-6">
+                                ${step.title}
+                            </h3>
+
+                            <p class="text-sm text-muted leading-relaxed mt-2">
+                                ${step.text}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                `).join("");
+
+
+            /*
+            ========================================================
+            LUCIDE
+            ========================================================
+            */
+
+            lucide.createIcons();
+
+        }
+
+    </script>
 
     <!-- ================= UNIVERSAL BOOKING MODAL ================= -->
     <div id="bookingModal"
@@ -1086,6 +1964,7 @@
     </div>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
