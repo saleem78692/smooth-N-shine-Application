@@ -122,7 +122,7 @@
 <body class="bg-background text-text">
 
     <!-- ================= TOP OFFER BAR ================= -->
-    <div class="bg-[#2B1A20] text-xs sm:text-sm py-2.5 px-4 text-white">
+   <div class="hidden sm:block bg-[#2B1A20] text-xs sm:text-sm py-2.5 px-4 text-white">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-2 mx-auto sm:mx-0">
                 <span class="text-[#EAA597] font-bold">✨ Special Offer:</span>
@@ -136,12 +136,12 @@
     </div>
 
     <!-- ================= STICKY HEADER ================= -->
-    <header
+     <header
         class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-[0_4px_20px_rgba(32,18,15,0.04)]">
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <div class="h-20 flex items-center justify-between">
+            <div class="h-16 flex items-center justify-between">
 
                 <!-- ================= LOGO ================= -->
                 <a href="index.html" class="flex items-center shrink-0 no-underline group py-1"
@@ -515,7 +515,7 @@
 
                     <!-- =========================================================
                      CONCERNS DROPDOWN
-                ========================================================== -->
+                    ========================================================== -->
                     <div class="relative h-full flex items-center has-dropdown cursor-pointer">
 
                         <a href="concerns.html" class="text-sm font-medium text-text hover:text-primary
@@ -684,17 +684,18 @@
             ============================================================== -->
                 <div class="flex lg:hidden items-center gap-2">
 
-                    <!-- Search -->
-                    <a href="treatments.html" class="w-9 h-9
+                    <!-- Cart -->
+                    <a href="cart.html" class="w-9 h-9
                            rounded-full
                            bg-background
                            border border-border
                            flex items-center justify-center
-                           text-text">
+                           text-text relative">
 
-                        <i data-lucide="search" class="w-4 h-4">
+                        <i data-lucide="shopping-cart" class="w-4 h-4">
                         </i>
-
+                        <span
+                            class="absolute -top-2 -right-1 bg-primary rounded-full h-5 w-5 text-sm flex justify-center items-center">0</span>
                     </a>
 
 
