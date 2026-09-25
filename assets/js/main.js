@@ -615,7 +615,7 @@ const treatments = [
     label: "Laser Hair Reduction",
     price: "₹1,079",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCz-spjoi9dzFJb1caSyDce0qtBvijQeTTAbq21utiMQ&s=10",
+      "assets/images/chin.webp",
   },
 
   {
