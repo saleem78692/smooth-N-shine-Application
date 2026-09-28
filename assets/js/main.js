@@ -34,7 +34,7 @@ const servicesData = {
       duration: "45 mins",
       badge: "Most Booked",
       subtitle: null,
-      image: "assets/images/legs2.webp",
+      image: "assets/images/Legs.png",
       initialQty: 0,
     },
 
@@ -124,27 +124,8 @@ const servicesData = {
       initialQty: 0,
     },
 
-    {
-      id: "facial-6",
-      title: "Buttocks",
-      price: 3599,
-      duration: "1 hr",
-      badge: "Skin Care",
-      subtitle: "Helps Improve Uneven Skin Tone",
-      image: "assets/images/buttocks1.jpeg",
-      initialQty: 0,
-    },
-
-    {
-      id: "facial-7",
-      title: "Bikini",
-      price: 3599,
-      duration: "1 hr 15 mins",
-      badge: "Skin Care",
-      subtitle: "Deep Cleanse & Clarifying Care",
-      image: "assets/images/bikini1.avif",
-      initialQty: 0,
-    },
+   
+  
 
     {
       id: "facial-8",
@@ -153,7 +134,7 @@ const servicesData = {
       duration: "1",
       badge: "Combo",
       subtitle: "Complete Glow & Polish",
-      image: "assets/images/body.webp",
+      image: "assets/images/full-body.png",
       initialQty: 0,
     },
   ],
@@ -695,30 +676,12 @@ const treatments = [
   },
 
   {
-    name: "Bikini",
-    time:"45 mins",
-    category: "laser",
-    label: "Laser Hair Reduction",
-    price: "₹3,599",
-    image: "assets/images/bikini1.avif",
-  },
-
-  {
-    name: "Buttocks",
-    time:"45 mins",
-    category: "laser",
-    label: "Laser Hair Reduction",
-    price: "₹3,599",
-    image: "assets/images/buttocks1.jpeg",
-  },
-
-  {
     name: "Legs",
     time:"1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹4,799",
-    image: "assets/images/legs2.webp",
+    image: "assets/images/Legs.png",
   },
 
   {
@@ -727,7 +690,7 @@ const treatments = [
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹12,000",
-    image: "assets/images/full-body(5parts).png",
+    image: "assets/images/full-body.png",
   },
 
   {
@@ -736,7 +699,7 @@ const treatments = [
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹14,000",
-    image: "assets/images/full-body(7parts).png",
+    image: "assets/images/full-body.png",
   },
 
   /* ================= BODY ================= */
@@ -759,16 +722,6 @@ const treatments = [
     price: "₹2,500",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDrsejniEOGrQkg_tvE_Lti7bmOoXWZzbpw1_aHXung&s=10",
-  },
-
-  {
-    name: "Thigh Contouring",
-    time:"",
-    category: "body",
-    label: "Body Contouring",
-    price: "₹2,500",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR76H_hBpK-RzDBNePZaWxdnxo727JiS5wkxcijAvFIw&s=10",
   },
 
   {
