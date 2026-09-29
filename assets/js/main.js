@@ -96,7 +96,7 @@ const servicesData = {
       badge: "Trending",
       subtitle: "Instant Hydration & Radiance",
       image:
-        "assets/images/body.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-I6U0U8-rc3DlZ0HbebSgqZNdwWAXJV_ZEDzZW_QH9w&s=10",
       initialQty: 0,
     },
 
@@ -718,7 +718,7 @@ const treatments = [
     name: "Stomach Contouring",
     time:"",
     category: "body",
-    label: "Body Contouring",
+    label: "Body Toning",
     price: "₹2,500",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDrsejniEOGrQkg_tvE_Lti7bmOoXWZzbpw1_aHXung&s=10",
@@ -728,7 +728,7 @@ const treatments = [
     name: "Arm Contouring",
     time:"",
     category: "body",
-    label: "Body Contouring",
+    label: "Body Toning",
     price: "₹2,500",
     image:
       "https://www.jacobsonplasticsurgery.com//files/2024/08/Arm-fat-reduction-1024x683.jpeg",
@@ -773,7 +773,7 @@ const treatments = [
     label: "Body Polish",
     price: "₹2,399",
     image:
-      "assets/images/body.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-I6U0U8-rc3DlZ0HbebSgqZNdwWAXJV_ZEDzZW_QH9w&s=10",
   },
 
   {
