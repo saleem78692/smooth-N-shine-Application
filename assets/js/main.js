@@ -12,7 +12,8 @@ const servicesData = {
       duration: "30 mins",
       badge: null,
       subtitle: null,
-      image: "assets/images/Upper-Lip-and-Chin-Laser-Hair-Reduction-03jan26.webp",
+      image:
+        "assets/images/Upper-Lip-and-Chin-Laser-Hair-Reduction-03jan26.webp",
       initialQty: 0,
     },
 
@@ -38,7 +39,7 @@ const servicesData = {
       initialQty: 0,
     },
 
-     {
+    {
       id: "salon-4",
       title: "Front",
       price: 3599,
@@ -48,7 +49,6 @@ const servicesData = {
       image: "assets/images/front1.webp",
       initialQty: 0,
     },
-
 
     {
       id: "salon-5",
@@ -124,9 +124,6 @@ const servicesData = {
       initialQty: 0,
     },
 
-   
-  
-
     {
       id: "facial-8",
       title: "Full Body",
@@ -148,8 +145,7 @@ const servicesData = {
       duration: "1 hr 15 mins",
       badge: "Best Value",
       subtitle: "Painless Cooling Technology",
-      image:
-        "assets/images/ssi-FullFace-LHR-03jan26.webp",
+      image: "assets/images/ssi-FullFace-LHR-03jan26.webp",
       initialQty: 0,
     },
   ],
@@ -582,7 +578,7 @@ const treatments = [
 
   {
     name: "Upper Lip",
-    time:"30 mins",
+    time: "30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
@@ -591,17 +587,16 @@ const treatments = [
 
   {
     name: "Chin",
-    time:"50 mins",
+    time: "50 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
-    image:
-      "assets/images/chin.webp",
+    image: "assets/images/chin.webp",
   },
 
   {
     name: "Side Locks",
-    time:"30 mins",
+    time: "30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
@@ -610,7 +605,7 @@ const treatments = [
 
   {
     name: "Underarms",
-    time:"30 mins",
+    time: "30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,079",
@@ -619,7 +614,7 @@ const treatments = [
 
   {
     name: "Neck Line",
-    time:"30 mins",
+    time: "30 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,179",
@@ -628,27 +623,25 @@ const treatments = [
 
   {
     name: "Midriff",
-    time:"50 mins",
+    time: "50 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹1,439",
-    image:
-      "assets/images/front1.webp",
+    image: "assets/images/front1.webp",
   },
 
   {
     name: "Face",
-    time:"1 hr",
+    time: "1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
-    image:
-      "assets/images/Full-Face-Laser-Hair-Reduction-05jan26.webp",
+    image: "assets/images/Full-Face-Laser-Hair-Reduction-05jan26.webp",
   },
 
   {
     name: "Hands",
-    time:"1 hr",
+    time: "1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
@@ -657,7 +650,7 @@ const treatments = [
 
   {
     name: "Front",
-    time:"45 mins",
+    time: "45 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
@@ -667,7 +660,7 @@ const treatments = [
 
   {
     name: "Back",
-    time:"50 mins",
+    time: "50 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹3,599",
@@ -677,7 +670,7 @@ const treatments = [
 
   {
     name: "Legs",
-    time:"1 hr",
+    time: "1 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹4,799",
@@ -686,7 +679,7 @@ const treatments = [
 
   {
     name: "Full Body (5 Part)",
-    time:"3 hr",
+    time: "3 hr",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹12,000",
@@ -695,7 +688,7 @@ const treatments = [
 
   {
     name: "Full Body (7 Part)",
-    time:"3 hr 20 mins",
+    time: "3 hr 20 mins",
     category: "laser",
     label: "Laser Hair Reduction",
     price: "₹14,000",
@@ -706,7 +699,7 @@ const treatments = [
 
   {
     name: "U-Lipo",
-    time:"",
+    time: "",
     category: "body",
     label: "Body Toning",
     price: "₹2,500",
@@ -716,7 +709,7 @@ const treatments = [
 
   {
     name: "Stomach Contouring",
-    time:"",
+    time: "",
     category: "body",
     label: "Body Toning",
     price: "₹2,500",
@@ -726,7 +719,7 @@ const treatments = [
 
   {
     name: "Arm Contouring",
-    time:"",
+    time: "",
     category: "body",
     label: "Body Toning",
     price: "₹2,500",
@@ -738,7 +731,7 @@ const treatments = [
 
   {
     name: "Korean Facial",
-    time:"",
+    time: "",
     category: "facial",
     label: "Facial",
     price: "₹3,599",
@@ -748,7 +741,7 @@ const treatments = [
 
   {
     name: "Medi Facial",
-    time:"",
+    time: "",
     category: "facial",
     label: "Facial",
     price: "₹3,599",
@@ -758,7 +751,7 @@ const treatments = [
 
   {
     name: "Polishing Combined with Facial",
-    time:"",
+    time: "",
     category: "facial",
     label: "Facial",
     price: "₹2,999",
@@ -768,7 +761,7 @@ const treatments = [
 
   {
     name: "Body Diamond Polish",
-    time:"",
+    time: "",
     category: "facial",
     label: "Body Polish",
     price: "₹2,399",
@@ -778,9 +771,8 @@ const treatments = [
 
   {
     name: "RF with Anti-Aging Facial",
-    time:"",
-    category: "facial",
     time: "20 min",
+    category: "facial",
     label: "Anti-Aging Facial",
     price: "₹2,399",
     image:
@@ -823,131 +815,102 @@ function renderTreatments(filter = "all", search = "") {
     const card = document.createElement("div");
 
     card.className =
-      "treatment-card bg-white rounded-3xl overflow-hidden border border-border";
+      "treatment-card bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-border flex flex-col h-full hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group";
 
     card.innerHTML = `
-
             <!-- IMAGE -->
             <a
                 href="${detailsUrl}"
-                class="block relative h-56 overflow-hidden group"
+                class="block relative w-full h-44 sm:h-52 md:h-56 overflow-hidden shrink-0"
                 aria-label="View ${item.name} details">
 
                 <img
                     src="${item.image}"
                     alt="${item.name}"
-                    class="treatment-image w-full h-full object-cover"
+                    class="treatment-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80'"
                 >
 
-                <div class="image-overlay absolute inset-0"></div>
+                <div class="image-overlay absolute inset-0 bg-gradient-to-t from-dark/85 via-dark/20 to-transparent"></div>
 
-                <!-- Category -->
-                <div class="absolute top-4 left-4">
+                <!-- Category Badge -->
+                <div class="absolute top-3 left-3 sm:top-4 sm:left-4 z-10">
                     <span
-                        class="bg-white/95 backdrop-blur-sm text-primary text-[11px] font-bold px-3 py-1.5 rounded-full">
+                        class="bg-white/95 backdrop-blur-sm text-primary text-[10px] sm:text-[11px] font-bold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-sm">
                         ${item.label}
                     </span>
                 </div>
 
                 <!-- Price -->
-                <div class="absolute bottom-4 left-4 text-white">
-                    <div class="text-xs opacity-80">
+                <div class="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 z-10 text-white">
+                    <div class="text-[10px] sm:text-xs opacity-80 leading-none mb-1">
                         Starting from
                     </div>
-
-                    <div class="text-xl font-bold">
+                    <div class="text-base sm:text-lg md:text-xl font-bold leading-tight">
                         ${item.price}
                     </div>
                 </div>
 
                 <!-- Arrow -->
                 <div
-                    class="absolute right-4 bottom-4 w-10 h-10 rounded-full
+                    class="absolute right-3 bottom-3 sm:right-4 sm:bottom-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full
                     bg-white text-primary flex items-center justify-center
                     opacity-0 group-hover:opacity-100 transition-all duration-300
-                    translate-y-2 group-hover:translate-y-0">
-
-                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-
+                    translate-y-2 group-hover:translate-y-0 shadow-md z-10">
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </div>
-
             </a>
 
-
             <!-- CONTENT -->
-            <div class="p-5">
+            <div class="p-4 sm:p-5 flex flex-col flex-grow justify-between gap-3">
+                <div>
+                    <!-- Meta Row -->
+                    <div class="flex items-center justify-between gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-primary mb-2">
+                        <span class="truncate">${item.category}</span>
+                        ${
+                          item.time
+                            ? `
+                        <span class="flex items-center gap-1 shrink-0 text-muted font-semibold lowercase tracking-normal">
+                            <i data-lucide="clock-3" class="w-3.5 h-3.5 text-primary"></i>
+                            ${item.time}
+                        </span>`
+                            : ""
+                        }
+                    </div>
 
-                <div
-                    class="text-xs uppercase tracking-widest
-                    text-primary font-bold mb-2">
+                    <!-- Title -->
+                    <a href="${detailsUrl}" class="inline-block group-hover:text-primary transition-colors">
+                        <h3 class="text-base sm:text-lg md:text-xl font-bold text-dark line-clamp-2 leading-snug">
+                            ${item.name}
+                        </h3>
+                    </a>
 
-                    ${item.category}
-
-                      <span class="float-end flex items-center gap-1">
-                        <i data-lucide="clock-3" class="w-4 h-4"></i>
-                         ${item.time}
-                      </span>
-
+                    <p class="text-xs sm:text-sm text-muted mt-1.5 line-clamp-2">
+                        Single session • Professional treatment
+                    </p>
                 </div>
 
-
-                <!-- TITLE -->
-                <a
-                    href="${detailsUrl}"
-                    class="group inline-block">
-
-                    <h3
-                        class="text-xl font-bold text-dark
-                        group-hover:text-primary transition">
-
-                        ${item.name}
-
-                    </h3>
-
-                </a>
-
-
-                <p class="text-sm text-muted mt-2">
-                    Single session • Professional treatment
-                </p>
-
-
-                <div
-                    class="flex items-center justify-between gap-3 mt-5">
-
+                <!-- Action Footer -->
+                <div class="flex items-center justify-between gap-2 sm:gap-3 pt-3 border-t border-border/60 mt-auto">
                     <!-- VIEW DETAILS -->
                     <a
                         href="${detailsUrl}"
-                        class="text-sm font-bold text-primary hover:underline">
-
-                        View Details
-
+                        class="text-xs sm:text-sm font-bold text-primary hover:text-primary-dark transition inline-flex items-center gap-1 hover:underline">
+                        <span>View Details</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                     </a>
 
-
                     <!-- CART ACTION -->
-                    <div
-                        class="cart-action"
-                        data-index="${index}">
-
-                        <!-- ADD NOW -->
+                    <div class="cart-action shrink-0" data-index="${index}">
                         <button
                             type="button"
                             onclick="showQuantity(this)"
-                            class="bg-primary hover:bg-primary-dark
-                            text-white px-4 py-2.5 rounded-full
-                            text-sm font-bold transition">
-
-                            ADD NOW
-
+                            class="bg-primary hover:bg-primary-dark text-white px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg active:scale-95 transition-all inline-flex items-center gap-1">
+                            <span>ADD NOW</span>
                         </button>
-
                     </div>
-
                 </div>
-
             </div>
         `;
 
@@ -1060,18 +1023,12 @@ function decreaseQty(button) {
     cartAction.dataset.quantity = "0";
 
     cartAction.innerHTML = `
-
             <button
                 type="button"
                 onclick="showQuantity(this)"
-                class="bg-primary hover:bg-primary-dark
-                text-white px-4 py-2.5 rounded-full
-                text-sm font-bold transition">
-
-                ADD NOW
-
+                class="bg-primary hover:bg-primary-dark text-white px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg active:scale-95 transition-all inline-flex items-center gap-1">
+                <span>ADD NOW</span>
             </button>
-
         `;
   }
 }

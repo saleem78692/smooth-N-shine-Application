@@ -628,3 +628,23 @@ a[href="#bookingModal"]:not([class*="text-"]):hover,
 #dashboardSidebar > div:first-child::-webkit-scrollbar-thumb:hover {
     background: #A66373;
 }
+
+/* Hero Banner Swiper Pagination & Control Styles */
+
+
+.hero-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.hero-pagination .swiper-pagination-bullet-active {
+    background: #A66373 !important;
+    width: 32px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(166, 99, 115, 0.6);
+}

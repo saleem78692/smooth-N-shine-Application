@@ -147,15 +147,8 @@ function initHeroSwiper() {
   if (typeof Swiper !== "undefined" && document.querySelector(".hero-swiper")) {
     new Swiper(".hero-swiper", {
       loop: true,
-      speed: 800,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true,
-      },
+      speed: 600,
+      autoplay: false, // No auto slide - only changes on side click / navigation
       pagination: {
         el: ".hero-pagination",
         clickable: true,
@@ -602,6 +595,7 @@ document.addEventListener("keydown", function (event) {
     closeReviewModal();
   }
 });
+
 function setRating(rating) {
   document.getElementById("reviewRating").value = rating;
   document.getElementById("ratingError").classList.add("hidden");
@@ -616,6 +610,7 @@ function setRating(rating) {
     }
   });
 }
+
 function submitReview(event) {
   event.preventDefault();
   const rating = document.getElementById("reviewRating").value;

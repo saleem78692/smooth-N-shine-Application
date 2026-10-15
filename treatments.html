@@ -834,69 +834,12 @@
     <!-- HERO -->
     <!-- ========================================================= -->
 
-    <section class="relative overflow-hidden bg-primary-light py-5 sm:py-10">
+    <section class="relative overflow-hidden bg-dark min-h-[300px] sm:min-h-[420px] lg:min-h-[480px] flex items-center justify-center">
+        <!-- Background Video -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none" src="assets/video/lhrCatvideo.mp4"></video>
 
-        <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary/10">
-        </div>
-
-        <div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-secondary/10">
-        </div>
-
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-
-            <div class="max-w-3xl">
-
-                <div
-                    class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-sm mb-6">
-
-                    <span class="w-2 h-2 rounded-full bg-primary"></span>
-
-                    Our Treatments
-
-                </div>
-
-
-                <h1 class="serif text-2xl sm:text-6xl lg:text-7xl leading-tight text-dark">
-
-                    Beauty That
-                    <span class="text-primary">
-                        Comes To You
-                    </span>
-
-                </h1>
-
-
-                <p class="mt-3 text-muted text-[15px] sm:text-lg leading-8 max-w-2xl">
-
-                    Discover personalised aesthetic treatments delivered
-                    by trained professionals at the comfort of your home.
-
-                </p>
-
-
-                <div class="flex flex-wrap gap-4 mt-8">
-
-                    <button onclick="openBooking('')"
-                        class="bg-primary hover:bg-primary-dark text-white px-3 sm:px-4 py-2 sm:py-2 rounded-full font-bold transition shadow-lg">
-
-                        Book Appointment
-
-                    </button>
-
-                    <a href="#treatments"
-                        class="border border-primary text-primary hover:bg-primary hover:text-white px-3 sm:px-4 py-2 sm:py-2 rounded-full font-bold transition">
-
-                        Explore Treatments
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
+        <!-- Subtle overlay for video clarity -->
+        <div class="absolute inset-0 bg-black/10 z-10"></div>
     </section>
 
 
@@ -981,7 +924,7 @@
 
 
             <!-- Treatment Grid -->
-            <div id="treatmentGrid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div id="treatmentGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             </div>
 
 
